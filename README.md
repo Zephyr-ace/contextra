@@ -10,18 +10,19 @@ Provide **financial peace of mind** by tracing how world events impact a portfol
 - **Scale & noise**: fragmented sources; humans can’t connect signals fast enough.
 - **Vague outputs**: many LLM tools lack quantified impact or verifiable reasoning.
 
-## Approach (end-to-end)
-1. **Monitor** — ingest high-signal news/research/filings around portfolio components
-2. **Graph Factory** — extract typed entities & relations to build/refresh an **Investment Graph** for each stock/sector 
-3. **Reaction Chain** — trace event → intermediaries → portfolio component to capture indirect effects.
-4. **Impact Score** — aggregate influence along weighted paths (edge/type weights, distance decay, recency).
-5. **Sanity Check** — Reasoning model checks source reliability, sanity-check weights and chains and then after potentially finetuning weights we calculate final impact; produce rationale + evidence bundle.
-6. **Decisioning** — align to trading strategy → ** suggest: buy/hold/sell + confidence**, with the **impact path** and a rational (in text).
+## Approach (for each component)
+
+0. **Graph Factory** — extract typed entities & relations to build/refresh an **Investment Graph** for each stock/sector 
+1. **Monitor** — a) extract events: analyze news (/filings/trends) around n most impactful nodes b) extract insights: analyze UBS research for structural and thematic insight around n most impactful nodes
+2. **Reaction Chain** — trace event/insight → intermediaries → portfolio component to capture indirect effects.
+3. **Impact Score** — aggregate influence along weighted paths (edge/type weights, distance decay, recency).
+4. **Sanity Check** — Reasoning model checks source reliability, sanity-check weights and chains and then after potentially finetuning weights we calculate final impact; produce rationale + evidence bundle.
+5. **Decisioning** — **suggest: buy/hold/sell + confidence**, with the **impact path** and a rational (in text). additionaly: align to trading strategy
 
 ## Architecture (at a glance)
 main
 - **graph_factory**: full pipeline + agentic "refinement": extraction, graph creation and then iterative agentic expansion/enrichment
-- **monitor**: determine n most impactful nodes (adjuntenmatrix or pageranker) -> monitor those. fetch news, extract and calculate impact -> "alarm"
+- **monitor**: determine n_most_impactful_nodes (adjuntenmatrix or pageranker) -> monitor those. fetch news, extract and calculate impact -> "alarm"
 - **impact_chain_validator**: verification, sanity check, explanation/rational through: state-of-the-art reasoning model
 
 details
