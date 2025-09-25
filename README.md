@@ -11,7 +11,7 @@ Provide **financial peace of mind** by tracing how world events impact a portfol
 - **Vague outputs**: many LLM tools lack quantified impact or verifiable reasoning.
 
 ## Approach (end-to-end)
-1. **Monitor** — ingest high-signal news/research/filings around portfolio components.
+1. **Monitor** — ingest high-signal news/research/filings around portfolio components
 2. **Graph Factory** — extract typed entities & relations to build/refresh an **Investment Graph** for each stock/sector 
 3. **Reaction Chain** — trace event → intermediaries → portfolio component to capture indirect effects.
 4. **Impact Score** — aggregate influence along weighted paths (edge/type weights, distance decay, recency).
@@ -24,14 +24,15 @@ main
 - **monitor**: determine n most impactful nodes (adjuntenmatrix or pageranker) -> monitor those. fetch news, extract and calculate impact -> "alarm"
 - **impact_chain_validator**: verification, sanity check, explanation/rational through: state-of-the-art reasoning model
 
-additional
+details
 - **ingestors**: source adapters, dedupe, rate-limit, source.
 - **extractors**: LLM-assisted structured extraction; schema-validated.
 - **models**: LLM models (currently nothing local, only API)
 - **data**: input, cache and output folder here.
 
 optional
-- (**Orchestrator**: jobs, caching, retries; pipelines.)
+- (**portfolio_decomposition**: 1. Portfolio → Fonds / ETFs / Stocks. 2. Fond/ETF -> (top 10 holdings) -> sector) 
+- (**orchestrator**: jobs, caching, retries; pipelines.)
 
 
 ## Milestones
