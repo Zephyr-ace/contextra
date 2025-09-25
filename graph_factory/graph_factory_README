@@ -1,0 +1,13 @@
+
+
+1. initial graph (fundament)
+create a small graph, only one and max some two hop nodes (if really important)
+nodes categories:
+companies, products, people, events, regulations
+
+edges (no categories): more flexible, a small reasoning model concludes them for each fragment-> edge_type: str , edge_weight: int and then we aggregate over all fragments when merging into global graph).
+
+2. iterative agentic refinement
+crew of Ai agents:
+-decide which of the nodes are most important (for our goal / impact on apple)
+-fetch more information using one node + (category we're looking for or something like that, llm can get creative here) at a time as a query.

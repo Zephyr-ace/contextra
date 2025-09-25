@@ -12,19 +12,25 @@ Provide **financial peace of mind** by tracing how world events impact a portfol
 
 ## Approach (end-to-end)
 1. **Monitor** — ingest high-signal news/research/filings around portfolio components.
-2. **Graph Factory** — extract typed entities & relations to build/refresh an **Investment Graph** for each stock/sector (nodes categories: companies, products, people, events, regulations; edges (no categories): more flexible, reasoning model concludes them).
+2. **Graph Factory** — extract typed entities & relations to build/refresh an **Investment Graph** for each stock/sector 
 3. **Reaction Chain** — trace event → intermediaries → portfolio component to capture indirect effects.
 4. **Impact Score** — aggregate influence along weighted paths (edge/type weights, distance decay, recency).
 5. **Sanity Check** — Reasoning model checks source reliability, sanity-check weights and chains and then after potentially finetuning weights we calculate final impact; produce rationale + evidence bundle.
 6. **Decisioning** — align to trading strategy → ** suggest: buy/hold/sell + confidence**, with the **impact path** and a rational (in text).
 
 ## Architecture (at a glance)
-- **ingestors**: source adapters, dedupe, rate-limit, provenance.
+main
+- **graph_factory**: full pipeline + agentic "refinement": extraction, graph creation and then iterative agentic expansion/enrichment
+- **monitor**: determine n most impactful nodes (adjuntenmatrix or pageranker) -> monitor those. fetch news, extract and calculate impact -> "alarm"
+- **impact_chain_validator**: verification, sanity check, explanation/rational through: state-of-the-art reasoning model
+
+additional
+- **ingestors**: source adapters, dedupe, rate-limit, source.
 - **extractors**: LLM-assisted structured extraction; schema-validated.
 - **models**: LLM models (currently nothing local, only API)
 - **data**: input, cache and output folder here.
-- **monitor**: determine n most impactful nodes (adjuntenmatrix or pageranker) -> monitor those. fetch news, extract and calculate impact
-- **impact_chain_validator**: verification, sanity check, explanation/rational. state-of-the-art reasoning model
+
+optional
 - (**Orchestrator**: jobs, caching, retries; pipelines.)
 
 
