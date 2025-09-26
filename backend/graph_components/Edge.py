@@ -8,19 +8,19 @@ if TYPE_CHECKING:
 class Edge(BaseModel):
     """
     Edge class representing a connection between two nodes in the graph.
-    
+
     Attributes:
         title (str): Primary name/identifier of the edge
         description (str): Brief description of the connection
         start (Node): Starting node of the edge
         end (Node): Ending node of the edge
-        weight (int): Weight of the edge (importance/strength of connection)
+        importance_score (float): Importance score of the edge (0.5-1.0, higher = stronger connection)
     """
     title: str = Field(..., description="Primary name/identifier")
     description: str = Field(..., description="Brief description of the connection")
     start: 'Node' = Field(..., description="Starting node")
     end: 'Node' = Field(..., description="Ending node")
-    weight: int = Field(default=1, description="Weight of the edge (importance/strength of connection)")
+    importance_score: float = Field(default=0.75, description="Importance score of the edge (0.5-1.0, higher = stronger connection)")
     
     class Config:
         arbitrary_types_allowed = True

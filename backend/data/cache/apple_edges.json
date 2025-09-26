@@ -1,780 +1,604 @@
 [
   {
-    "title": "fabricated_by",
-    "description": "Apple's A-series and M-series chips are fabricated by TSMC.",
+    "title": "Apple-TSMC Exclusive Supply",
+    "description": "Apple strongly depends on TSMC for advanced chip manufacturing.",
     "start": {
       "name": "Taiwan Semiconductor Manufacturing Co.",
       "aliases": [
         "TSMC"
       ],
-      "description": "World's most advanced chip foundry and Apple's exclusive silicon partner.",
+      "description": "World's leading semiconductor foundry; makes Apple's custom chips.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "aliases": [
+        "Apple"
+      ],
+      "description": "Major technology company; designs iPhone, Mac, etc.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "assembled_by",
-    "description": "Foxconn assembles the majority of iPhones and other Apple devices.",
+    "title": "TSMC enables iPhone performance",
+    "description": "TSMC's advanced node enables iPhone and Mac chip performance.",
+    "start": {
+      "name": "Taiwan Semiconductor Manufacturing Co.",
+      "aliases": [
+        "TSMC"
+      ],
+      "description": "Critical for Apple's silicon roadmap.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "iPhone",
+      "aliases": [],
+      "description": "Apple's flagship smartphone product.",
+      "type": "Product"
+    },
+    "importance_score": 0.95
+  },
+  {
+    "title": "Foxconn Assembles iPhone",
+    "description": "Foxconn (Hon Hai) assembles the majority of iPhones for Apple.",
     "start": {
       "name": "Hon Hai Precision Industry",
       "aliases": [
         "Foxconn"
       ],
-      "description": "Primary Apple contract manufacturer.",
+      "description": "Largest Apple device assembler.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
+      "name": "iPhone",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
+      "description": "Apple's flagship smartphone product.",
+      "type": "Product"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "supplies_critical_parts_to",
-    "description": "Samsung supplies OLED displays and memory to Apple devices.",
+    "title": "Samsung Competes in Smartphones",
+    "description": "Samsung and Apple vie for global smartphone market share.",
     "start": {
       "name": "Samsung Electronics",
       "aliases": [],
-      "description": "Major Apple rival and component supplier.",
+      "description": "Major smartphone manufacturer and Apple competitor.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Producer of iPhone and other products.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.95
   },
   {
-    "title": "competes_with",
-    "description": "Samsung and Apple compete for global smartphone market share.",
+    "title": "Samsung Supplies Components",
+    "description": "Samsung supplies OLED displays and memory chips for Apple devices.",
     "start": {
       "name": "Samsung Electronics",
       "aliases": [],
-      "description": "Major Apple rival and component supplier.",
+      "description": "Key global supplier of advanced electronics for Apple.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Top global buyer of advanced phone components.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.9
   },
   {
-    "title": "competes_with",
-    "description": "Android\u2019s prevalence defines the competitive landscape for iPhone.",
+    "title": "Alphabet Controls Android",
+    "description": "Android defines the global competitive landscape for iPhone.",
     "start": {
       "name": "Alphabet Inc.",
       "aliases": [
         "Google"
       ],
-      "description": "Owns Android and key mobile services competing with Apple.",
+      "description": "Parent company of Google; creator of Android OS.",
       "type": "Company"
+    },
+    "end": {
+      "name": "iPhone",
+      "aliases": [],
+      "description": "Apple's main competitive smartphone product.",
+      "type": "Product"
+    },
+    "importance_score": 0.95
+  },
+  {
+    "title": "iPhone sales drive Apple revenue",
+    "description": "iPhone is the single biggest driver of Apple's results.",
+    "start": {
+      "name": "iPhone",
+      "aliases": [],
+      "description": "Apple's flagship smartphone product.",
+      "type": "Product"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Profits and invests based on iPhone success.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "supplies_modem_chips_to",
-    "description": "Apple remains dependent on Qualcomm\u2019s cellular modem technology.",
+    "title": "Qualcomm Supplies Modems",
+    "description": "Apple relies on Qualcomm's modems for iPhone connectivity.",
     "start": {
       "name": "Qualcomm",
       "aliases": [],
-      "description": "World leader in smartphone modem technology, Apple supplier.",
+      "description": "Leading supplier of 4G/5G cellular modems.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
+      "name": "iPhone",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
+      "description": "Requires Qualcomm modems for connectivity.",
+      "type": "Product"
     },
-    "weight": 1
+    "importance_score": 0.95
   },
   {
-    "title": "supplies_wireless_chips_to",
-    "description": "Broadcom provides Wi-Fi/Bluetooth/RF chips for Apple products.",
+    "title": "Broadcom supplies wireless chips",
+    "description": "Apple signed multi-year deals for Broadcom Wi-Fi/Bluetooth chips.",
     "start": {
       "name": "Broadcom",
       "aliases": [],
-      "description": "Key supplier for Apple\u2019s connectivity components.",
+      "description": "Key supplier of wireless connectivity chips.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Relies on Broadcom for advanced connectivity.",
       "type": "Company"
     },
-    "weight": 0
+    "importance_score": 0.85
   },
   {
-    "title": "supplies_camera_sensors_to",
-    "description": "Sony supplies camera sensors used in iPhones.",
+    "title": "Sony supplies camera sensors",
+    "description": "Sony sensors in iPhones directly affect camera quality.",
     "start": {
-      "name": "Sony Corporation",
+      "name": "Sony",
       "aliases": [],
-      "description": "Key camera sensor supplier for Apple devices.",
+      "description": "Supplier of camera sensors to Apple.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
+      "name": "iPhone",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
+      "description": "Camera hardware built around Sony sensors.",
+      "type": "Product"
     },
-    "weight": 0
+    "importance_score": 0.8
   },
   {
-    "title": "supplies_displays_to",
-    "description": "LG Display provides screens (OLED panels) for iPhones.",
+    "title": "LG Display supplies screens",
+    "description": "LG Display provides OLED panels for Apple devices.",
     "start": {
       "name": "LG Display",
       "aliases": [],
-      "description": "Major display supplier for Apple products.",
+      "description": "OLED and LCD supplier to Apple.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Uses LG screens in iPhones, Macs, iPads.",
       "type": "Company"
     },
-    "weight": 0
+    "importance_score": 0.8
   },
   {
-    "title": "supplies_memory_to",
-    "description": "SK Hynix provides memory used in Apple devices.",
+    "title": "SK Hynix supplies memory",
+    "description": "SK Hynix supplies NAND/DRAM memory for Apple devices.",
     "start": {
       "name": "SK Hynix",
       "aliases": [],
-      "description": "Key memory supplier for Apple.",
+      "description": "Global memory manufacturer for electronics.",
       "type": "Company"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Depends on memory chips for product performance.",
       "type": "Company"
     },
-    "weight": 0
+    "importance_score": 0.75
   },
   {
-    "title": "supplies_memory_to",
-    "description": "Micron supplies memory used in Apple devices.",
-    "start": {
-      "name": "Micron Technology",
-      "aliases": [],
-      "description": "Major memory chip supplier for Apple.",
-      "type": "Company"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "assembles_devices_for",
-    "description": "Pegatron assembles iPhones and some iPads for Apple.",
+    "title": "Pegatron assembles iPhones",
+    "description": "Pegatron assembles iPhones and some iPads.",
     "start": {
       "name": "Pegatron",
       "aliases": [],
-      "description": "Contract manufacturer assembling Apple devices.",
+      "description": "Key contract assembler in Apple supply chain.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
+      "name": "iPhone",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
+      "description": "Final device assembly.",
+      "type": "Product"
     },
-    "weight": 0
+    "importance_score": 0.9
   },
   {
-    "title": "assembles_devices_for",
-    "description": "Wistron assembles some iPhones for Apple.",
-    "start": {
-      "name": "Wistron",
-      "aliases": [],
-      "description": "Contract manufacturer assembling Apple devices.",
-      "type": "Company"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "assembles_devices_for",
+    "title": "Luxshare assembles AirPods",
     "description": "Luxshare assembles AirPods and some iPhones for Apple.",
     "start": {
       "name": "Luxshare Precision",
       "aliases": [],
-      "description": "Rising Chinese assembly partner for Apple devices.",
+      "description": "Rising Chinese assembly partner for Apple.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
+      "name": "AirPods",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
+      "description": "Apple's wireless earphones.",
+      "type": "Product"
     },
-    "weight": 0
+    "importance_score": 0.8
   },
   {
-    "title": "pressures_policy_on",
-    "description": "Epic\u2019s lawsuit triggered global scrutiny of App Store commission and rules.",
+    "title": "Wistron assembles iPhones",
+    "description": "Wistron handles some iPhone assembly for Apple.",
+    "start": {
+      "name": "Wistron",
+      "aliases": [],
+      "description": "Taiwanese contract assembler, partner for Apple.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "iPhone",
+      "aliases": [],
+      "description": "Product assembled in India and China.",
+      "type": "Product"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "Epic Games triggered App Store scrutiny",
+    "description": "Epic Games lawsuit led to global scrutiny of App Store policies.",
     "start": {
       "name": "Epic Games",
       "aliases": [],
-      "description": "Major developer and litigant, driving scrutiny of Apple\u2019s App Store policies.",
+      "description": "Game developer that challenged Apple's App Store rules.",
       "type": "Company"
     },
     "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "drives_revenue_of",
-    "description": "The iPhone accounts for roughly half of Apple\u2019s total revenue by itself.",
-    "start": {
-      "name": "iPhone",
-      "aliases": [],
-      "description": "Apple\u2019s flagship smartphone product line.",
-      "type": "Product"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "anchors_services_for",
-    "description": "The App Store is part of a broader app economy that includes Google\u2019s Play Store and millions of developers.",
-    "start": {
       "name": "App Store",
       "aliases": [],
-      "description": "Apple\u2019s mobile app distribution and sales platform.",
+      "description": "Platform for distributing iOS apps and collecting commission.",
       "type": "Product"
     },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
+    "importance_score": 0.95
   },
   {
-    "title": "drives_growth_of",
-    "description": "Apple\u2019s Services division, anchored by the App Store, has become a major pillar of its business.",
-    "start": {
-      "name": "Apple Services",
-      "aliases": [],
-      "description": "Apple\u2019s portfolio of software and digital service revenue.",
-      "type": "Product"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "runs_on",
-    "description": "Macs powered by macOS and Apple Silicon chips.",
-    "start": {
-      "name": "macOS",
-      "aliases": [],
-      "description": "Apple\u2019s desktop and laptop operating system.",
-      "type": "Product"
-    },
-    "end": {
-      "name": "Mac Hardware",
-      "aliases": [],
-      "description": "Apple\u2019s personal computer product line.",
-      "type": "Product"
-    },
-    "weight": 0
-  },
-  {
-    "title": "drives_earnings_of",
-    "description": "Overall trends in smartphone demand directly affect Apple.",
+    "title": "Global smartphone market drives Apple",
+    "description": "Smartphone trends directly affect Apple\u2019s iPhone sales.",
     "start": {
       "name": "Global Smartphone Market",
       "aliases": [],
-      "description": "Industry that drives the revenue for smartphone makers.",
+      "description": "Industry for smartphones, drives Apple's main revenue.",
       "type": "Industry"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "iPhone sales shape Apple's financial performance.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.98
   },
   {
-    "title": "enables_product",
-    "description": "The wider chip industry has a direct impact on Apple.",
+    "title": "Semiconductor industry enables Apple innovation",
+    "description": "Industry breakthroughs in chips power Apple's device leadership.",
     "start": {
       "name": "Semiconductor & Chip Industry",
       "aliases": [],
-      "description": "Industry that provides critical chips for tech products.",
+      "description": "Enables leading edge hardware used by Apple.",
       "type": "Industry"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Builds custom chips but depends on industry supply and capacity.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.92
   },
   {
-    "title": "governs_app_economy_for",
-    "description": "Trends in this sector influence Apple\u2019s strategy for services.",
-    "start": {
-      "name": "Mobile App Economy & Services Sector",
-      "aliases": [],
-      "description": "Sector involving app development, app stores, digital content.",
-      "type": "Industry"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "determines_sales_of",
-    "description": "Surge in PC demand lifted Mac sales as well.",
-    "start": {
-      "name": "Personal Computing Industry",
-      "aliases": [],
-      "description": "Industry involving PCs and laptops.",
-      "type": "Industry"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "influences_roadmap_of",
-    "description": "Industry-wide emphasis on health tracking, AR/VR, and IoT influences Apple\u2019s roadmap.",
-    "start": {
-      "name": "Wearables & Consumer Electronics",
-      "aliases": [],
-      "description": "Market for wearables, smart home, and other electronics.",
-      "type": "Industry"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "shapes_iphone_strategy",
-    "description": "Telecom infrastructure and carrier business models have a shaping influence on Apple\u2019s iPhone development.",
-    "start": {
-      "name": "Telecommunications Industry",
-      "aliases": [],
-      "description": "Industry for mobile carriers, network infrastructure.",
-      "type": "Industry"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "influences_sales_strategy",
-    "description": "Growth of e-commerce, for instance, influences Apple\u2019s sales tactics.",
-    "start": {
-      "name": "Retail and E-commerce Industry",
-      "aliases": [],
-      "description": "Industry for physical and online goods.",
-      "type": "Industry"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "regulates_business_model_of",
-    "description": "DOJ has taken unprecedented action against Apple by filing a major antitrust lawsuit in 2024.",
+    "title": "U.S. DOJ antitrust lawsuit challenges Apple",
+    "description": "DOJ sued Apple for monopolizing smartphone distribution.",
     "start": {
       "name": "U.S. Department of Justice",
-      "aliases": [],
-      "description": "US governmental antitrust enforcement agency.",
-      "type": "Entity"
+      "aliases": [
+        "DOJ"
+      ],
+      "description": "Federal law enforcement and antitrust agency.",
+      "type": "Regulator"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Defendant in DOJ antitrust case filed in 2024.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "enforces_digital_market_rules_on",
-    "description": "European Commission fined Apple \u20ac1.84 billion for App Store abuses.",
+    "title": "European Commission fines and mandates Apple",
+    "description": "EU fined Apple \u20ac1.84B and mandated app ecosystem changes.",
     "start": {
       "name": "European Commission",
       "aliases": [],
-      "description": "Principal EU antitrust and digital regulatory body.",
-      "type": "Entity"
+      "description": "EU executive; enforces competition and regulatory rules.",
+      "type": "Regulator"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Target of EU antitrust and Digital Markets Act enforcement.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "regulates_operations_of",
-    "description": "Chinese regulators also enforce stringent rules on content, privacy, and data.",
+    "title": "Chinese government restricts Apple use",
+    "description": "China instructed state staff not to use iPhones at work.",
     "start": {
-      "name": "Chinese Government",
-      "aliases": [],
-      "description": "PRC governing and regulatory bodies.",
-      "type": "Entity"
+      "name": "Chinese Government and Regulatory Bodies",
+      "aliases": [
+        "China"
+      ],
+      "description": "State power affects Apple in the China market.",
+      "type": "Regulator"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Major revenue tied to Chinese regulations and demand.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.95
   },
   {
-    "title": "sets_tariff_policy_affecting",
-    "description": "US imposed tariffs on Chinese-manufactured goods \u2013 directly raised Apple\u2019s costs.",
+    "title": "U.S.\u2013China trade policy alters Apple supply chain costs",
+    "description": "US tariffs on China-raised Apple\u2019s manufacturing costs.",
     "start": {
       "name": "U.S.\u2013China Trade Policy",
       "aliases": [],
-      "description": "US-China trade, tariff, and tech export policy.",
-      "type": "Entity"
+      "description": "Tariffs/export controls, affect manufacturing and sourcing.",
+      "type": "Policy"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Absorbed tariff costs, shifted production in response.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.85
   },
   {
-    "title": "exerts_legislative_pressure_on",
-    "description": "Committees have called Apple execs for hearings on antitrust (App Store policies).",
+    "title": "Arm architecture underpins Apple Silicon",
+    "description": "Apple's chips are built on ARM architecture.",
     "start": {
-      "name": "U.S. Congress",
+      "name": "ARM Architecture",
       "aliases": [],
-      "description": "U.S. federal legislative body.",
-      "type": "Entity"
+      "description": "RISC architecture licensed by Apple for all silicon.",
+      "type": "Technology"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "All iPhones, iPads, Macs use ARM-based chips.",
       "type": "Company"
     },
-    "weight": 0
+    "importance_score": 0.9
   },
   {
-    "title": "forces_policy_change_on",
-    "description": "Court ruled that Apple must allow developers to inform users of outside payment options.",
-    "start": {
-      "name": "U.S. Judicial System",
-      "aliases": [],
-      "description": "Courts and judiciary in the United States.",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "regulates_consumer_and_app_practices",
-    "description": "FTC could challenge Apple on privacy or competition grounds.",
-    "start": {
-      "name": "Federal Trade Commission",
-      "aliases": [],
-      "description": "US regulator for competition and consumers (FTC).",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "sets_financial_regulations_for",
-    "description": "SEC and accounting regulators can influence Apple in areas like reporting finances.",
-    "start": {
-      "name": "U.S. Securities and Exchange Commission",
-      "aliases": [
-        "SEC"
-      ],
-      "description": "US securities and accounting regulator.",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "forces_app_store_policy_change",
-    "description": "South Korea passed a law forcing platform owners to allow third-party payments.",
-    "start": {
-      "name": "South Korean Regulator",
-      "aliases": [],
-      "description": "South Korea competition authority and telecom regulator.",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "imposes_tax_policies_on",
-    "description": "EU ordered Ireland to collect $14 billion in back taxes from Apple.",
-    "start": {
-      "name": "Tax Authorities (EU, US, etc.)",
-      "aliases": [],
-      "description": "Global and regional tax authorities affecting multinationals.",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "drives_supply_chain_for",
-    "description": "Vast majority of iPhones, iPads, and Macs are assembled in China\u2019s factories.",
-    "start": {
-      "name": "China",
-      "aliases": [],
-      "description": "Market and manufacturing center for Apple.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "key_market_and_hq_for",
-    "description": "The U.S. is Apple\u2019s single largest country market and headquarters.",
-    "start": {
-      "name": "United States",
-      "aliases": [],
-      "description": "Home and main market for Apple.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "sets_regulatory_standards",
-    "description": "EU\u2019s new Digital Markets Act has designated Apple as a 'gatekeeper' and already charged Apple with violating the DMA.",
-    "start": {
-      "name": "European Union",
-      "aliases": [],
-      "description": "Political union and regulatory standard-setter.",
-      "type": "Entity"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "critical_for_supply_chain",
-    "description": "Taiwan is the home of TSMC and Foxconn, at the heart of Apple\u2019s supply chain.",
-    "start": {
-      "name": "Taiwan",
-      "aliases": [],
-      "description": "Critical hub for semiconductors and contract manufacturing.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "grows_manufacturing_and_market_access_for",
-    "description": "India has led to Apple expanding assembly and opening retail stores.",
-    "start": {
-      "name": "India",
-      "aliases": [],
-      "description": "Emerging market and rising Apple manufacturing base.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "provides_components_and_market",
-    "description": "Japan is a major source of high-tech components; iPhone holds ~50% market share there.",
-    "start": {
-      "name": "Japan",
-      "aliases": [],
-      "description": "Key component source and strong iPhone market.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "enables_diversification_for",
-    "description": "Vietnam has become a significant manufacturing location for Apple accessories.",
-    "start": {
-      "name": "Vietnam",
-      "aliases": [],
-      "description": "Emerging Apple manufacturing hub.",
-      "type": "Country"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "strategy_driven_by",
-    "description": "Tim Cook\u2019s vision drives nearly every aspect of Apple\u2019s business.",
+    "title": "Tim Cook sets Apple\u2019s global strategy",
+    "description": "Tim Cook's decisions drive Apple\u2019s operational and product direction.",
     "start": {
       "name": "Tim Cook",
       "aliases": [],
-      "description": "CEO of Apple since 2011.",
+      "description": "Apple CEO, directs global supply and product strategy.",
       "type": "Person"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Major tech firm led by Tim Cook since 2011.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 1.0
   },
   {
-    "title": "operationally_shapes",
-    "description": "Williams\u2019 operational calls have immediate impact on Apple\u2019s capacity to deliver products.",
+    "title": "Steve Jobs\u2019 vision guides Apple",
+    "description": "Jobs' legacy drives Apple product philosophy and culture.",
     "start": {
-      "name": "Jeff Williams",
+      "name": "Steve Jobs",
       "aliases": [],
-      "description": "COO, responsible for worldwide operations.",
+      "description": "Apple co-founder, former CEO and product visionary.",
       "type": "Person"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Company culture and direction follow Jobs\u2019 legacy.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.98
   },
   {
-    "title": "defines_software_strategy_for",
-    "description": "Federighi oversees iOS, macOS, and integration of Apple devices.",
+    "title": "Apple Watch success diversifies Apple",
+    "description": "Apple Watch adoption diversifies and grows Apple's revenue.",
+    "start": {
+      "name": "Apple Watch",
+      "aliases": [],
+      "description": "Smartwatch; anchors wearable division at Apple.",
+      "type": "Product"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Benefits from new wearable revenue streams.",
+      "type": "Company"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "India incentivizes Apple manufacturing",
+    "description": "Modi government\u2019s incentives led Apple to expand assembly in India.",
+    "start": {
+      "name": "India",
+      "aliases": [],
+      "description": "Large population, emerging consumer and manufacturing hub.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Shifts more iPhone production to India to reduce China risk.",
+      "type": "Company"
+    },
+    "importance_score": 0.9
+  },
+  {
+    "title": "Narendra Modi promotes Apple investment",
+    "description": "Modi\u2019s government enabled Foxconn to expand iPhone output in India.",
+    "start": {
+      "name": "Narendra Modi",
+      "aliases": [],
+      "description": "Prime Minister of India; advanced national tech agenda.",
+      "type": "Person"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Invests in India\u2019s supply chain infrastructure.",
+      "type": "Company"
+    },
+    "importance_score": 0.85
+  },
+  {
+    "title": "Margrethe Vestager forces Apple regulatory changes",
+    "description": "Vestager publicly charged Apple over App Store anti-competition.",
+    "start": {
+      "name": "Margrethe Vestager",
+      "aliases": [],
+      "description": "EU Commissioner driving antitrust cases targeting Apple.",
+      "type": "Person"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Subject to regulatory compliance due to Vestager's actions.",
+      "type": "Company"
+    },
+    "importance_score": 0.92
+  },
+  {
+    "title": "China enables Apple manufacturing scale",
+    "description": "Apple builds most products in China due to supply chain density.",
+    "start": {
+      "name": "China (Mainland China)",
+      "aliases": [
+        "China"
+      ],
+      "description": "Manufactures and buys large share of Apple\u2019s products.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Highly dependent on Chinese supply chain for devices.",
+      "type": "Company"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "US consumer demand drives Apple",
+    "description": "U.S. is Apple's largest country market and home base.",
+    "start": {
+      "name": "United States",
+      "aliases": [
+        "US",
+        "USA"
+      ],
+      "description": "World\u2019s largest iPhone market; sets Apple\u2019s corporate base.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Major operations, innovation, and sales in US.",
+      "type": "Company"
+    },
+    "importance_score": 0.98
+  },
+  {
+    "title": "Japan key market and supplier for Apple",
+    "description": "Japan\u2019s tech firms provide components vital to Apple devices.",
+    "start": {
+      "name": "Japan",
+      "aliases": [],
+      "description": "High adoption market and home to key Apple suppliers.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Benefits from Japan\u2019s market and components ecosystem.",
+      "type": "Company"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "South Korea supplies components and competition",
+    "description": "Samsung & LG provide screens/parts and compete with Apple.",
+    "start": {
+      "name": "South Korea",
+      "aliases": [],
+      "description": "Industry home for Samsung, LG; part of Apple supply chain.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Receives critical tech, faces premium phone competition.",
+      "type": "Company"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "Vietnam grows in Apple\u2019s supply chain",
+    "description": "Apple moved AirPods and some iPad assembly to Vietnam.",
+    "start": {
+      "name": "Vietnam",
+      "aliases": [],
+      "description": "Manufacturing base for Apple\u2019s accessories, growing share.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [],
+      "description": "Diversifies manufacturing footprint using Vietnam.",
+      "type": "Company"
+    },
+    "importance_score": 0.75
+  },
+  {
+    "title": "Craig Federighi shapes Apple's software",
+    "description": "Federighi\u2019s team defines iOS and macOS features and security.",
     "start": {
       "name": "Craig Federighi",
       "aliases": [],
@@ -784,196 +608,26 @@
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Depends on strong software execution for user experience.",
       "type": "Company"
     },
-    "weight": 1
+    "importance_score": 0.85
   },
   {
-    "title": "drives_hardware_technology",
-    "description": "Srouji\u2019s leadership in custom silicon has given Apple a performance and efficiency edge.",
+    "title": "Johny Srouji steers Apple silicon",
+    "description": "Srouji leads Apple\u2019s custom silicon (A/M chips) development.",
     "start": {
       "name": "Johny Srouji",
       "aliases": [],
-      "description": "SVP, Hardware Technologies \u2013 leads chip development.",
+      "description": "SVP, Hardware Technologies at Apple.",
       "type": "Person"
     },
     "end": {
       "name": "Apple Inc.",
       "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
+      "description": "Custom chip success gives Apple performance edge.",
       "type": "Company"
     },
-    "weight": 1
-  },
-  {
-    "title": "directs_marketing_and_revenue",
-    "description": "Schiller and Joswiak shape Apple\u2019s narrative and product launches.",
-    "start": {
-      "name": "Phil Schiller",
-      "aliases": [],
-      "description": "Apple Fellow, former SVP of Marketing and App Store lead.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "directs_marketing_and_revenue",
-    "description": "Joswiak oversees product launches, messaging, and developer relations.",
-    "start": {
-      "name": "Greg Joswiak",
-      "aliases": [],
-      "description": "SVP, Worldwide Marketing at Apple.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "originated_innovation_principles_for",
-    "description": "Jobs set the standard for product excellence, focus on user experience.",
-    "start": {
-      "name": "Steve Jobs",
-      "aliases": [],
-      "description": "Co-founder and late CEO, set Apple\u2019s long-term strategic doctrine.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "enforces_antitrust_against",
-    "description": "Vestager spearheaded multiple investigations and enforcement actions against Apple.",
-    "start": {
-      "name": "Margrethe Vestager",
-      "aliases": [],
-      "description": "EU Competition Commissioner, led antitrust cases against Apple.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "initiates_federal_investigations_on",
-    "description": "Khan\u2019s FTC is seen as more likely to enforce or create rules that could affect Apple.",
-    "start": {
-      "name": "Lina Khan",
-      "aliases": [],
-      "description": "FTC Chair, prominent antitrust thinker and investigator.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "sets_apple\u2019s_fate_in_china",
-    "description": "Xi\u2019s administration can decide how strictly to enforce regulations that affect Apple.",
-    "start": {
-      "name": "Xi Jinping",
-      "aliases": [],
-      "description": "President of China, influential over China\u2019s tech policy.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "enables_manufacturing_expansion",
-    "description": "Modi\u2019s administration has been pivotal in Apple\u2019s decision to significantly invest in India.",
-    "start": {
-      "name": "Narendra Modi",
-      "aliases": [],
-      "description": "Prime Minister of India, champion of local Apple manufacturing.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
-  },
-  {
-    "title": "creates_competitive_pressure_on",
-    "description": "If Tesla continues dominating electric cars, it raises the bar for any entrant like Apple.",
-    "start": {
-      "name": "Elon Musk",
-      "aliases": [],
-      "description": "CEO of Tesla and SpaceX, innovation driver in adjacent industry.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "sets_enterprise_competition_landscape",
-    "description": "Nadella\u2019s Microsoft shapes enterprise and software trends that affect Apple.",
-    "start": {
-      "name": "Satya Nadella",
-      "aliases": [],
-      "description": "CEO of Microsoft, Apple competitor and partner.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 0
-  },
-  {
-    "title": "shapes_mobile_landscape_for",
-    "description": "Pichai\u2019s stewardship of Android directly impacts Apple\u2019s competitive position.",
-    "start": {
-      "name": "Sundar Pichai",
-      "aliases": [],
-      "description": "CEO of Alphabet/Google, Android leader.",
-      "type": "Person"
-    },
-    "end": {
-      "name": "Apple Inc.",
-      "aliases": [],
-      "description": "Leading technology company, maker of iPhone, Mac, and more.",
-      "type": "Company"
-    },
-    "weight": 1
+    "importance_score": 0.88
   }
 ]

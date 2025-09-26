@@ -20,13 +20,21 @@ For each edge, return:
 - target_node (must match {node_titles})  
 - relationship_type (e.g., supplies_to, competes_with, regulates, customer_of, partner_with)  
 - evidence_text (≤100 chars, verbatim from source text)  
-- importance_score (float between 0.5–1; 0.5 = weak, 0.75 = neutral, 1 = very strong)  
+- importance_score (float between 0.00–1.00) 
 
 RULES:  
 • Only extract relationships with **direct causal relevance**.  
-• Do not include mere co-mentions.  
-• Exclude connections weaker than 0.5.  
+• Do not include mere co-mentions.   
 • If symmetric (e.g., competes_with, partners_with), importance_score must apply equally both ways.  
+
+GUIDELINES  
+• 1.0 = explicit, decisive, single-point causal event (“sole supplier”, “court ordered”, “halted production”).  
+• 0.75–0.95 = strong but not absolute (major supplier, mandated change, primary rival).  
+• 0.5–0.74 = moderate relevance (important but shared, one-of-many supplier, lawsuit pending).  
+• 0.25–0.49 = weak/indirect but still causal.  
+• 0.0–0.24 = reject (too vague or ambient context).  
+
+
 
 GOAL:  
 Produce a clean set of nodes and strong edges that form a simple, causality-focused graph of the text."""

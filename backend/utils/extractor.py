@@ -20,7 +20,7 @@ class Extractor:
         self.promptNodeExtractor = promptNodeExtractor
     def extract(self):
         """main method"""
-        # Check if cached nodes and edges exist
+        # Check if both cached nodes and edges exist
         if os.path.exists(self.nodes_cache_path) and os.path.exists(self.edges_cache_path):
             nodes = self._load_nodes_from_cache()
             edges = self._load_edges_from_cache()
@@ -28,12 +28,20 @@ class Extractor:
             return nodes, edges
 
         research_output = self._fetch_data()
-        nodes = self._extract_nodes(research_output)
-        edges = self._extract_edges(nodes, research_output)
 
-        # Cache the results
-        self._save_nodes_to_cache(nodes)
+        # Load or extract nodes
+        if os.path.exists(self.nodes_cache_path):
+            nodes = self._load_nodes_from_cache()
+            print(f"Loaded {len(nodes)} nodes from cache")
+        else:
+            nodes = self._extract_nodes(research_output)
+            self._save_nodes_to_cache(nodes)
+            print(f"Extracted {len(nodes)} nodes")
+
+        # Extract edges (always uses the nodes we have)
+        edges = self._extract_edges(nodes, research_output)
         self._save_edges_to_cache(edges)
+        print(f"Extracted {len(edges)} edges")
 
         return nodes, edges
 
