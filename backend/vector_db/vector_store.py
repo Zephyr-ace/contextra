@@ -1,9 +1,18 @@
 from typing import List, Dict, Any, Optional, Union
 import chromadb
 from chromadb.config import Settings
-from ..graph_components.Node import Node
 import os
 import uuid
+
+# Use absolute imports instead of relative imports
+try:
+    from graph_components.Node import Node
+except ImportError:
+    # For when running from within the vector_db directory
+    import sys
+    import os
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from graph_components.Node import Node
 
 class VectorStore:
     """
@@ -27,11 +36,15 @@ class VectorStore:
         # Ensure the persist directory exists
         os.makedirs(persist_directory, exist_ok=True)
         
-        # Initialize ChromaDB client
-        self.client = chromadb.Client(Settings(
-            persist_directory=persist_directory,
-            chroma_db_impl="duckdb+parquet",  # Local persistent storage
-        ))
+        # Initialize ChromaDB client with a simpler configuration
+        try:
+            # Try the persistent client first
+            self.client = chromadb.PersistentClient(path=persist_directory)
+        except Exception as e:
+            print(f"Warning: Could not create persistent client: {e}")
+            print("Falling back to in-memory client...")
+            # Fall back to in-memory client
+            self.client = chromadb.Client()
         
         # Get or create collection
         try:

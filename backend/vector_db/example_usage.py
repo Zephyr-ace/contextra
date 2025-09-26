@@ -2,11 +2,19 @@
 Example usage of the vector database for Contextra.
 """
 
-from vector_store import VectorStore
-from embedding_service import EmbeddingService
-from ..graph_components.Node import Node
-from ..graph_components.Graph import Graph
 import os
+import sys
+
+# Add the parent directory to the path so we can import modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Import from vector_db module
+from vector_db.vector_store import VectorStore
+from vector_db.embedding_service import EmbeddingService
+
+# Import from graph_components module
+from graph_components.Node import Node
+from graph_components.Graph import Graph
 
 def main():
     # Initialize services
