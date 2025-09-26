@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import GraphViz from "./components/GraphViz";
-import type { Portfolio, Strategy } from "@/types/models";
-import { portfolioService, strategyService } from "@/api";
+import type { Portfolio, Strategy, ChatMessage } from "@/types/models";
+import { portfolioService, strategyService, chatService } from "@/api";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
@@ -12,6 +12,36 @@ export default function Home() {
   const [strategy, setStrategy] = useState<Strategy | null>(null);
   const [loading, setLoading] = useState<{ portfolio: boolean; strategy: boolean }>({ portfolio: true, strategy: true });
   const [error, setError] = useState<string | null>(null);
+  
+  // Chat state
+  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
+    {
+      role: "assistant",
+      content: "Hello! I'm your AI financial analyst. I can help you analyze your portfolio, discuss investment strategies, and provide insights on market trends. What would you like to know?",
+      timestamp: new Date().toISOString(),
+    }
+  ]);
+  const [chatInput, setChatInput] = useState("");
+  const [isChatLoading, setIsChatLoading] = useState(false);
+  const chatEndRef = useRef<HTMLDivElement>(null);
+  
+  // Resize state
+  const [isResizing, setIsResizing] = useState(false);
+  const [contentWidth, setContentWidth] = useState(75); // Percentage
+  const [isDesktop, setIsDesktop] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Check if desktop layout
+  useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
 
   useEffect(() => {
     let isMounted = true;
@@ -46,13 +76,111 @@ export default function Home() {
     };
   }, []);
 
+  const handleSendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!chatInput.trim() || isChatLoading) return;
+
+    const userMessage: ChatMessage = {
+      role: "user",
+      content: chatInput.trim(),
+      timestamp: new Date().toISOString(),
+    };
+
+    // Add user message immediately
+    setChatMessages(prev => [...prev, userMessage]);
+    setChatInput("");
+    setIsChatLoading(true);
+
+    try {
+      const response = await chatService.sendMessage({
+        message: userMessage.content,
+        chat_history: chatMessages,
+      });
+
+      setChatMessages(response.chat_history);
+    } catch (error) {
+      console.error("Chat error:", error);
+      const errorMessage: ChatMessage = {
+        role: "assistant",
+        content: "Sorry, I encountered an error. Please try again.",
+        timestamp: new Date().toISOString(),
+      };
+      setChatMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsChatLoading(false);
+    }
+  };
+
+  // Auto-scroll to bottom of chat
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chatMessages, isChatLoading]);
+
+  // Resize handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizing(true);
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isResizing || !containerRef.current) return;
+    
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const newContentWidth = ((e.clientX - containerRect.left) / containerRect.width) * 100;
+    
+    // Constrain between 50% and 80% (chat minimum 20%, content maximum 80%)
+    const constrainedWidth = Math.min(Math.max(newContentWidth, 50), 80);
+    setContentWidth(constrainedWidth);
+  };
+
+  const handleMouseUp = () => {
+    setIsResizing(false);
+  };
+
+  // Add global mouse event listeners
+  useEffect(() => {
+    if (isResizing) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = 'col-resize';
+      document.body.style.userSelect = 'none';
+    } else {
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+  }, [isResizing]);
+
   return (
-    <div className="font-sans min-h-screen p-6 sm:p-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-theme(spacing.6)*2)] sm:min-h-[calc(100vh-theme(spacing.10)*2)]">
-        {/* Main Column with floating tabs above content */}
-        <div className="lg:col-span-9 flex flex-col gap-3">
-          {/* Floating tabs above the content window */}
-          <nav className="relative z-10 flex items-center gap-2 -mb-3">
+    <div className="font-sans h-screen p-6 sm:p-10">
+      <div 
+        ref={containerRef}
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-2 h-[calc(100vh-theme(spacing.6)*2)] sm:h-[calc(100vh-theme(spacing.10)*2)]"
+      >
+        {/* Main Column with side tabs */}
+        <div 
+          className="flex gap-3 w-full lg:w-auto"
+          style={{ width: isDesktop ? `${contentWidth}%` : '100%' }}
+        >
+          {/* UBS Logo and Side tabs on the left */}
+          <div className="flex flex-col gap-3 w-12 flex-shrink-0">
+            {/* UBS Logo */}
+            <div className="flex justify-center">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/de/a/a0/UBS_Logo_SVG.svg" 
+                alt="UBS Logo" 
+                className="h-8 w-auto"
+              />
+            </div>
+            
+            {/* Side tabs */}
+            <nav className="flex flex-col gap-2">
             <button
               type="button"
               title="Portfolio"
@@ -92,11 +220,12 @@ export default function Home() {
             >
               📈
             </button>
-          </nav>
+            </nav>
+          </div>
 
           {/* Main Content Window */}
-          <section className="surface-card accent-top h-full flex flex-col">
-          <div className="p-5 sm:p-6 flex-1 flex flex-col min-h-0">
+          <section className="surface-card accent-top flex-1 flex flex-col overflow-hidden">
+          <div className="p-5 sm:p-6 flex-1 flex flex-col overflow-auto">
             {activeTab === "Portfolio" && (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
@@ -253,47 +382,77 @@ export default function Home() {
           </section>
         </div>
 
+        {/* Resize Handle */}
+        <div
+          className="hidden lg:flex items-center justify-center"
+        >
+          <div
+            className="w-0.5 h-8 bg-gray-300 hover:bg-gray-400 cursor-col-resize transition-colors rounded-full"
+            onMouseDown={handleMouseDown}
+          />
+        </div>
+
         {/* Chat Panel */}
-        <aside className="surface-card accent-top flex flex-col lg:col-span-3 h-full lg:mt-[52px] lg:h-[calc(100%_-_52px)] overflow-hidden">
+        <aside 
+          className="surface-card accent-top flex flex-col flex-1 overflow-hidden"
+          style={{ width: isDesktop ? `${100 - contentWidth}%` : '100%' }}
+        >
           <div className="p-5 sm:p-6 border-b border-[var(--ubs-border)]">
             <h2 className="section-title text-lg">Analyst Chat</h2>
             <p className="text-sm text-neutral-600 mt-1">Discuss insights and next steps</p>
           </div>
 
           <div className="flex-1 overflow-auto p-5 space-y-4">
-            {/* Sample messages */}
-            <div className="flex gap-3 items-start">
-              <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />
-              <div>
-                <div className="text-[13px] text-neutral-500">Analyst</div>
-                <div className="mt-1 px-3 py-2 rounded-lg bg-[var(--ubs-gray-100)] text-sm max-w-[28rem]">
-                  Apple is approaching resistance near $180. Consider trimming 10% of the position.
+            {chatMessages.map((message, index) => (
+              <div key={index} className={`flex gap-3 items-start ${message.role === "user" ? "justify-end" : ""}`}>
+                {message.role === "assistant" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />}
+                <div>
+                  <div className="text-[13px] text-neutral-500">{message.role === "user" ? "You" : "Analyst"}</div>
+                  <div className={`mt-1 px-3 py-2 rounded-lg text-sm max-w-[28rem] ${
+                    message.role === "user" 
+                      ? "bg-white border border-[var(--ubs-border)]" 
+                      : "bg-[var(--ubs-gray-100)]"
+                  }`}>
+                    {message.content}
+                  </div>
+                </div>
+                {message.role === "user" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-red)]" />}
+              </div>
+            ))}
+            
+            {isChatLoading && (
+              <div className="flex gap-3 items-start">
+                <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />
+                <div>
+                  <div className="text-[13px] text-neutral-500">Analyst</div>
+                  <div className="mt-1 px-3 py-2 rounded-lg bg-[var(--ubs-gray-100)] text-sm max-w-[28rem]">
+                    <div className="flex items-center gap-1">
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="flex gap-3 items-start justify-end">
-              <div>
-                <div className="text-[13px] text-neutral-500 text-right">You</div>
-                <div className="mt-1 px-3 py-2 rounded-lg bg-white border border-[var(--ubs-border)] text-sm max-w-[28rem]">
-                  Noted. What is the updated target for UBSG after the latest report?
-                </div>
-              </div>
-              <div className="h-7 w-7 rounded-full bg-[var(--ubs-red)]" />
-            </div>
+            )}
+            <div ref={chatEndRef} />
           </div>
 
-          <form className="p-4 border-t border-[var(--ubs-border)] flex items-center gap-3">
+          <form onSubmit={handleSendMessage} className="p-4 border-t border-[var(--ubs-border)] flex items-center gap-2 min-w-0">
             <input
               type="text"
               placeholder="Type your message..."
-              className="flex-1 rounded-md border border-[var(--ubs-border)] px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[var(--ubs-red)]"
+              value={chatInput}
+              onChange={(e) => setChatInput(e.target.value)}
+              disabled={isChatLoading}
+              className="flex-1 min-w-0 rounded-md border border-[var(--ubs-border)] px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[var(--ubs-red)] disabled:opacity-50"
             />
             <button
-              type="button"
+              type="submit"
               title="Send"
               aria-label="Send"
-              className="h-10 w-10 grid place-items-center rounded-md bg-[var(--ubs-red)] text-white hover:opacity-90"
+              disabled={isChatLoading || !chatInput.trim()}
+              className="h-10 w-10 flex-shrink-0 grid place-items-center rounded-md bg-[var(--ubs-red)] text-white hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M3.4 20.6L21 12L3.4 3.4L3 10L15 12L3 14L3.4 20.6Z" fill="currentColor"/>
