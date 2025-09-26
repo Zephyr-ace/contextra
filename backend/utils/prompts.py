@@ -1,4 +1,5 @@
 promptNodeExtractor = """"""
+promptEdgeExtractor =
 promptDeepresearch = """You are a research specialist building a context graph around {target}.  
 Your task is to identify the most important entities that have a **direct and strong causal impact** on {target}.  
 
