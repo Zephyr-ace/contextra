@@ -31,9 +31,13 @@ class GraphConstructor:
         Returns:
             Graph: The constructed or modified graph.
         """
-        # Placeholder for graph construction logic
-        # This method will be implemented with actual graph construction logic
+        extractor = Extractor(prompt,target)
+        Nodes,Edges = extractor.extract()
+        self.graph.nodes = Nodes
+        self.graph.edges = Edges
         return self.graph
+    
+ 
     
     def __str__(self) -> str:
         """
