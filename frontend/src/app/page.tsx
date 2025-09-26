@@ -24,6 +24,24 @@ export default function Home() {
   const [chatInput, setChatInput] = useState("");
   const [isChatLoading, setIsChatLoading] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
+  
+  // Resize state
+  const [isResizing, setIsResizing] = useState(false);
+  const [contentWidth, setContentWidth] = useState(75); // Percentage
+  const [isDesktop, setIsDesktop] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Check if desktop layout
+  useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
 
   useEffect(() => {
     let isMounted = true;
@@ -98,11 +116,58 @@ export default function Home() {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatMessages, isChatLoading]);
 
+  // Resize handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizing(true);
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isResizing || !containerRef.current) return;
+    
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const newContentWidth = ((e.clientX - containerRect.left) / containerRect.width) * 100;
+    
+    // Constrain between 50% and 80% (chat minimum 20%, content maximum 80%)
+    const constrainedWidth = Math.min(Math.max(newContentWidth, 50), 80);
+    setContentWidth(constrainedWidth);
+  };
+
+  const handleMouseUp = () => {
+    setIsResizing(false);
+  };
+
+  // Add global mouse event listeners
+  useEffect(() => {
+    if (isResizing) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = 'col-resize';
+      document.body.style.userSelect = 'none';
+    } else {
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+  }, [isResizing]);
+
   return (
-    <div className="font-sans min-h-screen p-6 sm:p-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-theme(spacing.6)*2)] sm:min-h-[calc(100vh-theme(spacing.10)*2)]">
+    <div className="font-sans h-screen p-6 sm:p-10">
+      <div 
+        ref={containerRef}
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-2 h-[calc(100vh-theme(spacing.6)*2)] sm:h-[calc(100vh-theme(spacing.10)*2)]"
+      >
         {/* Main Column with floating tabs above content */}
-        <div className="lg:col-span-9 flex flex-col gap-3">
+        <div 
+          className="flex flex-col gap-3 w-full lg:w-auto"
+          style={{ width: isDesktop ? `${contentWidth}%` : '100%' }}
+        >
           {/* Floating tabs above the content window */}
           <nav className="relative z-10 flex items-center gap-2 -mb-3">
             <button
@@ -147,8 +212,8 @@ export default function Home() {
           </nav>
 
           {/* Main Content Window */}
-          <section className="surface-card accent-top h-full flex flex-col">
-          <div className="p-5 sm:p-6 flex-1 flex flex-col min-h-0">
+          <section className="surface-card accent-top flex-1 flex flex-col overflow-hidden">
+          <div className="p-5 sm:p-6 flex-1 flex flex-col overflow-auto">
             {activeTab === "Portfolio" && (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
@@ -305,8 +370,21 @@ export default function Home() {
           </section>
         </div>
 
+        {/* Resize Handle */}
+        <div
+          className="hidden lg:flex items-center justify-center"
+        >
+          <div
+            className="w-0.5 h-8 bg-gray-300 hover:bg-gray-400 cursor-col-resize transition-colors rounded-full"
+            onMouseDown={handleMouseDown}
+          />
+        </div>
+
         {/* Chat Panel */}
-        <aside className="surface-card accent-top flex flex-col lg:col-span-3 h-full lg:mt-[40px] lg:h-[calc(100%_-_40px)] overflow-hidden">
+        <aside 
+          className="surface-card accent-top flex flex-col flex-1 lg:mt-[40px] overflow-hidden"
+          style={{ width: isDesktop ? `${100 - contentWidth}%` : '100%' }}
+        >
           <div className="p-5 sm:p-6 border-b border-[var(--ubs-border)]">
             <h2 className="section-title text-lg">Analyst Chat</h2>
             <p className="text-sm text-neutral-600 mt-1">Discuss insights and next steps</p>
