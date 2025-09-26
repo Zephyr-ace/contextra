@@ -1,106 +1,170 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy">("Portfolio");
+
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 min-h-[calc(100vh-theme(spacing.6)*2)] sm:min-h-[calc(100vh-theme(spacing.10)*2)]">
-        {/* Portfolio Section (2/3) */}
-        <section className="lg:col-span-2 surface-card accent-top h-full flex flex-col">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-theme(spacing.6)*2)] sm:min-h-[calc(100vh-theme(spacing.10)*2)]">
+        {/* Main Column with top-left attached tabs */}
+        <div className="lg:col-span-9 flex flex-col gap-3">
+          <nav className="sticky top-0 z-10 flex items-center gap-2">
+            <button
+              type="button"
+              title="Portfolio"
+              aria-label="Portfolio"
+              onClick={() => setActiveTab("Portfolio")}
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+                activeTab === "Portfolio"
+                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
+                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+              }`}
+            >
+              📊
+            </button>
+            <button
+              type="button"
+              title="Investment Strategy"
+              aria-label="Investment Strategy"
+              onClick={() => setActiveTab("Investment Strategy")}
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+                activeTab === "Investment Strategy"
+                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
+                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+              }`}
+            >
+              🧭
+            </button>
+          </nav>
+
+          {/* Main Content */}
+          <section className="surface-card accent-top h-full flex flex-col">
           <div className="p-5 sm:p-6">
-            <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
-            <p className="text-sm text-neutral-600 mt-1">Overview of positions and performance</p>
+            {activeTab === "Portfolio" ? (
+              <>
+                <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
+                <p className="text-sm text-neutral-600 mt-1">Overview of positions and performance</p>
 
-            <div className="mt-5 divide-y divide-[var(--ubs-border)]">
-              {/* Accordion items */}
-              <details role="accordion" className="py-3 group" open>
-                <summary className="flex items-center justify-between cursor-pointer">
-                  <div className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--ubs-red)" }} />
-                    <span className="font-medium">Apple Inc. (AAPL)</span>
+                <div className="mt-5 divide-y divide-[var(--ubs-border)]">
+                  {/* Accordion items */}
+                  <details role="accordion" className="py-3 group" open>
+                    <summary className="flex items-center justify-between cursor-pointer">
+                      <div className="flex items-center gap-3">
+                        <div className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--ubs-red)" }} />
+                        <span className="font-medium">Apple Inc. (AAPL)</span>
+                      </div>
+                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
+                    </summary>
+                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+                      <div>
+                        <div className="text-neutral-500">Quantity</div>
+                        <div className="font-medium">120</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Avg. Cost</div>
+                        <div className="font-medium">$168.40</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Market Value</div>
+                        <div className="font-medium">$21,480</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">P/L</div>
+                        <div className="font-medium text-green-600">+4.2%</div>
+                      </div>
+                    </div>
+                  </details>
+
+                  <details role="accordion" className="py-3 group">
+                    <summary className="flex items-center justify-between cursor-pointer">
+                      <div className="flex items-center gap-3">
+                        <div className="h-2 w-2 rounded-full bg-neutral-300" />
+                        <span className="font-medium">Microsoft (MSFT)</span>
+                      </div>
+                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
+                    </summary>
+                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+                      <div>
+                        <div className="text-neutral-500">Quantity</div>
+                        <div className="font-medium">80</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Avg. Cost</div>
+                        <div className="font-medium">$310.20</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Market Value</div>
+                        <div className="font-medium">$25,200</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">P/L</div>
+                        <div className="font-medium text-red-600">-1.1%</div>
+                      </div>
+                    </div>
+                  </details>
+
+                  <details role="accordion" className="py-3 group">
+                    <summary className="flex items-center justify-between cursor-pointer">
+                      <div className="flex items-center gap-3">
+                        <div className="h-2 w-2 rounded-full bg-neutral-300" />
+                        <span className="font-medium">UBS Group (UBSG)</span>
+                      </div>
+                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
+                    </summary>
+                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+                      <div>
+                        <div className="text-neutral-500">Quantity</div>
+                        <div className="font-medium">500</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Avg. Cost</div>
+                        <div className="font-medium">CHF 23.50</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">Market Value</div>
+                        <div className="font-medium">CHF 12,150</div>
+                      </div>
+                      <div>
+                        <div className="text-neutral-500">P/L</div>
+                        <div className="font-medium text-green-600">+2.7%</div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </>
+            ) : (
+              <>
+                <h1 className="section-title text-xl sm:text-2xl">Investment Strategy</h1>
+                <p className="text-sm text-neutral-600 mt-1">Your personalized approach to financial growth.</p>
+
+                <div className="mt-5 divide-y divide-[var(--ubs-border)]">
+                  <div className="py-3">
+                    <div className="text-neutral-500">Risk Tolerance</div>
+                    <div className="font-medium">Medium</div>
                   </div>
-                  <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                </summary>
-                <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="text-neutral-500">Quantity</div>
-                    <div className="font-medium">120</div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Investment Horizon</div>
+                    <div className="font-medium">Long-term (5+ years)</div>
                   </div>
-                  <div>
-                    <div className="text-neutral-500">Avg. Cost</div>
-                    <div className="font-medium">$168.40</div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Capital Amount</div>
+                    <div className="font-medium">$100,000</div>
                   </div>
-                  <div>
-                    <div className="text-neutral-500">Market Value</div>
-                    <div className="font-medium">$21,480</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">P/L</div>
-                    <div className="font-medium text-green-600">+4.2%</div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Investment Preferences</div>
+                    <div className="font-medium">Sustainable investments, Technology, Healthcare</div>
                   </div>
                 </div>
-              </details>
-
-              <details role="accordion" className="py-3 group">
-                <summary className="flex items-center justify-between cursor-pointer">
-                  <div className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-neutral-300" />
-                    <span className="font-medium">Microsoft (MSFT)</span>
-                  </div>
-                  <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                </summary>
-                <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="text-neutral-500">Quantity</div>
-                    <div className="font-medium">80</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">Avg. Cost</div>
-                    <div className="font-medium">$310.20</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">Market Value</div>
-                    <div className="font-medium">$25,200</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">P/L</div>
-                    <div className="font-medium text-red-600">-1.1%</div>
-                  </div>
-                </div>
-              </details>
-
-              <details role="accordion" className="py-3 group">
-                <summary className="flex items-center justify-between cursor-pointer">
-                  <div className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-neutral-300" />
-                    <span className="font-medium">UBS Group (UBSG)</span>
-                  </div>
-                  <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                </summary>
-                <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="text-neutral-500">Quantity</div>
-                    <div className="font-medium">500</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">Avg. Cost</div>
-                    <div className="font-medium">CHF 23.50</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">Market Value</div>
-                    <div className="font-medium">CHF 12,150</div>
-                  </div>
-                  <div>
-                    <div className="text-neutral-500">P/L</div>
-                    <div className="font-medium text-green-600">+2.7%</div>
-                  </div>
-                </div>
-              </details>
+              </>
+            )}
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        {/* Chat Panel (1/3) */}
-        <aside className="surface-card accent-top flex flex-col lg:col-span-1 h-full">
+        {/* Chat Panel */}
+        <aside className="surface-card accent-top flex flex-col lg:col-span-3 h-full lg:mt-[52px] lg:h-[calc(100%_-_52px)] overflow-hidden">
           <div className="p-5 sm:p-6 border-b border-[var(--ubs-border)]">
             <h2 className="section-title text-lg">Analyst Chat</h2>
             <p className="text-sm text-neutral-600 mt-1">Discuss insights and next steps</p>
@@ -137,9 +201,13 @@ export default function Home() {
             />
             <button
               type="button"
-              className="rounded-md bg-[var(--ubs-red)] text-white px-4 py-2 text-sm font-medium hover:opacity-90"
+              title="Send"
+              aria-label="Send"
+              className="h-10 w-10 grid place-items-center rounded-md bg-[var(--ubs-red)] text-white hover:opacity-90"
             >
-              Send
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3.4 20.6L21 12L3.4 3.4L3 10L15 12L3 14L3.4 20.6Z" fill="currentColor"/>
+              </svg>
             </button>
           </form>
         </aside>
