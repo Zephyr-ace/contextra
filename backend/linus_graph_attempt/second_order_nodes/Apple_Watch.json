@@ -1,0 +1,70 @@
+{
+  "source": "Apple Watch",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Fabricates Apple Watch S-series chips; critical for performance and efficiency."
+    },
+    {
+      "title": "Luxshare Precision",
+      "category": "Company",
+      "short_description": "Major assembler of Apple Watch; key to production capacity and cost."
+    },
+    {
+      "title": "LG Display",
+      "category": "Company",
+      "short_description": "Supplies OLED displays for Apple Watch; impacts screen quality and availability."
+    },
+    {
+      "title": "Samsung Display",
+      "category": "Company",
+      "short_description": "Alternate OLED supplier for Apple Watch; mitigates display supply risk."
+    },
+    {
+      "title": "Masimo Corporation",
+      "category": "Company",
+      "short_description": "Medical device firm suing over pulse oximetry; triggered U.S. import restrictions."
+    },
+    {
+      "title": "U.S. Food and Drug Administration (FDA)",
+      "category": "Regulation",
+      "short_description": "Regulator granting clearances for ECG and heart rhythm features."
+    },
+    {
+      "title": "U.S. International Trade Commission (ITC)",
+      "category": "Regulation",
+      "short_description": "Agency that ordered import bans affecting certain Apple Watch models."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Primary manufacturing base for components and assembly."
+    },
+    {
+      "title": "Vietnam",
+      "category": "Country",
+      "short_description": "Alternative assembly hub for Apple Watch diversification."
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Largest market and regulatory jurisdiction for Apple Watch."
+    },
+    {
+      "title": "Samsung Galaxy Watch",
+      "category": "Product/Service",
+      "short_description": "Direct competitor shaping smartwatch features, pricing, and ecosystem expectations."
+    },
+    {
+      "title": "Joe Kiani",
+      "category": "Person",
+      "short_description": "Masimo CEO leading patent actions impacting Apple Watch sales."
+    },
+    {
+      "title": "Smartwatch industry",
+      "category": "Sector",
+      "short_description": "Market dynamics drive product roadmap and competition."
+    }
+  ]
+}

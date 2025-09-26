@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "United States",
+    "target_node": "Federal Reserve System",
+    "relationship_type": "regulates",
+    "evidence_text": "Sets U.S. monetary policy; controls rates and liquidity",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "United States",
+    "target_node": "U.S. Congress",
+    "relationship_type": "regulates",
+    "evidence_text": "Writes laws, controls federal spending and taxation",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "United States",
+    "target_node": "U.S. Department of the Treasury",
+    "relationship_type": "regulates",
+    "evidence_text": "Manages federal finances, debt issuance, sanctions, and financial oversight",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Supreme Court of the United States",
+    "relationship_type": "regulates",
+    "evidence_text": "Interprets Constitution; landmark rulings reshape rights, regulation, elections, and business",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "United States",
+    "target_node": "People's Republic of China",
+    "relationship_type": "competes_with",
+    "evidence_text": "Primary strategic competitor; trade, technology, military, and geopolitical actions",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Energy (Oil & Gas)",
+    "relationship_type": "partner_with",
+    "evidence_text": "drive inflation, industrial costs, geopolitics, and national security",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Semiconductors",
+    "relationship_type": "regulates",
+    "evidence_text": "shortages or advancements ripple across the U.S. economy",
+    "importance_score": 0.5
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Taiwan Semiconductor Manufacturing Company",
+    "relationship_type": "customer_of",
+    "evidence_text": "U.S. tech, autos, and defense depend on its capacity and resilience.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Microsoft",
+    "relationship_type": "supplies_to",
+    "evidence_text": "critical cybersecurity and infrastructure for government",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Amazon",
+    "relationship_type": "partner_with",
+    "evidence_text": "influence retail, logistics, and digital infrastructure across the U.S.",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Lockheed Martin",
+    "relationship_type": "customer_of",
+    "evidence_text": "Largest U.S. defense contractor;",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Mexico",
+    "relationship_type": "partner_with",
+    "evidence_text": "Top U.S. goods trade partner; migration, manufacturing, and security cooperation",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Canada",
+    "relationship_type": "partner_with",
+    "evidence_text": "NORAD defense partnership influence U.S. stability.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "United States",
+    "target_node": "Saudi Arabia",
+    "relationship_type": "partner_with",
+    "evidence_text": "production decisions influence global prices, U.S. inflation, and foreign policy.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "United States",
+    "target_node": "COVID-19 pandemic",
+    "relationship_type": "regulates",
+    "evidence_text": "Public health crisis disrupting labor, supply chains, fiscal policy, and Federal Reserve actions in…",
+    "importance_score": 0.85
+  }
+]

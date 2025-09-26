@@ -1,0 +1,115 @@
+{
+  "source": "LG Display",
+  "nodes": [
+    {
+      "title": "Samsung Display",
+      "category": "Company",
+      "short_description": "Primary OLED competitor; influences pricing, capacity, and technology roadmaps.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "BOE Technology Group",
+      "category": "Company",
+      "short_description": "Chinese panel rival; drives price competition and capacity shifts in OLED/LCD.",
+      "Aliases": []
+    },
+    {
+      "title": "LG Electronics",
+      "category": "Company",
+      "short_description": "Major buyer of large OLED TV panels; group synergy shapes demand and strategy.",
+      "Aliases": [
+        "LG Display",
+        "LG"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Guangzhou OLED fab location; market demand, subsidies, and regulations strongly influence outcomes.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "South Korea",
+      "category": "Country",
+      "short_description": "Headquarters and R&D/manufacturing base; policy, labor, and currency materially affect operations.",
+      "Aliases": [
+        "South Korea"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Major end market and regulatory origin for export controls affecting customers and suppliers.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "Universal Display Corporation",
+      "category": "Company",
+      "short_description": "Supplies and licenses PHOLED materials essential to LG Display’s OLED performance.",
+      "Aliases": []
+    },
+    {
+      "title": "Canon Tokki",
+      "category": "Company",
+      "short_description": "Key supplier of OLED evaporation tools; tool availability constrains OLED capacity.",
+      "Aliases": []
+    },
+    {
+      "title": "TCL China Star Optoelectronics Technology (CSOT)",
+      "category": "Company",
+      "short_description": "Chinese competitor; LCD oversupply and OLED investments impact LGD margins.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. Department of Commerce Bureau of Industry and Security",
+      "category": "Regulation",
+      "short_description": "Imposes export controls impacting Chinese customers and equipment/material flows.",
+      "Aliases": []
+    },
+    {
+      "title": "Ministry of Trade, Industry and Energy (South Korea)",
+      "category": "Regulation",
+      "short_description": "Sets industrial policy and incentives guiding display investments and subsidies.",
+      "Aliases": []
+    },
+    {
+      "title": "Japan–South Korea 2019 export controls dispute",
+      "category": "Event",
+      "short_description": "Export curbs on key materials disrupted OLED/LCD supply and qualified alternative sourcing.",
+      "Aliases": []
+    },
+    {
+      "title": "OLED TV panels (WOLED)",
+      "category": "Product/Service",
+      "short_description": "Core product line; yields, capacity, and TV demand drive profitability.",
+      "Aliases": [
+        "LG Display",
+        "LG"
+      ]
+    },
+    {
+      "title": "Flexible OLED (POLED) smartphone displays",
+      "category": "Product/Service",
+      "short_description": "Growth product; yields, customer wins, and device cycles swing earnings.",
+      "Aliases": [
+        "LG Display",
+        "LG"
+      ]
+    },
+    {
+      "title": "Automotive displays sector",
+      "category": "Sector",
+      "short_description": "Emerging demand for mid-size displays; long-term contracts influence capex and mix.",
+      "Aliases": []
+    }
+  ]
+}

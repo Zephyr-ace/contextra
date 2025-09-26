@@ -1,0 +1,90 @@
+[
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "United States",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary security partner, arms supplier, and technology regulator",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "partner_with",
+    "evidence_text": "anchor of Taiwan’s economy, jobs, and geopolitical leverage",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Semiconductor manufacturing",
+    "relationship_type": "partner_with",
+    "evidence_text": "Core industry driving exports, GDP, employment, and strategic relevance for Taiwan.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Xi Jinping",
+    "relationship_type": "competes_with",
+    "evidence_text": "central to military posture and reunification strategy.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Taiwan Relations Act (1979)",
+    "relationship_type": "regulates",
+    "evidence_text": "U.S. law underpinning Taiwan’s defense support, arms sales",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "PRC Anti-Secession Law (2005)",
+    "relationship_type": "regulates",
+    "evidence_text": "Authorizes non-peaceful means against Taiwanese independence",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "U.S. semiconductor export controls on China (2022–)",
+    "relationship_type": "partner_with",
+    "evidence_text": "reshape Taiwan’s supply chains and market access.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Hon Hai Precision Industry (Foxconn)",
+    "relationship_type": "partner_with",
+    "evidence_text": "influences Taiwan’s economy and cross-strait industrial exposure",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "ASML Holding N.V.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Sole EUV supplier; tool access constrains Taiwan’s leading-edge chip production",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "CHIPS and Science Act (2022)",
+    "relationship_type": "competes_with",
+    "evidence_text": "affects Taiwan’s talent, supply chain, and competitiveness.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "2022 Taiwan Strait military exercises after Pelosi visit",
+    "relationship_type": "competes_with",
+    "evidence_text": "Large-scale PLA drills coercing Taiwan",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Taiwan",
+    "target_node": "Japan",
+    "relationship_type": "partner_with",
+    "evidence_text": "Key regional security partner and technology market",
+    "importance_score": 0.85
+  }
+]

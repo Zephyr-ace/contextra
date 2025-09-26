@@ -1,0 +1,97 @@
+[
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Manufactures Apple Silicon chips for Macs",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Arm Ltd.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Licenses ARM ISA and cores underpinning Apple Silicon Macs.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Intel Corporation",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Former Mac CPU supplier; x86 legacy drives macOS compatibility",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Hon Hai Precision Industry (Foxconn)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary contract manufacturer assembling Mac hardware at scale.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "ARM architecture (ARMv8/ARMv9)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "used by Apple Silicon Macs",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "x86-64 architecture",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Legacy instruction set shaping macOS support",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "USB4",
+    "relationship_type": "supplies_to",
+    "evidence_text": "adopted in modern Macs",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Semiconductor foundries",
+    "relationship_type": "supplies_to",
+    "evidence_text": "fabricating Apple Silicon SoCs.",
+    "importance_score": 0.8
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "EU RoHS Directive",
+    "relationship_type": "regulates",
+    "evidence_text": "Limits hazardous substances in electronics used in Mac manufacturing.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "U.S. Section 301 Tariffs on Chinese electronics",
+    "relationship_type": "regulates",
+    "evidence_text": "U.S. tariffs on Chinese electronics affecting Mac costs and supply chain.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "Taiwan",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Home to TSMC and key Apple suppliers; critical to Mac chip supply.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Major Mac assembly base and component manufacturing hub.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "macOS & Mac Hardware",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "Core market, R&D base; some Mac assembly; trade policy impacts.",
+    "importance_score": 0.85
+  }
+]

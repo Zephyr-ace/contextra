@@ -1,0 +1,80 @@
+{
+  "source": "Alphabet Inc.",
+  "nodes": [
+    {
+      "title": "Microsoft",
+      "category": "Company",
+      "short_description": "Major competitor in search, cloud, AI; partnership with OpenAI intensifies rivalry across core markets."
+    },
+    {
+      "title": "Meta Platforms",
+      "category": "Company",
+      "short_description": "Competes for digital ad spend and user attention; challenges YouTube and Google ads."
+    },
+    {
+      "title": "Amazon",
+      "category": "Company",
+      "short_description": "Competes in ads and cloud; shopping search diverts queries and budgets from Google."
+    },
+    {
+      "title": "ByteDance",
+      "category": "Company",
+      "short_description": "TikTok competes with YouTube for video engagement and ad dollars."
+    },
+    {
+      "title": "OpenAI",
+      "category": "Company",
+      "short_description": "AI breakthroughs and ChatGPT reshape search/user behavior, pressuring Google's core."
+    },
+    {
+      "title": "Nvidia",
+      "category": "Company",
+      "short_description": "Critical supplier of GPUs for Alphabet’s AI training and inference infrastructure."
+    },
+    {
+      "title": "Google Search",
+      "category": "Product/Service",
+      "short_description": "Alphabet's primary revenue engine; distribution, defaults, and quality directly drive financial performance."
+    },
+    {
+      "title": "YouTube",
+      "category": "Product/Service",
+      "short_description": "Large ad platform; engagement and creator ecosystem materially affect revenue."
+    },
+    {
+      "title": "Android",
+      "category": "Product/Service",
+      "short_description": "Mobile OS underpinning Google services distribution and Play ecosystem economics."
+    },
+    {
+      "title": "Google Chrome",
+      "category": "Product/Service",
+      "short_description": "Browser controlling search defaults and web platform strategy; key to traffic acquisition."
+    },
+    {
+      "title": "U.S. Department of Justice (Antitrust Division)",
+      "category": "Regulation",
+      "short_description": "Brings antitrust actions against Google affecting search and ad tech practices."
+    },
+    {
+      "title": "Digital Markets Act (EU)",
+      "category": "Regulation",
+      "short_description": "EU law imposing gatekeeper obligations on Google services and app distribution."
+    },
+    {
+      "title": "General Data Protection Regulation (GDPR)",
+      "category": "Regulation",
+      "short_description": "EU privacy law constraining data collection/targeting; impacts ads and product design."
+    },
+    {
+      "title": "Digital Advertising",
+      "category": "Sector",
+      "short_description": "Primary industry for Alphabet’s revenue; cyclicality and competition directly influence results."
+    },
+    {
+      "title": "United States v. Google LLC (Search antitrust)",
+      "category": "Event",
+      "short_description": "DOJ case targeting default search and exclusionary agreements; potential remedies could reshape business."
+    }
+  ]
+}

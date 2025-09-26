@@ -1,0 +1,98 @@
+[
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "AirPods",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Wireless earbuds assembled by Luxshare",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "iPhone",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Smartphone line with partial assembly by Luxshare",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "regulatory environment shaping operations",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Vietnam",
+    "relationship_type": "partner_with",
+    "evidence_text": "Key expansion hub for assembly; policy stability and labor costs affect",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "source of trade policies impacting supply chains and tariffs.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Hon Hai Precision Industry Co., Ltd.",
+    "relationship_type": "competes_with",
+    "evidence_text": "competitor for order share, pricing, and capacity.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Pegatron Corporation",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major competitor for smartphone assembly orders; shifts directly affect Luxshare",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "GoerTek Inc.",
+    "relationship_type": "competes_with",
+    "evidence_text": "AirPods order reallocations between GoerTek and Luxshare change revenues.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Wistron Corporation",
+    "relationship_type": "partner_with",
+    "evidence_text": "Former iPhone assembly asset seller to Luxshare",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Electronics manufacturing services (EMS)",
+    "relationship_type": "partner_with",
+    "evidence_text": "Core business model; industry cycles and margins determine profitability",
+    "importance_score": 0.33
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "EU Common Charger Directive (USB-C mandate)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "increases connector demand and redesigns across devices",
+    "importance_score": 0.3
+  },
+  {
+    "source_node": "Luxshare Precision",
+    "target_node": "Wang Laichun",
+    "relationship_type": "partner_with",
+    "evidence_text": "Chairwoman and co-founder steering strategy",
+    "importance_score": 0.45
+  }
+]

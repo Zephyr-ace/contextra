@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Largest smartphone vendor; shapes pricing, features, and component demand globally.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Huawei",
+    "relationship_type": "competes_with",
+    "evidence_text": "sanctions-driven shifts in market share, standards, and supply chains.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Xiaomi",
+    "relationship_type": "competes_with",
+    "evidence_text": "aggressive pricing in emerging markets.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Qualcomm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies Snapdragon SoCs and modems;",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "MediaTek",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Dominant mid/low-tier smartphone chip supplier",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "TSMC",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Leading foundry fabricating most advanced smartphone chips for global OEMs.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "ARM",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Licenses CPU architectures used in nearly all smartphone processors.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Hon Hai Precision Industry",
+    "relationship_type": "supplies_to",
+    "evidence_text": "assembles a substantial share of global smartphones.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Android",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Dominant mobile OS underpinning most smartphones",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "Semiconductor manufacturing",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Fabrication capacity, yields, and nodes directly constrain smartphone performance",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "China",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Largest manufacturing base and consumer market",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "PLI incentives shift manufacturing and vendor strategies.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "United States",
+    "relationship_type": "supplies_to",
+    "evidence_text": "home to critical chip and software suppliers",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "U.S. Export Controls on Huawei and China Semiconductors",
+    "relationship_type": "regulates",
+    "evidence_text": "Sanctions restricting Huawei and chip exports",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Global Smartphone Market",
+    "target_node": "COVID-19 pandemic",
+    "relationship_type": "supplies_to",
+    "evidence_text": "supply-chain disruptions that reshaped shipments, inventory, and channels.",
+    "importance_score": 0.8
+  }
+]

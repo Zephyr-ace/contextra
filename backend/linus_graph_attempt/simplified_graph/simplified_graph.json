@@ -1,0 +1,570 @@
+{
+  "nodes": [
+    {
+      "id": "taiwan_semiconductor_manufacturing_co",
+      "position": {
+        "x": 411.44722221560636,
+        "y": -696.4942524093946
+      },
+      "data": {
+        "label": "Taiwan Semiconductor Manufacturing Co."
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "bill_gates",
+      "position": {
+        "x": 3346.2259158702245,
+        "y": 3988.43314477669
+      },
+      "data": {
+        "label": "Bill Gates"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "2022_shanghai_covid_19_lockdowns",
+      "position": {
+        "x": -3954.978309383977,
+        "y": -2741.4197758822997
+      },
+      "data": {
+        "label": "2022 Shanghai COVID-19 lockdowns"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "united_states",
+      "position": {
+        "x": -1293.3177922023685,
+        "y": -84.69927647735246
+      },
+      "data": {
+        "label": "United States"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "steve_jobs",
+      "position": {
+        "x": 1971.312553880509,
+        "y": 2340.161643001992
+      },
+      "data": {
+        "label": "Steve Jobs"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "supreme_court_of_the_united_states",
+      "position": {
+        "x": -3462.4524896012276,
+        "y": 1206.9770868591252
+      },
+      "data": {
+        "label": "Supreme Court of the United States"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "asml_holding",
+      "position": {
+        "x": 1838.2983428728026,
+        "y": -3135.293003528543
+      },
+      "data": {
+        "label": "ASML Holding"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "u_s_international_trade_commission_itc",
+      "position": {
+        "x": -359.9025147916364,
+        "y": -4598.699420459337
+      },
+      "data": {
+        "label": "U.S. International Trade Commission (ITC)"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "broadcom",
+      "position": {
+        "x": 1401.1429276039494,
+        "y": -786.3294937171372
+      },
+      "data": {
+        "label": "Broadcom"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "apple_inc",
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "data": {
+        "label": "Apple Inc."
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "pegatron",
+      "position": {
+        "x": -1941.482790309623,
+        "y": -1594.5591162057272
+      },
+      "data": {
+        "label": "Pegatron"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "macos_mac_hardware",
+      "position": {
+        "x": -516.9233535318093,
+        "y": 422.21590493333366
+      },
+      "data": {
+        "label": "macOS & Mac Hardware"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "apple_watch",
+      "position": {
+        "x": -332.67643508192964,
+        "y": -2248.4787135725733
+      },
+      "data": {
+        "label": "Apple Watch"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "app_store",
+      "position": {
+        "x": -950.1442105939731,
+        "y": 1790.8377607525338
+      },
+      "data": {
+        "label": "App Store"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "china_mainland_china",
+      "position": {
+        "x": 69.9590721287398,
+        "y": -1452.7136320637696
+      },
+      "data": {
+        "label": "China (Mainland China)"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "iphone",
+      "position": {
+        "x": -529.3307043608219,
+        "y": -1016.638265169061
+      },
+      "data": {
+        "label": "iPhone"
+      },
+      "type": "custom",
+      "draggable": true
+    },
+    {
+      "id": "hon_hai_precision_industry",
+      "position": {
+        "x": -1420.1990708530395,
+        "y": -767.5218962657267
+      },
+      "data": {
+        "label": "Hon Hai Precision Industry"
+      },
+      "type": "custom",
+      "draggable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--apple_inc",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "apple_inc",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--apple_watch",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "apple_watch",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--broadcom",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "broadcom",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--china_mainland_china",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.75
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--iphone",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--macos_mac_hardware",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "macos_mac_hardware",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "taiwan_semiconductor_manufacturing_co--united_states",
+      "source": "taiwan_semiconductor_manufacturing_co",
+      "target": "united_states",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "bill_gates--steve_jobs",
+      "source": "bill_gates",
+      "target": "steve_jobs",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "2022_shanghai_covid_19_lockdowns--pegatron",
+      "source": "2022_shanghai_covid_19_lockdowns",
+      "target": "pegatron",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "united_states--apple_inc",
+      "source": "united_states",
+      "target": "apple_inc",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "united_states--apple_watch",
+      "source": "united_states",
+      "target": "apple_watch",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "united_states--app_store",
+      "source": "united_states",
+      "target": "app_store",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.8
+      }
+    },
+    {
+      "id": "united_states--china_mainland_china",
+      "source": "united_states",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "united_states--hon_hai_precision_industry",
+      "source": "united_states",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.7
+      }
+    },
+    {
+      "id": "united_states--iphone",
+      "source": "united_states",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "united_states--macos_mac_hardware",
+      "source": "united_states",
+      "target": "macos_mac_hardware",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "united_states--pegatron",
+      "source": "united_states",
+      "target": "pegatron",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.5
+      }
+    },
+    {
+      "id": "united_states--supreme_court_of_the_united_states",
+      "source": "united_states",
+      "target": "supreme_court_of_the_united_states",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "steve_jobs--apple_inc",
+      "source": "steve_jobs",
+      "target": "apple_inc",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "asml_holding--china_mainland_china",
+      "source": "asml_holding",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "u_s_international_trade_commission_itc--apple_watch",
+      "source": "u_s_international_trade_commission_itc",
+      "target": "apple_watch",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "broadcom--apple_inc",
+      "source": "broadcom",
+      "target": "apple_inc",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "broadcom--china_mainland_china",
+      "source": "broadcom",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.75
+      }
+    },
+    {
+      "id": "broadcom--iphone",
+      "source": "broadcom",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "apple_inc--hon_hai_precision_industry",
+      "source": "apple_inc",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "apple_inc--pegatron",
+      "source": "apple_inc",
+      "target": "pegatron",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "apple_inc--iphone",
+      "source": "apple_inc",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "apple_inc--app_store",
+      "source": "apple_inc",
+      "target": "app_store",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "apple_inc--macos_mac_hardware",
+      "source": "apple_inc",
+      "target": "macos_mac_hardware",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "apple_inc--apple_watch",
+      "source": "apple_inc",
+      "target": "apple_watch",
+      "type": "floating",
+      "data": {
+        "max_importance": 1.0
+      }
+    },
+    {
+      "id": "apple_inc--china_mainland_china",
+      "source": "apple_inc",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "pegatron--hon_hai_precision_industry",
+      "source": "pegatron",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "pegatron--iphone",
+      "source": "pegatron",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.95
+      }
+    },
+    {
+      "id": "pegatron--china_mainland_china",
+      "source": "pegatron",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.8
+      }
+    },
+    {
+      "id": "macos_mac_hardware--hon_hai_precision_industry",
+      "source": "macos_mac_hardware",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "macos_mac_hardware--china_mainland_china",
+      "source": "macos_mac_hardware",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "apple_watch--china_mainland_china",
+      "source": "apple_watch",
+      "target": "china_mainland_china",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    },
+    {
+      "id": "china_mainland_china--hon_hai_precision_industry",
+      "source": "china_mainland_china",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "china_mainland_china--iphone",
+      "source": "china_mainland_china",
+      "target": "iphone",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.85
+      }
+    },
+    {
+      "id": "iphone--hon_hai_precision_industry",
+      "source": "iphone",
+      "target": "hon_hai_precision_industry",
+      "type": "floating",
+      "data": {
+        "max_importance": 0.9
+      }
+    }
+  ]
+}

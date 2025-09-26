@@ -1,0 +1,80 @@
+{
+  "source": "Steve Jobs",
+  "nodes": [
+    {
+      "title": "Steve Wozniak",
+      "category": "Person",
+      "short_description": "Co-founder whose engineering enabled Apple's birth and early success with Jobs."
+    },
+    {
+      "title": "John Sculley",
+      "category": "Person",
+      "short_description": "Apple CEO who removed Jobs in 1985, catalyzing NeXT and Pixar paths."
+    },
+    {
+      "title": "NeXT",
+      "category": "Company",
+      "short_description": "Company Jobs founded post-Apple, led to his return via acquisition and underpinned macOS."
+    },
+    {
+      "title": "Pixar Animation Studios",
+      "category": "Company",
+      "short_description": "Studio Jobs bought and led, Toy Story success made him billionaire, enabling Disney acquisition."
+    },
+    {
+      "title": "2003 cancer diagnosis",
+      "category": "Event",
+      "short_description": "Pancreatic neuroendocrine tumor diagnosis that reshaped Jobs's priorities and succession planning."
+    },
+    {
+      "title": "Microsoft",
+      "category": "Company",
+      "short_description": "Competitor whose 1997 investment and Office commitment stabilized Apple during Jobs's return."
+    },
+    {
+      "title": "Bill Gates",
+      "category": "Person",
+      "short_description": "Microsoft co-founder who negotiated 1997 deal, rival and counterpart shaping Jobs's strategy."
+    },
+    {
+      "title": "The Walt Disney Company",
+      "category": "Company",
+      "short_description": "Acquired Pixar in 2006, making Jobs its largest individual shareholder and a board member."
+    },
+    {
+      "title": "Bob Iger",
+      "category": "Person",
+      "short_description": "Disney CEO who championed the Pixar acquisition and became a key ally to Jobs."
+    },
+    {
+      "title": "Xerox PARC",
+      "category": "Company",
+      "short_description": "Research center demonstration of GUI and mouse profoundly influenced Jobs's product vision."
+    },
+    {
+      "title": "Paul Jobs",
+      "category": "Person",
+      "short_description": "Adoptive father who instilled craftsmanship and work ethic central to Steve's approach."
+    },
+    {
+      "title": "Mike Markkula",
+      "category": "Person",
+      "short_description": "Early investor and mentor, board influence shaped Jobs's role and 1985 departure."
+    },
+    {
+      "title": "Nolan Bushnell",
+      "category": "Person",
+      "short_description": "Atari founder who hired Jobs, shaping his early career and entrepreneurial path."
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "1974 spiritual journey there deeply influenced Jobs's philosophy, aesthetics, and leadership."
+    },
+    {
+      "title": "Toy Story (1995)",
+      "category": "Product/Service",
+      "short_description": "Pixar's first feature film, breakout success transformed Jobs's wealth and stature."
+    }
+  ]
+}

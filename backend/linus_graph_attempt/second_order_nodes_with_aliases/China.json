@@ -1,0 +1,102 @@
+{
+  "source": "China",
+  "nodes": [
+    {
+      "title": "Communist Party of China (CCP)",
+      "category": "Regulation",
+      "short_description": "Ruling party directing governance, economy, security, and ideology nationwide.",
+      "Aliases": []
+    },
+    {
+      "title": "Xi Jinping",
+      "category": "Person",
+      "short_description": "Paramount leader steering policy, reform, security, and foreign strategy.",
+      "Aliases": [
+        "Xi Jinping"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Top trade partner and rival shaping sanctions, tech access, and geopolitics.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "People's Bank of China (PBOC)",
+      "category": "Regulation",
+      "short_description": "Central bank managing monetary policy, credit growth, and financial stability.",
+      "Aliases": []
+    },
+    {
+      "title": "National Development and Reform Commission (NDRC)",
+      "category": "Regulation",
+      "short_description": "Macro planner allocating investment, industrial policy, pricing, and energy quotas.",
+      "Aliases": []
+    },
+    {
+      "title": "Real estate sector",
+      "category": "Sector",
+      "short_description": "Core driver of investment, local revenues, household wealth, and systemic risk.",
+      "Aliases": []
+    },
+    {
+      "title": "Semiconductor industry",
+      "category": "Sector",
+      "short_description": "Strategic industry underpinning innovation, security, and economic competitiveness.",
+      "Aliases": [
+        "Semiconductor & Chip Industry",
+        "Semiconductor industry"
+      ]
+    },
+    {
+      "title": "Bureau of Industry and Security (BIS)",
+      "category": "Regulation",
+      "short_description": "U.S. export controls limiting China's access to advanced chips and tools.",
+      "Aliases": []
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Geopolitical flashpoint and semiconductor hub shaping security and supply chains.",
+      "Aliases": [
+        "Taiwan"
+      ]
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Leading foundry gating advanced chips crucial to Chinese technology.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "ASML Holding",
+      "category": "Company",
+      "short_description": "Sole EUV supplier constraining China's leading-edge chip manufacturing.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S.–China trade war (2018–present)",
+      "category": "Event",
+      "short_description": "Tariffs and restrictions disrupting trade, supply chains, and industrial policy.",
+      "Aliases": []
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Health crisis triggering lockdowns, supply shocks, and demand swings.",
+      "Aliases": []
+    },
+    {
+      "title": "China's WTO accession (2001)",
+      "category": "Event",
+      "short_description": "Integrated China into global trade, boosting exports and foreign investment.",
+      "Aliases": []
+    }
+  ]
+}

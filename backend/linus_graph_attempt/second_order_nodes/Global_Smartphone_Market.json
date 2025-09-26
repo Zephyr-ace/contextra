@@ -1,0 +1,80 @@
+{
+  "source": "Global Smartphone Market",
+  "nodes": [
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Largest smartphone vendor; shapes pricing, features, and component demand globally."
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Major OEM; sanctions-driven shifts in market share, standards, and supply chains."
+    },
+    {
+      "title": "Xiaomi",
+      "category": "Company",
+      "short_description": "High-volume budget-to-midrange smartphones; aggressive pricing in emerging markets."
+    },
+    {
+      "title": "Qualcomm",
+      "category": "Company",
+      "short_description": "Supplies Snapdragon SoCs and modems; critical for Android performance and 5G capability."
+    },
+    {
+      "title": "MediaTek",
+      "category": "Company",
+      "short_description": "Dominant mid/low-tier smartphone chip supplier; volume drives Android affordability."
+    },
+    {
+      "title": "TSMC",
+      "category": "Company",
+      "short_description": "Leading foundry fabricating most advanced smartphone chips for global OEMs."
+    },
+    {
+      "title": "ARM",
+      "category": "Company",
+      "short_description": "Licenses CPU architectures used in nearly all smartphone processors."
+    },
+    {
+      "title": "Hon Hai Precision Industry",
+      "category": "Company",
+      "short_description": "World’s largest EMS; assembles a substantial share of global smartphones."
+    },
+    {
+      "title": "Android",
+      "category": "Product/Service",
+      "short_description": "Dominant mobile OS underpinning most smartphones and the global app ecosystem."
+    },
+    {
+      "title": "Semiconductor manufacturing",
+      "category": "Sector",
+      "short_description": "Fabrication capacity, yields, and nodes directly constrain smartphone performance and supply."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Largest manufacturing base and consumer market; policies and supply chains drive global volumes."
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "Fast-growing large market; PLI incentives shift manufacturing and vendor strategies."
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Key regulatory actor and premium market; home to critical chip and software suppliers."
+    },
+    {
+      "title": "U.S. Export Controls on Huawei and China Semiconductors",
+      "category": "Regulation",
+      "short_description": "Sanctions restricting Huawei and chip exports, reconfiguring market shares and supply chains."
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Demand shock and supply-chain disruptions that reshaped shipments, inventory, and channels."
+    }
+  ]
+}

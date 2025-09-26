@@ -1,0 +1,104 @@
+{
+  "source": "Epic Games",
+  "nodes": [
+    {
+      "title": "Fortnite",
+      "category": "Product/Service",
+      "short_description": "Epic's flagship game driving revenue, platform negotiations, and legal disputes.",
+      "Aliases": [
+        "Epic Games"
+      ]
+    },
+    {
+      "title": "Google",
+      "category": "Company",
+      "short_description": "Controls Android and Play Store policies; target of Epic antitrust case shaping distribution and billing.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "Unreal Engine",
+      "category": "Product/Service",
+      "short_description": "Epic's engine powering many games; licensing, ecosystem partnerships, and platform access are critical.",
+      "Aliases": [
+        "Epic Games"
+      ]
+    },
+    {
+      "title": "Epic Games Store",
+      "category": "Product/Service",
+      "short_description": "Epic's PC storefront; exclusivity deals, revenue split, and user acquisition strategy shape competition with Steam.",
+      "Aliases": [
+        "Epic Games"
+      ]
+    },
+    {
+      "title": "EU Digital Markets Act (DMA)",
+      "category": "Regulation",
+      "short_description": "EU law forcing gatekeepers to allow alternative app stores and billing; expands Epic distribution options.",
+      "Aliases": []
+    },
+    {
+      "title": "Tencent",
+      "category": "Company",
+      "short_description": "Major shareholder and partner; influences strategy, funding, and access to China market.",
+      "Aliases": []
+    },
+    {
+      "title": "Valve",
+      "category": "Company",
+      "short_description": "Owner of Steam; primary competitor to Epic Games Store in PC distribution.",
+      "Aliases": []
+    },
+    {
+      "title": "Microsoft",
+      "category": "Company",
+      "short_description": "Xbox platform holder and partner; distribution, cloud gaming, and cross-play policies influence Epic titles.",
+      "Aliases": []
+    },
+    {
+      "title": "Sony Interactive Entertainment",
+      "category": "Company",
+      "short_description": "PlayStation platform holder and investor; cross-play policies and revenue share affect Fortnite economics.",
+      "Aliases": [
+        "Sony"
+      ]
+    },
+    {
+      "title": "Epic Games v. Google jury verdict (2023)",
+      "category": "Event",
+      "short_description": "Jury found Google liable for anticompetitive conduct; remedies may open Android distribution and billing.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Primary market and legal venue for Epic's operations, litigation, and regulatory outcomes.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "European Union",
+      "category": "Country",
+      "short_description": "Major region where DMA enforcement enables alternative distribution paths for Epic.",
+      "Aliases": [
+        "European Union",
+        "Europe",
+        "EU"
+      ]
+    },
+    {
+      "title": "Mobile App Stores",
+      "category": "Sector",
+      "short_description": "Gatekeeper marketplaces on mobile; dictate distribution, billing, and discoverability for Epic products.",
+      "Aliases": []
+    }
+  ]
+}

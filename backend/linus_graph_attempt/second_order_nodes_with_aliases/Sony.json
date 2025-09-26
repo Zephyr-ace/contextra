@@ -1,0 +1,101 @@
+{
+  "source": "Sony",
+  "nodes": [
+    {
+      "title": "PlayStation platform",
+      "category": "Product/Service",
+      "short_description": "Sony’s flagship gaming ecosystem driving hardware, software, and subscription revenues.",
+      "Aliases": [
+        "Sony"
+      ]
+    },
+    {
+      "title": "Microsoft",
+      "category": "Company",
+      "short_description": "Rival Xbox platform and game services compete directly; strategic moves shape Sony’s gaming market.",
+      "Aliases": []
+    },
+    {
+      "title": "Call of Duty",
+      "category": "Product/Service",
+      "short_description": "Top-selling franchise influencing console choice, engagement, and PlayStation revenues.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Key market for games, music, and films; regulatory and consumer trends drive performance.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "CMOS Image Sensors",
+      "category": "Product/Service",
+      "short_description": "Core component business supplying smartphone and camera markets; volume and pricing drive profits.",
+      "Aliases": []
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Large smartphone and entertainment market; regulations and demand swings impact sensors and content.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "U.S. sanctions on Huawei",
+      "category": "Event",
+      "short_description": "Export restrictions curtailed Huawei smartphone production, reducing Sony’s image sensor shipments.",
+      "Aliases": []
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Smartphone demand shifts and restrictions materially impact Sony’s image sensor sales.",
+      "Aliases": []
+    },
+    {
+      "title": "Nintendo",
+      "category": "Company",
+      "short_description": "Competing consoles and first-party exclusives affect Sony’s market share and pricing.",
+      "Aliases": []
+    },
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Major smartphone maker and image-sensor competitor, shaping demand and pricing dynamics.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "TSMC",
+      "category": "Company",
+      "short_description": "Manufacturing partner for Japan fab projects; capacity and process nodes affect Sony’s chip supply.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "The Walt Disney Company",
+      "category": "Company",
+      "short_description": "Marvel partnership and Spider-Man film rights materially affect Sony Pictures revenues.",
+      "Aliases": [
+        "Sony"
+      ]
+    },
+    {
+      "title": "Japan",
+      "category": "Country",
+      "short_description": "Headquarters, workforce, and policy environment influence strategy, currency, and operations.",
+      "Aliases": [
+        "Japan"
+      ]
+    }
+  ]
+}

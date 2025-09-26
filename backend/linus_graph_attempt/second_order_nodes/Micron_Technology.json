@@ -1,0 +1,80 @@
+{
+  "source": "Micron Technology",
+  "nodes": [
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Largest memory competitor; pricing, capacity, and technology leadership drive DRAM/NAND supply-demand and pricing."
+    },
+    {
+      "title": "SK hynix",
+      "category": "Company",
+      "short_description": "Major DRAM/HBM competitor; capacity decisions and technology pace affect Micron's pricing and share."
+    },
+    {
+      "title": "Nvidia",
+      "category": "Company",
+      "short_description": "Top HBM buyer; AI accelerator demand directly drives Micron's HBM and DRAM sales."
+    },
+    {
+      "title": "Kioxia",
+      "category": "Company",
+      "short_description": "Key NAND competitor; output cuts or expansions influence industry pricing and Micron margins."
+    },
+    {
+      "title": "Western Digital",
+      "category": "Company",
+      "short_description": "Major NAND rival, Kioxia JV partner; supply strategies materially impact flash pricing and competition."
+    },
+    {
+      "title": "DRAM",
+      "category": "Product/Service",
+      "short_description": "Core Micron product; pricing cycles and node transitions determine revenue and profitability."
+    },
+    {
+      "title": "NAND Flash Memory",
+      "category": "Product/Service",
+      "short_description": "Core product; hyperscaler and device demand drive pricing, bit growth, and utilization."
+    },
+    {
+      "title": "High Bandwidth Memory (HBM)",
+      "category": "Product/Service",
+      "short_description": "Critical for AI workloads; GPU adoption drives volume, pricing, and capacity investment."
+    },
+    {
+      "title": "Data Center and AI Infrastructure",
+      "category": "Sector",
+      "short_description": "Primary demand engine for DRAM/HBM; hyperscaler buildouts shift product mix and pricing."
+    },
+    {
+      "title": "Smartphone Manufacturing",
+      "category": "Sector",
+      "short_description": "Large consumer of DRAM/NAND; handset cycles directly impact shipments and average selling prices."
+    },
+    {
+      "title": "U.S. Export Controls on Semiconductors to China (BIS Rules)",
+      "category": "Regulation",
+      "short_description": "Restrict advanced chip and tool exports; reshape Micron's China sales and supply chains."
+    },
+    {
+      "title": "CHIPS and Science Act (U.S.)",
+      "category": "Regulation",
+      "short_description": "U.S. subsidies and guardrails influence Micron's domestic investment, capacity, and compliance."
+    },
+    {
+      "title": "China Cybersecurity Review Ban on Micron in Critical Infrastructure",
+      "category": "Regulation",
+      "short_description": "Bars Micron memory in Chinese critical infrastructure, reducing market access and revenue."
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Headquarters and fab locations; policies and incentives significantly guide strategy and operations."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Major end market; regulations and domestic competitors shape demand, pricing, and access."
+    }
+  ]
+}

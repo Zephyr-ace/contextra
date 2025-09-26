@@ -1,0 +1,104 @@
+[
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "ASML Holding N.V.",
+    "relationship_type": "partner_with",
+    "evidence_text": "tool availability dictates TSMC's leading-node output",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "U.S. Department of Commerce Bureau of Industry and Security (BIS)",
+    "relationship_type": "regulates",
+    "evidence_text": "restricts sales to China and tool access",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "NVIDIA Corporation",
+    "relationship_type": "supplies_to",
+    "evidence_text": "drives leading-node and CoWoS capacity demand",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "Samsung Electronics Co., Ltd.",
+    "relationship_type": "competes_with",
+    "evidence_text": "Primary advanced-node foundry competitor",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "Intel Corporation",
+    "relationship_type": "competes_with",
+    "evidence_text": "outsourcing and foundry competition affect capacity and strategy.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "Advanced Micro Devices, Inc.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major CPU/GPU customer; demand influences advanced-node utilization",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "Applied Materials, Inc.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "tool lead times constrain capacity ramps.",
+    "importance_score": 0.3
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "MediaTek Inc.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "drives mid-to-advanced node capacity.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "CoWoS (Chip-on-Wafer-on-Substrate)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "TSMC's advanced packaging; throughput limits constrain AI chip shipments.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "EUV lithography systems",
+    "relationship_type": "customer_of",
+    "evidence_text": "Essential for N7+ and below; availability caps wafer starts.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "N3 (3nm) process technology",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Flagship node; yield and ramp set revenue and competitiveness.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "CHIPS and Science Act of 2022",
+    "relationship_type": "regulates",
+    "evidence_text": "U.S. subsidies and guardrails shape TSMC's U.S. fabs and China investments.",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "U.S. sanctions on Huawei/HiSilicon (2019–2020)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Forced TSMC to cease shipments",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Taiwan Semiconductor Manufacturing Co.",
+    "target_node": "Taiwan",
+    "relationship_type": "regulates",
+    "evidence_text": "power, water, and geopolitics directly affect operations",
+    "importance_score": 0.7
+  }
+]

@@ -1,0 +1,142 @@
+# backend/linus_graph_attempt/create_second_order_edges.py
+
+import os
+import re
+import json
+from typing import List, Dict, Any
+from openai import OpenAI
+
+# ── Config ─────────────────────────────────────────────────────────────────────
+OPENAI_API_KEY = ""
+MODEL_NAME = "gpt-4o"                         # per request
+
+INPUT_DIR  = "backend/linus_graph_attempt/second_order_nodes"
+OUTPUT_DIR = "backend/linus_graph_attempt/second_order_edges"
+ALLOWED_REL = ["supplies_to", "competes_with", "regulates", "customer_of", "partner_with"]
+# ───────────────────────────────────────────────────────────────────────────────
+
+client = OpenAI(api_key=OPENAI_API_KEY)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def sanitize_filename(name: str) -> str:
+    return re.sub(r"[^A-Za-z0-9._-]+", "_", name).strip("_")
+
+def clip(s: str, n: int) -> str:
+    s = (s or "").replace("\n", " ").strip()
+    return s if len(s) <= n else s[: n-1] + "…"
+
+def load_entities(path: str) -> (str, List[Dict[str, Any]]):
+    """Accepts either {'source': X, 'nodes': [...]} or a raw list for backward compatibility."""
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if isinstance(data, dict):
+        src = data.get("source")
+        nodes = data.get("nodes", [])
+    else:
+        src = os.path.splitext(os.path.basename(path))[0].replace("_", " ")
+        nodes = data
+    # Normalize entity dicts
+    cleaned = []
+    for n in nodes:
+        title = (n.get("title") or "").strip()
+        if not title:
+            continue
+        cleaned.append({
+            "title": title,
+            "category": (n.get("category") or "").strip(),
+            "short_description": (n.get("short_description") or "").strip()
+        })
+    return src, cleaned
+
+def build_prompt(source: str, entity: Dict[str, str]) -> str:
+    """
+    Evidence must be drawn verbatim from the provided short_description (treat as source text).
+    """
+    return f"""
+You are given a SOURCE entity and another TARGET entity. Using your trained knowledge,
+and treating the TARGET short_description as source text, extract a **single** causal
+relationship from SOURCE (source_node) → TARGET (target_node).
+
+SOURCE: {source}
+
+TARGET:
+- title: {entity.get('title')}
+- category: {entity.get('category')}
+- short_description: "{clip(entity.get('short_description',''), 300)}"
+
+Return ONLY valid JSON with:
+- source_node (exactly "{source}")
+- target_node (TARGET title)
+- relationship_type (one of: supplies_to, competes_with, regulates, customer_of, partner_with)
+- evidence_text (≤100 chars, **verbatim from TARGET short_description**)
+- importance_score (float 0.00–1.00)
+
+RULES:
+• Only extract relationships with direct causal relevance.
+• Do not include mere co-mentions.
+• If the short_description is weak/ambiguous, lower the importance_score accordingly.
+
+GUIDELINES:
+• 1.0 = explicit, decisive, single-point causal event (“sole supplier”, “court ordered”, “halted production”).
+• 0.75–0.95 = strong but not absolute (major supplier, mandated change, primary rival).
+• 0.5–0.74 = moderate relevance (important but shared, one-of-many supplier, lawsuit pending).
+• 0.25–0.49 = weak/indirect but still causal.
+• 0.0–0.24 = reject (too vague or ambient context).
+
+Output strict JSON only.
+"""
+
+def extract_edge(source: str, entity: Dict[str, str]) -> Dict[str, Any]:
+    prompt = build_prompt(source, entity)
+
+    resp = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[
+            {"role": "system", "content": "You are a precise JSON relationship extractor."},
+            {"role": "user", "content": prompt},
+        ],
+        response_format={"type": "json_object"},
+    )
+
+    raw = resp.choices[0].message.content
+    try:
+        obj = json.loads(raw)
+        # light validation
+        rel = (obj.get("relationship_type") or "").strip()
+        if rel not in ALLOWED_REL:
+            obj["relationship_type"] = "partner_with"
+        # keep evidence ≤100 chars just in case
+        obj["evidence_text"] = clip(obj.get("evidence_text", ""), 100)
+        return obj
+    except Exception as e:
+        print(f"[WARN] JSON parse failed for {source} → {entity.get('title')}: {e}")
+        return {}
+
+def main():
+    files = [f for f in os.listdir(INPUT_DIR) if f.lower().endswith(".json")]
+
+    for fname in files:
+        in_path = os.path.join(INPUT_DIR, fname)
+        source, entities = load_entities(in_path)
+        if not source or not entities:
+            print(f"[SKIP] {fname}: missing source or entities")
+            continue
+
+        print(f"Evaluating relationships for: {source}  ({len(entities)} targets)")
+        edges: List[Dict[str, Any]] = []
+        for ent in entities:
+            # Explicitly skip if target is Apple to keep this layer Apple-free
+            if re.search(r"\bapple(\s+inc)?\b", (ent.get("title") or "").lower()):
+                continue
+            edge = extract_edge(source, ent)
+            if edge:
+                edges.append(edge)
+
+        out_path = os.path.join(OUTPUT_DIR, sanitize_filename(source) + ".json")
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(edges, f, indent=2, ensure_ascii=False)
+
+        print(f"Saved {len(edges)} edges → {out_path}")
+
+if __name__ == "__main__":
+    main()

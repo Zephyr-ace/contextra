@@ -1,0 +1,90 @@
+[
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Fabricates Apple Watch S-series chips; critical for performance and efficiency.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Luxshare Precision",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major assembler of Apple Watch",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "LG Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies OLED displays for Apple Watch",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Samsung Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Alternate OLED supplier for Apple Watch",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Masimo Corporation",
+    "relationship_type": "competes_with",
+    "evidence_text": "Medical device firm suing over pulse oximetry",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "U.S. Food and Drug Administration (FDA)",
+    "relationship_type": "regulates",
+    "evidence_text": "Regulator granting clearances for ECG and heart rhythm features.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "U.S. International Trade Commission (ITC)",
+    "relationship_type": "regulates",
+    "evidence_text": "ordered import bans affecting certain Apple Watch models.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary manufacturing base for components and assembly.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Vietnam",
+    "relationship_type": "partner_with",
+    "evidence_text": "Alternative assembly hub for Apple Watch diversification.",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "Largest market and regulatory jurisdiction for Apple Watch.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Samsung Galaxy Watch",
+    "relationship_type": "competes_with",
+    "evidence_text": "Direct competitor shaping smartwatch features, pricing, and ecosystem expectations.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Watch",
+    "target_node": "Joe Kiani",
+    "relationship_type": "competes_with",
+    "evidence_text": "Masimo CEO leading patent actions impacting Apple Watch sales.",
+    "importance_score": 0.7
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "source": "macOS & Mac Hardware",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Manufactures Apple Silicon chips for Macs on leading-edge nodes.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Arm Ltd.",
+      "category": "Company",
+      "short_description": "Licenses ARM ISA and cores underpinning Apple Silicon Macs.",
+      "Aliases": []
+    },
+    {
+      "title": "Intel Corporation",
+      "category": "Company",
+      "short_description": "Former Mac CPU supplier; x86 legacy drives macOS compatibility and transition strategies.",
+      "Aliases": []
+    },
+    {
+      "title": "Hon Hai Precision Industry (Foxconn)",
+      "category": "Company",
+      "short_description": "Primary contract manufacturer assembling Mac hardware at scale.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "ARM architecture (ARMv8/ARMv9)",
+      "category": "Product/Service",
+      "short_description": "Instruction set architecture used by Apple Silicon Macs.",
+      "Aliases": [
+        "ARM Architecture",
+        "ARM"
+      ]
+    },
+    {
+      "title": "x86-64 architecture",
+      "category": "Product/Service",
+      "short_description": "Legacy instruction set shaping macOS support and Rosetta translation.",
+      "Aliases": []
+    },
+    {
+      "title": "USB4",
+      "category": "Product/Service",
+      "short_description": "Unified high-speed I/O standard adopted in modern Macs (Thunderbolt 4 compatible).",
+      "Aliases": []
+    },
+    {
+      "title": "Semiconductor foundries",
+      "category": "Sector",
+      "short_description": "Critical capacity for fabricating Apple Silicon SoCs.",
+      "Aliases": []
+    },
+    {
+      "title": "Electronics manufacturing services (EMS)",
+      "category": "Sector",
+      "short_description": "Large-scale assembly and integration of Mac hardware components.",
+      "Aliases": []
+    },
+    {
+      "title": "EU RoHS Directive",
+      "category": "Regulation",
+      "short_description": "Limits hazardous substances in electronics used in Mac manufacturing.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. Section 301 Tariffs on Chinese electronics",
+      "category": "Regulation",
+      "short_description": "U.S. tariffs on Chinese electronics affecting Mac costs and supply chain.",
+      "Aliases": []
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Home to TSMC and key Apple suppliers; critical to Mac chip supply.",
+      "Aliases": [
+        "Taiwan"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Major Mac assembly base and component manufacturing hub.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Core market, R&D base; some Mac assembly; trade policy impacts.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    }
+  ]
+}

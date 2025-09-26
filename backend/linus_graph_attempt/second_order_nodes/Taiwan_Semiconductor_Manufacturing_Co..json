@@ -1,0 +1,80 @@
+{
+  "source": "Taiwan Semiconductor Manufacturing Co.",
+  "nodes": [
+    {
+      "title": "ASML Holding N.V.",
+      "category": "Company",
+      "short_description": "Sole EUV supplier; tool availability dictates TSMC's leading-node output."
+    },
+    {
+      "title": "U.S. Department of Commerce Bureau of Industry and Security (BIS)",
+      "category": "Regulation",
+      "short_description": "Administers U.S. export controls; restricts sales to China and tool access."
+    },
+    {
+      "title": "NVIDIA Corporation",
+      "category": "Company",
+      "short_description": "Largest AI chip customer; drives leading-node and CoWoS capacity demand."
+    },
+    {
+      "title": "Samsung Electronics Co., Ltd.",
+      "category": "Company",
+      "short_description": "Primary advanced-node foundry competitor; impacts pricing, capacity, and technology race."
+    },
+    {
+      "title": "Intel Corporation",
+      "category": "Company",
+      "short_description": "Competitor and customer; outsourcing and foundry competition affect capacity and strategy."
+    },
+    {
+      "title": "Advanced Micro Devices, Inc.",
+      "category": "Company",
+      "short_description": "Major CPU/GPU customer; demand influences advanced-node utilization and pricing."
+    },
+    {
+      "title": "Applied Materials, Inc.",
+      "category": "Company",
+      "short_description": "Critical deposition/etch equipment supplier; tool lead times constrain capacity ramps."
+    },
+    {
+      "title": "MediaTek Inc.",
+      "category": "Company",
+      "short_description": "High-volume mobile SoC customer; drives mid-to-advanced node capacity."
+    },
+    {
+      "title": "CoWoS (Chip-on-Wafer-on-Substrate)",
+      "category": "Product/Service",
+      "short_description": "TSMC's advanced packaging; throughput limits constrain AI chip shipments."
+    },
+    {
+      "title": "EUV lithography systems",
+      "category": "Product/Service",
+      "short_description": "Essential for N7+ and below; availability caps wafer starts."
+    },
+    {
+      "title": "N3 (3nm) process technology",
+      "category": "Product/Service",
+      "short_description": "Flagship node; yield and ramp set revenue and competitiveness."
+    },
+    {
+      "title": "CHIPS and Science Act of 2022",
+      "category": "Regulation",
+      "short_description": "U.S. subsidies and guardrails shape TSMC's U.S. fabs and China investments."
+    },
+    {
+      "title": "Dutch export controls on advanced lithography equipment",
+      "category": "Regulation",
+      "short_description": "Licensing limits ASML shipments to China; alters competitive dynamics."
+    },
+    {
+      "title": "U.S. sanctions on Huawei/HiSilicon (2019–2020)",
+      "category": "Event",
+      "short_description": "Forced TSMC to cease shipments; materially reduced China revenue."
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Home base; power, water, and geopolitics directly affect operations."
+    }
+  ]
+}

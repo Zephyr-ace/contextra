@@ -1,0 +1,80 @@
+{
+  "source": "Hon Hai Precision Industry",
+  "nodes": [
+    {
+      "title": "iPhone",
+      "category": "Product/Service",
+      "short_description": "Primary device assembled; drives Foxconn revenue and capacity planning."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Largest manufacturing base; policies, labor, and lockdowns affect operations."
+    },
+    {
+      "title": "Luxshare Precision",
+      "category": "Company",
+      "short_description": "Chinese EMS rival gaining iPhone assembly share from Foxconn."
+    },
+    {
+      "title": "Pegatron",
+      "category": "Company",
+      "short_description": "Major competitor for Apple assembly orders."
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "Expansion hub with incentives; diversifies production from China."
+    },
+    {
+      "title": "Production Linked Incentive (PLI), India",
+      "category": "Regulation",
+      "short_description": "Subsidies for local smartphone production; accelerates Foxconn investment."
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Key end market; tariffs and policy shape supply chain."
+    },
+    {
+      "title": "Section 301 China tariffs (U.S.)",
+      "category": "Regulation",
+      "short_description": "Tariffs on Chinese imports driving relocation and cost changes."
+    },
+    {
+      "title": "2022 Zhengzhou Foxconn COVID disruptions",
+      "category": "Event",
+      "short_description": "Lockdowns and protests disrupted iPhone output at Zhengzhou campus."
+    },
+    {
+      "title": "BYD Electronic",
+      "category": "Company",
+      "short_description": "Competes in iPad/iPhone assembly and components."
+    },
+    {
+      "title": "Foxconn Industrial Internet (FII)",
+      "category": "Company",
+      "short_description": "Mainland-listed Foxconn unit for servers, networking, industrial IoT."
+    },
+    {
+      "title": "Tata Electronics",
+      "category": "Company",
+      "short_description": "Indian iPhone assembler winning local Apple orders."
+    },
+    {
+      "title": "Electronics manufacturing services (EMS)",
+      "category": "Sector",
+      "short_description": "Core industry; pricing power and utilization drive margins."
+    },
+    {
+      "title": "Sharp Corporation",
+      "category": "Company",
+      "short_description": "Foxconn-controlled subsidiary impacting group revenue and capabilities."
+    },
+    {
+      "title": "Young Liu",
+      "category": "Person",
+      "short_description": "Chairman/CEO directing diversification into India, EVs, and servers."
+    }
+  ]
+}

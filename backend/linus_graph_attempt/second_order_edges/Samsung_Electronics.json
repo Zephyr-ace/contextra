@@ -1,0 +1,101 @@
+[
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "TSMC",
+    "relationship_type": "competes_with",
+    "evidence_text": "shapes pricing, technology roadmaps, and major customers' allocation away from Samsung.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "SK Hynix",
+    "relationship_type": "competes_with",
+    "evidence_text": "Fierce memory competitor, influencing DRAM/HBM pricing, capex cycles, and market share.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Micron Technology",
+    "relationship_type": "competes_with",
+    "evidence_text": "Key DRAM/NAND competitor affecting pricing, supply discipline",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Qualcomm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies modems/SoCs and licenses IP, affecting Samsung smartphone performance",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Google",
+    "relationship_type": "regulates",
+    "evidence_text": "Controls Android and GMS ecosystem, dictating features, compliance",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "ASML",
+    "relationship_type": "customer_of",
+    "evidence_text": "tool availability dictates Samsung advanced-node timing and yields.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "NVIDIA",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major buyer of HBM and memory",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Huawei",
+    "relationship_type": "competes_with",
+    "evidence_text": "sanctions and recovery directly shift Samsung's market share",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "China",
+    "relationship_type": "customer_of",
+    "evidence_text": "Critical market and manufacturing base; regulations and demand swings heavily influence sales",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "South Korea",
+    "relationship_type": "regulates",
+    "evidence_text": "incentives, regulations, and labor decisions directly affect operations",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Lee Jae-yong",
+    "relationship_type": "partner_with",
+    "evidence_text": "strategic decisions on M&A, capex, and risk tolerance steer Samsung's trajectory",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Memory semiconductors (DRAM, NAND)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core profit driver; cyclicality and HBM transition dictate earnings",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Samsung Electronics",
+    "target_node": "Smartphones",
+    "relationship_type": "supplies_to",
+    "evidence_text": "demand cycles and ASPs determine revenue scale and component sourcing.",
+    "importance_score": 0.76
+  }
+]

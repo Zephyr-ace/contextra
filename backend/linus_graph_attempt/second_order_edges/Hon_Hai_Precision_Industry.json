@@ -1,0 +1,101 @@
+[
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "iPhone",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary device assembled; drives Foxconn revenue and capacity planning.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "policies, labor, and lockdowns affect operations.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Luxshare Precision",
+    "relationship_type": "competes_with",
+    "evidence_text": "gaining iPhone assembly share from Foxconn.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Pegatron",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major competitor for Apple assembly orders.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "Expansion hub with incentives; diversifies production from China.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Production Linked Incentive (PLI), India",
+    "relationship_type": "partner_with",
+    "evidence_text": "accelerates Foxconn investment",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "United States",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Key end market; tariffs and policy shape supply chain.",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Section 301 China tariffs (U.S.)",
+    "relationship_type": "competes_with",
+    "evidence_text": "Tariffs on Chinese imports driving relocation and cost changes.",
+    "importance_score": 0.45
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "2022 Zhengzhou Foxconn COVID disruptions",
+    "relationship_type": "supplies_to",
+    "evidence_text": "disrupted iPhone output at Zhengzhou campus.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "BYD Electronic",
+    "relationship_type": "competes_with",
+    "evidence_text": "Competes in iPad/iPhone assembly and components.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Foxconn Industrial Internet (FII)",
+    "relationship_type": "partner_with",
+    "evidence_text": "Mainland-listed Foxconn unit for servers, networking, industrial IoT.",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Sharp Corporation",
+    "relationship_type": "partner_with",
+    "evidence_text": "Foxconn-controlled subsidiary impacting group revenue and capabilities.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Hon Hai Precision Industry",
+    "target_node": "Young Liu",
+    "relationship_type": "partner_with",
+    "evidence_text": "Chairman/CEO directing diversification into India, EVs, and servers.",
+    "importance_score": 0.5
+  }
+]

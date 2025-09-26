@@ -1,0 +1,102 @@
+{
+  "source": "Taiwan",
+  "nodes": [
+    {
+      "title": "People's Republic of China",
+      "category": "Country",
+      "short_description": "Mainland government's political, military, and economic pressure shapes Taiwan’s security and international space.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Primary security partner, arms supplier, and technology regulator affecting Taiwan’s defense and semiconductor ecosyste…",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "World-leading foundry; anchor of Taiwan’s economy, jobs, and geopolitical leverage.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Semiconductor manufacturing",
+      "category": "Sector",
+      "short_description": "Core industry driving exports, GDP, employment, and strategic relevance for Taiwan.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Xi Jinping",
+      "category": "Person",
+      "short_description": "Sets PRC policy toward Taiwan; central to military posture and reunification strategy.",
+      "Aliases": [
+        "Xi Jinping"
+      ]
+    },
+    {
+      "title": "Taiwan Relations Act (1979)",
+      "category": "Regulation",
+      "short_description": "U.S. law underpinning Taiwan’s defense support, arms sales, and deterrence commitments.",
+      "Aliases": []
+    },
+    {
+      "title": "PRC Anti-Secession Law (2005)",
+      "category": "Regulation",
+      "short_description": "Authorizes non-peaceful means against Taiwanese independence moves; escalates deterrence and security risks.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. semiconductor export controls on China (2022–)",
+      "category": "Regulation",
+      "short_description": "Restrict advanced chip equipment and know-how; reshape Taiwan’s supply chains and market access.",
+      "Aliases": []
+    },
+    {
+      "title": "Hon Hai Precision Industry (Foxconn)",
+      "category": "Company",
+      "short_description": "Major employer and electronics manufacturer; influences Taiwan’s economy and cross-strait industrial exposure.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "ASML Holding N.V.",
+      "category": "Company",
+      "short_description": "Sole EUV supplier; tool access constrains Taiwan’s leading-edge chip production capabilities.",
+      "Aliases": []
+    },
+    {
+      "title": "CHIPS and Science Act (2022)",
+      "category": "Regulation",
+      "short_description": "U.S. incentives driving overseas fab investments; affects Taiwan’s talent, supply chain, and competitiveness.",
+      "Aliases": []
+    },
+    {
+      "title": "2022 Taiwan Strait military exercises after Pelosi visit",
+      "category": "Event",
+      "short_description": "Large-scale PLA drills coercing Taiwan; normalized pressure on airspace, waters, and trade routes.",
+      "Aliases": []
+    },
+    {
+      "title": "Japan",
+      "category": "Country",
+      "short_description": "Key regional security partner and technology market; supports stability and semiconductor supply chains.",
+      "Aliases": [
+        "Japan"
+      ]
+    }
+  ]
+}

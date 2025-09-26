@@ -1,0 +1,72 @@
+[
+  {
+    "source_node": "App Store",
+    "target_node": "Digital Markets Act (DMA)",
+    "relationship_type": "regulates",
+    "evidence_text": "Apple to allow alternative app marketplaces and payment options in the EU.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Google Play",
+    "relationship_type": "competes_with",
+    "evidence_text": "competing with App Store, influencing policy and pricing dynamics.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "European Union",
+    "relationship_type": "regulates",
+    "evidence_text": "Jurisdiction enforcing DMA and antitrust decisions",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "primary market and jurisdiction for major App Store litigation",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Telecommunications Business Act (South Korea) amendment",
+    "relationship_type": "regulates",
+    "evidence_text": "Law mandating third-party in-app payment options on app stores",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "South Korea",
+    "relationship_type": "regulates",
+    "evidence_text": "First country to legislate app store payment choice, forcing App Store changes.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Spotify",
+    "relationship_type": "regulates",
+    "evidence_text": "High-profile complainant driving EU antitrust action and anti-steering scrutiny of App Store.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Japan",
+    "relationship_type": "regulates",
+    "evidence_text": "Regulatory pressure via JFTC led to external link allowances",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Netherlands ACM order on iOS dating app payments",
+    "relationship_type": "regulates",
+    "evidence_text": "Regulatory order requiring third-party payments for dating apps on iOS",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "App Store",
+    "target_node": "Netherlands",
+    "relationship_type": "regulates",
+    "evidence_text": "ACM enforcement compelled alternative payments",
+    "importance_score": 0.85
+  }
+]

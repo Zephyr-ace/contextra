@@ -1,0 +1,80 @@
+{
+  "source": "Android",
+  "nodes": [
+    {
+      "title": "Google LLC",
+      "category": "Company",
+      "short_description": "Developer and controller of Android; defines roadmap, licensing, and ecosystem rules via GMS and Play."
+    },
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Largest Android OEM; hardware choices and scale influence platform requirements and feature priorities."
+    },
+    {
+      "title": "Qualcomm",
+      "category": "Company",
+      "short_description": "Major Android SoC supplier; modem and CPU/GPU capabilities drive Android performance, features, and timelines."
+    },
+    {
+      "title": "Arm",
+      "category": "Company",
+      "short_description": "Licenses CPU architectures used by Android devices; dictates instruction set, performance, efficiency, and compatibilit…"
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Major Android OEM; U.S. sanctions removed GMS access, accelerating forks and alternative ecosystems."
+    },
+    {
+      "title": "Google Mobile Services (GMS)",
+      "category": "Product/Service",
+      "short_description": "Proprietary Android services and apps; licensing terms shape OEM compliance and device capabilities."
+    },
+    {
+      "title": "Android Open Source Project (AOSP)",
+      "category": "Product/Service",
+      "short_description": "Core Android codebase; foundation for OEM builds and forks like Fire OS and HarmonyOS."
+    },
+    {
+      "title": "Linux kernel",
+      "category": "Product/Service",
+      "short_description": "Underlying kernel for Android; upstream development affects device support, security, and performance."
+    },
+    {
+      "title": "iOS",
+      "category": "Product/Service",
+      "short_description": "Primary competing mobile OS; rivalry drives Android feature development, privacy, and ecosystem strategies."
+    },
+    {
+      "title": "Digital Markets Act (EU)",
+      "category": "Regulation",
+      "short_description": "EU law constraining gatekeeper behaviors; forces Android changes in defaults, app stores, and interoperability."
+    },
+    {
+      "title": "European Commission Android antitrust decision (2018)",
+      "category": "Event",
+      "short_description": "Fined Google; mandated unbundling and choice screens, altering Android licensing and distribution in Europe."
+    },
+    {
+      "title": "U.S. Huawei Entity List (2019)",
+      "category": "Event",
+      "short_description": "Export controls restricting Huawei; cut GMS access and reshaped Android’s presence in China."
+    },
+    {
+      "title": "Sundar Pichai",
+      "category": "Person",
+      "short_description": "Google CEO overseeing Android strategy, ecosystem policies, and compliance with global regulations."
+    },
+    {
+      "title": "Margrethe Vestager",
+      "category": "Person",
+      "short_description": "EU competition chief leading actions that forced Android unbundling and default choice changes."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Restrictions on Google services foster Android forks, alternative app stores, and OEM customization."
+    }
+  ]
+}

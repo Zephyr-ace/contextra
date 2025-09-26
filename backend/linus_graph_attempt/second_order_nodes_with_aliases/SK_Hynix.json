@@ -1,0 +1,114 @@
+{
+  "source": "SK Hynix",
+  "nodes": [
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Largest memory competitor; sets pricing, capacity, and technology pace in DRAM/NAND.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "NVIDIA",
+      "category": "Company",
+      "short_description": "Major HBM customer; AI demand drives SK hynix shipments and capacity decisions.",
+      "Aliases": []
+    },
+    {
+      "title": "ASML",
+      "category": "Company",
+      "short_description": "Sole EUV lithography supplier; tool access dictates SK hynix process scaling.",
+      "Aliases": []
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "CoWoS packaging bottleneck affects HBM module integration for NVIDIA platforms.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Micron Technology",
+      "category": "Company",
+      "short_description": "Key DRAM/NAND rival; China ban shifted some demand to SK hynix.",
+      "Aliases": [
+        "Micron Technology",
+        "Micron"
+      ]
+    },
+    {
+      "title": "High Bandwidth Memory (HBM3/HBM3E)",
+      "category": "Product/Service",
+      "short_description": "Flagship high-margin product for AI accelerators; capacity and yields crucial.",
+      "Aliases": []
+    },
+    {
+      "title": "DRAM",
+      "category": "Product/Service",
+      "short_description": "Core revenue driver; pricing cycles determine profitability.",
+      "Aliases": [
+        "SK Hynix",
+        "Micron Technology",
+        "Micron"
+      ]
+    },
+    {
+      "title": "NAND Flash Memory",
+      "category": "Product/Service",
+      "short_description": "Storage product segment; impacted by pricing, capex, and demand cycles.",
+      "Aliases": []
+    },
+    {
+      "title": "Artificial Intelligence and Data Center Computing",
+      "category": "Sector",
+      "short_description": "Primary growth engine; dictates HBM demand and long-term investments.",
+      "Aliases": []
+    },
+    {
+      "title": "Smartphone Manufacturing",
+      "category": "Sector",
+      "short_description": "Major end market; drives mobile DRAM and NAND demand.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. semiconductor export controls on China (2022–present)",
+      "category": "Regulation",
+      "short_description": "Restrict advanced tools and chips; waivers critical for SK hynix China fabs.",
+      "Aliases": []
+    },
+    {
+      "title": "Japan's 2019 export restrictions on semiconductor materials to South Korea",
+      "category": "Regulation",
+      "short_description": "Tightened photoresist and HF exports; forced supply chain adjustments.",
+      "Aliases": []
+    },
+    {
+      "title": "China's ban on Micron in critical infrastructure (2013)",
+      "category": "Event",
+      "short_description": "Shifted some Chinese memory demand toward rivals, including SK hynix.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Key market, customer base, and policymaker affecting subsidies and export rules.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Large market and manufacturing base; subject to export controls impacting operations.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    }
+  ]
+}

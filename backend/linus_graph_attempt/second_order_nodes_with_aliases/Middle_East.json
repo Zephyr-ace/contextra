@@ -1,0 +1,102 @@
+{
+  "source": "Middle East",
+  "nodes": [
+    {
+      "title": "Oil & Gas",
+      "category": "Sector",
+      "short_description": "Primary economic driver; hydrocarbon rents shape politics, alliances, and conflicts across the region.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Security guarantor, military presence, sanctions and diplomacy shaping regional balances and conflicts.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "Saudi Arabia",
+      "category": "Country",
+      "short_description": "Largest oil exporter; leads OPEC, regional diplomacy, and invests heavily, influencing markets and geopolitics.",
+      "Aliases": []
+    },
+    {
+      "title": "Iran",
+      "category": "Country",
+      "short_description": "Regional power with proxy networks; nuclear program and sanctions drive conflicts, alignments, and economic strain.",
+      "Aliases": []
+    },
+    {
+      "title": "Israel",
+      "category": "Country",
+      "short_description": "Military power; conflict dynamics, technology sector, and regional normalization reshape security and economics.",
+      "Aliases": []
+    },
+    {
+      "title": "OPEC production quotas",
+      "category": "Regulation",
+      "short_description": "Coordinated output limits by member states set supply, revenues, and global prices affecting regional economies.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. sanctions on Iran",
+      "category": "Regulation",
+      "short_description": "Restrict Iranian oil, finance, and trade, altering regional power dynamics and economic flows.",
+      "Aliases": []
+    },
+    {
+      "title": "Syrian Civil War",
+      "category": "Event",
+      "short_description": "Protracted conflict drawing regional and global actors, refugee flows, militias, and territorial control shifts.",
+      "Aliases": []
+    },
+    {
+      "title": "2023 Israel-Hamas war",
+      "category": "Event",
+      "short_description": "Escalated conflict reshaping regional alignments, security postures, energy and shipping risk premia.",
+      "Aliases": []
+    },
+    {
+      "title": "Saudi Aramco",
+      "category": "Company",
+      "short_description": "State oil giant; pricing, investment, and capacity decisions move global markets and regional revenues.",
+      "Aliases": []
+    },
+    {
+      "title": "Mohammed bin Salman",
+      "category": "Person",
+      "short_description": "Saudi crown prince steering oil policy, Vision 2030, and regional diplomacy and security strategies.",
+      "Aliases": []
+    },
+    {
+      "title": "Ali Khamenei",
+      "category": "Person",
+      "short_description": "Iran's Supreme Leader directing foreign policy, nuclear posture, and regional proxy activities.",
+      "Aliases": []
+    },
+    {
+      "title": "United Arab Emirates",
+      "category": "Country",
+      "short_description": "Financial hub, energy producer, and assertive regional actor influencing trade, investment, and conflicts.",
+      "Aliases": [
+        "Middle East",
+        "UAE",
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "title": "Defense & Arms",
+      "category": "Sector",
+      "short_description": "High defense spending, arms sales, and domestic production shape security balances and conflict intensity.",
+      "Aliases": []
+    },
+    {
+      "title": "Suez Canal transit services",
+      "category": "Product/Service",
+      "short_description": "Critical shipping route; tolls and closures affect trade, energy flows, and regional revenues.",
+      "Aliases": []
+    }
+  ]
+}

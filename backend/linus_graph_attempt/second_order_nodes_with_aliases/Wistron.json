@@ -1,0 +1,97 @@
+{
+  "source": "Wistron",
+  "nodes": [
+    {
+      "title": "Foxconn",
+      "category": "Company",
+      "short_description": "Largest EMS competitor, competes for device assembly contracts, affecting Wistron volumes and pricing.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "Pegatron",
+      "category": "Company",
+      "short_description": "Major EMS competitor in handsets and PCs, directly contests contract awards.",
+      "Aliases": [
+        "Pegatron"
+      ]
+    },
+    {
+      "title": "Dell Technologies",
+      "category": "Company",
+      "short_description": "OEM client for PCs/servers; purchasing decisions drive Wistron orders.",
+      "Aliases": []
+    },
+    {
+      "title": "HP Inc.",
+      "category": "Company",
+      "short_description": "Major PC OEM customer; sourcing shifts significantly affect Wistron revenue.",
+      "Aliases": []
+    },
+    {
+      "title": "Wiwynn",
+      "category": "Company",
+      "short_description": "Wistron’s server ODM spin-off; performance and orders from hyperscalers materially affect group results.",
+      "Aliases": [
+        "Wistron"
+      ]
+    },
+    {
+      "title": "Tata Electronics",
+      "category": "Company",
+      "short_description": "Acquired Wistron’s India iPhone unit, altering Wistron’s footprint and revenue mix.",
+      "Aliases": []
+    },
+    {
+      "title": "Production Linked Incentive (PLI) for Large Scale Electronics Manufacturing",
+      "category": "Regulation",
+      "short_description": "India subsidy program shaping electronics manufacturing investment and eligibility.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. Section 301 tariffs on Chinese goods",
+      "category": "Regulation",
+      "short_description": "U.S. tariffs on Chinese imports driving factory location and cost decisions.",
+      "Aliases": []
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Major manufacturing base; regulations, labor, and geopolitics impact operations and costs.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "Key production location; policy, labor, and incentives affect investments and output.",
+      "Aliases": [
+        "India"
+      ]
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Headquarters location guiding strategy, finance, and governance across Wistron group.",
+      "Aliases": [
+        "Taiwan"
+      ]
+    },
+    {
+      "title": "U.S.–China trade war",
+      "category": "Event",
+      "short_description": "Geopolitical conflict causing tariffs, restrictions, and supply chain shifts.",
+      "Aliases": []
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Global health crisis disrupting factories, logistics, and labor availability.",
+      "Aliases": []
+    }
+  ]
+}

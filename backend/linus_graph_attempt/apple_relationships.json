@@ -1,0 +1,492 @@
+[
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Taiwan Semiconductor Manufacturing Co.",
+    "relationship_type": "customer_of",
+    "evidence_text": "Apple\u2019s exclusive chip fabricator.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Hon Hai Precision Industry",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary contract manufacturer for Apple, assembling most iPhones/devices.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major smartphone competitor and key supplier of components to Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Alphabet Inc.",
+    "relationship_type": "competes_with",
+    "evidence_text": "Apple\u2019s chief ecosystem competitor.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Qualcomm",
+    "relationship_type": "partner_with",
+    "evidence_text": "critical technology partner.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Broadcom",
+    "relationship_type": "customer_of",
+    "evidence_text": "Supplies critical wireless chips (Wi-Fi/Bluetooth) to Apple devices.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Sony",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies camera sensors for iPhones and other Apple products.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "LG Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies display panels for Apple devices;",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "SK Hynix",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Provides memory chips used in Apple products.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Micron Technology",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Memory chip supplier for Apple devices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Pegatron",
+    "relationship_type": "partner_with",
+    "evidence_text": "Key assembly partner for Apple, building iPhones and iPads.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Luxshare Precision",
+    "relationship_type": "partner_with",
+    "evidence_text": "Key assembler/manufacturer for AirPods and some iPhones.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Wistron",
+    "relationship_type": "partner_with",
+    "evidence_text": "Taiwanese manufacturer assembling devices for Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Epic Games",
+    "relationship_type": "competes_with",
+    "evidence_text": "sued Apple over App Store policies.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Global Smartphone Market",
+    "relationship_type": "customer_of",
+    "evidence_text": "Primary industry driving Apple\u2019s core business and revenue.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Semiconductor & Chip Industry",
+    "relationship_type": "customer_of",
+    "evidence_text": "Industry determining chip supply/innovation for Apple's products.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Mobile App Economy & Services Sector",
+    "relationship_type": "partner_with",
+    "evidence_text": "Sector defining app distribution and digital services revenue for Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Personal Computing Industry",
+    "relationship_type": "competes_with",
+    "evidence_text": "Sector shaping competition around Apple\u2019s Mac business.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Wearables & Consumer Electronics Sector",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Industry segment influencing Apple Watch, AirPods, consumer device strategies.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Telecommunications Industry",
+    "relationship_type": "customer_of",
+    "evidence_text": "Sector of wireless carriers and standards affecting iPhone distribution.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Retail and E-commerce Industry",
+    "relationship_type": "customer_of",
+    "evidence_text": "Industry segment affecting product distribution and customer experience for Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "iPhone",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s flagship smartphone product and largest revenue driver.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "App Store",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s mobile app distribution platform; core of its services revenue.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Apple Services",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Division including App Store, Apple Music, iCloud, Apple TV+, Apple Pay, etc.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "macOS & Mac Hardware",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s desktop and laptop computers and operating system.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "iPad",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s tablet product line; major presence in education and enterprise.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Apple Watch",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s smartwatch, leading the wearables market segment.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "AirPods",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Apple\u2019s popular wireless earbuds",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Android",
+    "relationship_type": "competes_with",
+    "evidence_text": "main iOS competitor.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "ARM Architecture",
+    "relationship_type": "customer_of",
+    "evidence_text": "Chip instruction set architecture critical to Apple's custom silicon.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S. Department of Justice",
+    "relationship_type": "regulates",
+    "evidence_text": "US federal agency suing Apple for antitrust;",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "European Commission",
+    "relationship_type": "regulates",
+    "evidence_text": "EU authority enforcing digital markets regulation affecting Apple policies in Europe.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Chinese Government and Regulatory Bodies",
+    "relationship_type": "regulates",
+    "evidence_text": "National authorities controlling Apple\u2019s access and compliance in China.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S.\u2013China Trade Policy",
+    "relationship_type": "regulates",
+    "evidence_text": "International policy affecting Apple\u2019s costs, supply chain, and market stability.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S. Congress",
+    "relationship_type": "regulates",
+    "evidence_text": "Legislative institution scrutinizing Apple\u2019s business",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S. Judicial System",
+    "relationship_type": "regulates",
+    "evidence_text": "Courts ruling on antitrust and other legal challenges to Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S. Federal Trade Commission",
+    "relationship_type": "regulates",
+    "evidence_text": "Oversees consumer protection and antitrust, directly impacting Apple practices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "U.S. Securities and Exchange Commission",
+    "relationship_type": "regulates",
+    "evidence_text": "Financial regulator overseeing Apple\u2019s financial reporting/disclosures.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Japan Fair Trade Commission",
+    "relationship_type": "regulates",
+    "evidence_text": "Japanese competition regulator influencing App Store rules compliance.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Competition Commission of India",
+    "relationship_type": "regulates",
+    "evidence_text": "Indian regulator investigating Apple\u2019s App Store practices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "South Korean Regulator",
+    "relationship_type": "regulates",
+    "evidence_text": "Competitive authority impacting Apple\u2019s payment systems and app stores in Korea.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Tax Authorities and Trade Institutions",
+    "relationship_type": "regulates",
+    "evidence_text": "Entities enforcing tax law and trade rules impacting Apple\u2019s finances.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "China",
+    "relationship_type": "customer_of",
+    "evidence_text": "Apple\u2019s largest manufacturing hub and key consumer market.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "Apple\u2019s home base, largest single market, and key regulatory environment.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "European Union",
+    "relationship_type": "regulates",
+    "evidence_text": "digital market compliance enforcement.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Taiwan",
+    "relationship_type": "partner_with",
+    "evidence_text": "Source of Apple\u2019s key foundries and supply chain partners",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "key region for Apple\u2019s supply chain diversification.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Japan",
+    "relationship_type": "customer_of",
+    "evidence_text": "large iPhone market share.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "South Korea",
+    "relationship_type": "competes_with",
+    "evidence_text": "important as Apple competitor and supplier.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Vietnam",
+    "relationship_type": "partner_with",
+    "evidence_text": "Emerging manufacturing hub for Apple components and some assembly.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Singapore",
+    "relationship_type": "partner_with",
+    "evidence_text": "Regional supply chain hub for Apple\u2019s operations.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Malaysia",
+    "relationship_type": "partner_with",
+    "evidence_text": "Host to Apple\u2019s chip testing and component factories.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Thailand",
+    "relationship_type": "partner_with",
+    "evidence_text": "Apple assembly location for some Macs.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Latin America",
+    "relationship_type": "customer_of",
+    "evidence_text": "Emerging market regions influencing Apple\u2019s long-term growth strategies.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Middle East",
+    "relationship_type": "customer_of",
+    "evidence_text": "Regions with high per-capita iPhone adoption and premium sales potential.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Africa",
+    "relationship_type": "customer_of",
+    "evidence_text": "Potential future market for Apple, currently low penetration.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Tim Cook",
+    "relationship_type": "partner_with",
+    "evidence_text": "CEO of Apple Inc.; chief architect of current strategy and operations.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Jeff Williams",
+    "relationship_type": "partner_with",
+    "evidence_text": "Chief Operating Officer at Apple, responsible for supply chain and health devices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Craig Federighi",
+    "relationship_type": "partner_with",
+    "evidence_text": "SVP of Software Engineering, oversees iOS, macOS, and software integration.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Johny Srouji",
+    "relationship_type": "partner_with",
+    "evidence_text": "SVP of Hardware Technologies, leads custom chip design at Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Phil Schiller",
+    "relationship_type": "regulates",
+    "evidence_text": "influences App Store policies.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Greg Joswiak",
+    "relationship_type": "partner_with",
+    "evidence_text": "SVP of Worldwide Marketing shaping product positioning and launches.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Steve Jobs",
+    "relationship_type": "partner_with",
+    "evidence_text": "Apple co-founder and former CEO, created Apple\u2019s culture and product vision.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Margrethe Vestager",
+    "relationship_type": "regulates",
+    "evidence_text": "EU Competition Commissioner, leading regulatory actions against Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Lina Khan",
+    "relationship_type": "regulates",
+    "evidence_text": "Chair of the U.S. FTC, prominent antitrust regulator for tech.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Xi Jinping",
+    "relationship_type": "regulates",
+    "evidence_text": "role in shaping tech policy affecting Apple.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Narendra Modi",
+    "relationship_type": "partner_with",
+    "evidence_text": "key to Apple\u2019s manufacturing expansion in India.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Elon Musk",
+    "relationship_type": "competes_with",
+    "evidence_text": "industry peer influencing future Apple strategies.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Satya Nadella",
+    "relationship_type": "competes_with",
+    "evidence_text": "leads key Apple partner and competitor.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Apple Inc.",
+    "target_node": "Sundar Pichai",
+    "relationship_type": "partner_with",
+    "evidence_text": "controls Android and Google-Apple partnership.",
+    "importance_score": 0.8
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "source_node": "Wistron",
+    "target_node": "Foxconn",
+    "relationship_type": "competes_with",
+    "evidence_text": "competes for device assembly contracts, affecting Wistron volumes and pricing.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Pegatron",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major EMS competitor in handsets and PCs",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Dell Technologies",
+    "relationship_type": "supplies_to",
+    "evidence_text": "purchasing decisions drive Wistron orders",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "HP Inc.",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major PC OEM customer; sourcing shifts significantly affect Wistron revenue.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Wiwynn",
+    "relationship_type": "supplies_to",
+    "evidence_text": "performance and orders from hyperscalers materially affect group results",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Tata Electronics",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Acquired Wistron’s India iPhone unit, altering Wistron’s footprint",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Production Linked Incentive (PLI) for Large Scale Electronics Manufacturing",
+    "relationship_type": "regulates",
+    "evidence_text": "shaping electronics manufacturing investment and eligibility.",
+    "importance_score": 0.5
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "policy, labor, and incentives affect investments and output.",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "Wistron",
+    "target_node": "Taiwan",
+    "relationship_type": "regulates",
+    "evidence_text": "Headquarters location guiding strategy, finance, and governance",
+    "importance_score": 0.5
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  }
+]

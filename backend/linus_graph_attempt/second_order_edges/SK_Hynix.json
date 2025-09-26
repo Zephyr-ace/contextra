@@ -1,0 +1,98 @@
+[
+  {
+    "source_node": "SK Hynix",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Largest memory competitor; sets pricing, capacity, and technology pace in DRAM/NAND.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "NVIDIA",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major HBM customer; AI demand drives SK hynix shipments",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "ASML",
+    "relationship_type": "customer_of",
+    "evidence_text": "tool access dictates SK hynix process scaling",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "Micron Technology",
+    "relationship_type": "competes_with",
+    "evidence_text": "Key DRAM/NAND rival; China ban shifted some demand to SK hynix.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "High Bandwidth Memory (HBM3/HBM3E)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Flagship high-margin product for AI accelerators",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "DRAM",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core revenue driver; pricing cycles determine profitability.",
+    "importance_score": 0.8
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "Smartphone Manufacturing",
+    "relationship_type": "supplies_to",
+    "evidence_text": "drives mobile DRAM and NAND demand.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "U.S. semiconductor export controls on China (2022–present)",
+    "relationship_type": "regulates",
+    "evidence_text": "waivers critical for SK hynix China fabs.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "Japan's 2019 export restrictions on semiconductor materials to South Korea",
+    "relationship_type": "regulates",
+    "evidence_text": "forced supply chain adjustments.",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "China's ban on Micron in critical infrastructure (2013)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Shifted some Chinese memory demand toward rivals, including SK hynix.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "Key market, customer base, and policymaker",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "SK Hynix",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "subject to export controls impacting operations.",
+    "importance_score": 0.75
+  }
+]

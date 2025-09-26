@@ -1,0 +1,116 @@
+{
+  "source": "Pegatron",
+  "nodes": [
+    {
+      "title": "Hon Hai Precision Industry (Foxconn)",
+      "category": "Company",
+      "short_description": "Largest iPhone assembler; direct competitor for Apple assembly contracts with Pegatron.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "Luxshare Precision Industry Co., Ltd.",
+      "category": "Company",
+      "short_description": "Chinese assembler gaining Apple orders; competitive pressure and share shift from Pegatron.",
+      "Aliases": [
+        "Luxshare Precision",
+        "Luxshare"
+      ]
+    },
+    {
+      "title": "Tata Electronics",
+      "category": "Company",
+      "short_description": "Emerging Indian iPhone assembler; competes for Apple localization and PLI benefits.",
+      "Aliases": []
+    },
+    {
+      "title": "iPhone",
+      "category": "Product/Service",
+      "short_description": "Core product assembled by Pegatron; volumes dictate revenue and capacity utilization.",
+      "Aliases": [
+        "iPhone"
+      ]
+    },
+    {
+      "title": "India Production-Linked Incentive (PLI) scheme for smartphones",
+      "category": "Regulation",
+      "short_description": "Incentives tied to local manufacturing; shapes Pegatron’s India investment and output.",
+      "Aliases": [
+        "Pegatron"
+      ]
+    },
+    {
+      "title": "U.S. Section 301 tariffs on Chinese imports",
+      "category": "Regulation",
+      "short_description": "Tariffs on Chinese goods affecting sourcing, pricing, and localization decisions.",
+      "Aliases": [
+        "U.S.–China Trade Policy",
+        "US-China tariffs"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Primary manufacturing base; policy shifts and lockdowns directly impact operations.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "Strategic expansion hub under PLI; growing share of Pegatron’s assembly.",
+      "Aliases": [
+        "India"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Key end market; trade policy and tariffs drive supply chain moves.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "T.H. Tung",
+      "category": "Person",
+      "short_description": "Pegatron chairman; sets strategy and key customer relationships.",
+      "Aliases": [
+        "Pegatron"
+      ]
+    },
+    {
+      "title": "S.J. Liao",
+      "category": "Person",
+      "short_description": "Pegatron CEO; oversees operations, diversification, and regional expansion.",
+      "Aliases": [
+        "Pegatron"
+      ]
+    },
+    {
+      "title": "Xi Jinping",
+      "category": "Person",
+      "short_description": "China’s leader; policy direction influences industrial regulation and COVID responses affecting factories.",
+      "Aliases": [
+        "Xi Jinping"
+      ]
+    },
+    {
+      "title": "U.S.–China trade war",
+      "category": "Event",
+      "short_description": "Escalating tariffs and restrictions drove diversification away from China.",
+      "Aliases": []
+    },
+    {
+      "title": "2022 Shanghai COVID-19 lockdowns",
+      "category": "Event",
+      "short_description": "Severe lockdowns halted Pegatron’s Shanghai iPhone production lines.",
+      "Aliases": []
+    }
+  ]
+}

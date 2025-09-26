@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "iPad",
+    "target_node": "Taiwan Semiconductor Manufacturing Company",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Fabs Apple-designed A/M processors for iPad",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Foxconn",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary iPad final assembler; production capacity, yields, and China operations",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Pegatron",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major iPad assembler",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Samsung Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "panel tech and yields drive iPad display quality, cost, and timing.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "LG Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Key iPad display supplier",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Qualcomm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Provides cellular modems for iPad",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Samsung Galaxy Tab",
+    "relationship_type": "competes_with",
+    "evidence_text": "Leading Android tablet competitor, shaping iPad pricing, features, and market share.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Microsoft Surface",
+    "relationship_type": "competes_with",
+    "evidence_text": "Windows competitor influencing iPad Pro positioning, accessories, and productivity",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Chromebooks",
+    "relationship_type": "competes_with",
+    "evidence_text": "directly impacting iPad adoption and procurement.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Education technology (K–12)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "drive iPad deployments, app requirements, and accessories.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary iPad manufacturing base; labor, regulation, and lockdowns directl",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Vietnam",
+    "relationship_type": "partner_with",
+    "evidence_text": "Alternative iPad assembly location; capacity expansion reduces China concentration risk.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "Digital Markets Act",
+    "relationship_type": "regulates",
+    "evidence_text": "forcing app store and platform changes on iPad",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "U.S.-China trade war",
+    "relationship_type": "regulates",
+    "evidence_text": "supply-chain shifts, costs, and production location decisions for iPad.",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "iPad",
+    "target_node": "COVID-19 pandemic",
+    "relationship_type": "supplies_to",
+    "evidence_text": "factory disruptions causing volatile iPad supply",
+    "importance_score": 0.8
+  }
+]

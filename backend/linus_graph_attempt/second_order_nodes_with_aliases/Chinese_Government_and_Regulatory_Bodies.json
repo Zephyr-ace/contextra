@@ -1,0 +1,100 @@
+{
+  "source": "Chinese Government and Regulatory Bodies",
+  "nodes": [
+    {
+      "title": "Xi Jinping",
+      "category": "Person",
+      "short_description": "Paramount leader; chairs commissions directing regulatory agendas, personnel, and enforcement priorities.",
+      "Aliases": [
+        "Xi Jinping"
+      ]
+    },
+    {
+      "title": "Communist Party of China Constitution",
+      "category": "Regulation",
+      "short_description": "Establishes Party leadership over state regulators, guiding mandates and political control.",
+      "Aliases": []
+    },
+    {
+      "title": "Anti-corruption campaign (since 2013)",
+      "category": "Event",
+      "short_description": "CCDI-led campaign disciplines cadres, shaping regulator behavior, enforcement zeal, and institutional incentives.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "External rival imposing tariffs and controls, provoking regulatory responses and industrial policy shifts.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "U.S. semiconductor export controls (2022–)",
+      "category": "Event",
+      "short_description": "Restricts advanced chips and tools, driving regulatory support, subsidies, and countermeasures.",
+      "Aliases": []
+    },
+    {
+      "title": "WTO accession (2001)",
+      "category": "Event",
+      "short_description": "Binding commitments spurred regulatory restructuring, legal harmonization, and opening measures.",
+      "Aliases": []
+    },
+    {
+      "title": "National Security Law of the PRC (2015)",
+      "category": "Regulation",
+      "short_description": "Expands national security remit, prioritizing security across regulation and governance.",
+      "Aliases": []
+    },
+    {
+      "title": "Cybersecurity Law of the PRC (2017)",
+      "category": "Regulation",
+      "short_description": "Defines cyberspace governance, empowering CAC and compliance enforcement.",
+      "Aliases": []
+    },
+    {
+      "title": "Common Prosperity campaign (2021–)",
+      "category": "Event",
+      "short_description": "Policy drive to reduce inequality, steering regulation of platforms, finance, education, and property.",
+      "Aliases": []
+    },
+    {
+      "title": "Real estate sector (China)",
+      "category": "Sector",
+      "short_description": "Dominant economic sector shaping financial, land, and risk oversight priorities.",
+      "Aliases": []
+    },
+    {
+      "title": "Platform economy (China)",
+      "category": "Sector",
+      "short_description": "Large internet platforms prompted antitrust, data, and labor regulation intensification.",
+      "Aliases": []
+    },
+    {
+      "title": "Ant Group",
+      "category": "Company",
+      "short_description": "Fintech giant whose halted IPO triggered sweeping financial technology regulation.",
+      "Aliases": []
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "National champion targeted by sanctions, catalyzing tech self-reliance policies and regulatory protection.",
+      "Aliases": []
+    },
+    {
+      "title": "Evergrande",
+      "category": "Company",
+      "short_description": "Property developer crisis forced systemic risk regulation and real-estate deleveraging measures.",
+      "Aliases": []
+    },
+    {
+      "title": "P2P lending platforms",
+      "category": "Product/Service",
+      "short_description": "Explosive growth and failures forced stricter fintech regulation and supervision.",
+      "Aliases": []
+    }
+  ]
+}

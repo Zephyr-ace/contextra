@@ -1,0 +1,117 @@
+{
+  "source": "Semiconductor & Chip Industry",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Dominant advanced foundry; sets process leadership and capacity.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "ASML",
+      "category": "Company",
+      "short_description": "Sole EUV lithography supplier; bottleneck for leading-edge nodes.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Market, policy, and tooling powerhouse; sets global standards and constraints.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Huge market and state-backed producer; pursues self-sufficiency under restrictions.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "EUV Lithography Systems",
+      "category": "Product/Service",
+      "short_description": "Essential for sub-7nm manufacturing; scarce, expensive tools constrain output.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. Export Controls on Advanced Semiconductors to China",
+      "category": "Regulation",
+      "short_description": "Restrict tool and chip access; reconfigure supply chains and demand.",
+      "Aliases": []
+    },
+    {
+      "title": "Artificial Intelligence",
+      "category": "Sector",
+      "short_description": "Massive compute demand dictates advanced node capacity and packaging.",
+      "Aliases": [
+        "Semiconductor & Chip Industry",
+        "Semiconductor industry"
+      ]
+    },
+    {
+      "title": "Nvidia",
+      "category": "Company",
+      "short_description": "Drives demand for advanced GPUs and HBM; influences supply chains.",
+      "Aliases": []
+    },
+    {
+      "title": "High-Bandwidth Memory (HBM)",
+      "category": "Product/Service",
+      "short_description": "Critical for AI accelerators; tight supply steers capex and packaging.",
+      "Aliases": []
+    },
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Major foundry and memory leader; impacts supply and pricing.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Foundry-dominated ecosystem; concentration and geopolitics influence global supply risk.",
+      "Aliases": [
+        "Taiwan"
+      ]
+    },
+    {
+      "title": "CHIPS and Science Act (United States, 2022)",
+      "category": "Regulation",
+      "short_description": "U.S. subsidies and guardrails reshaping fab location and investment.",
+      "Aliases": []
+    },
+    {
+      "title": "SK hynix",
+      "category": "Company",
+      "short_description": "Leading HBM supplier; capacity and yields directly constrain AI accelerator shipments.",
+      "Aliases": [
+        "SK Hynix"
+      ]
+    },
+    {
+      "title": "Automotive (EV/ADAS)",
+      "category": "Sector",
+      "short_description": "Growing silicon content drives reliability, power, and legacy node capacity needs.",
+      "Aliases": [
+        "Semiconductor & Chip Industry",
+        "Semiconductor industry"
+      ]
+    },
+    {
+      "title": "Gina Raimondo",
+      "category": "Person",
+      "short_description": "Leads U.S. Commerce decisions on export controls and CHIPS funding.",
+      "Aliases": []
+    }
+  ]
+}

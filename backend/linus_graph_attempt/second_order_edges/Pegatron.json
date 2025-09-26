@@ -1,0 +1,91 @@
+[
+  {
+    "source_node": "Pegatron",
+    "target_node": "Hon Hai Precision Industry (Foxconn)",
+    "relationship_type": "competes_with",
+    "evidence_text": "direct competitor for Apple assembly contracts with Pegatron",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "Luxshare Precision Industry Co., Ltd.",
+    "relationship_type": "competes_with",
+    "evidence_text": "competitive pressure and share shift from Pegatron.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "Tata Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "competes for Apple localization and PLI benefits.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "iPhone",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core product assembled by Pegatron",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "India Production-Linked Incentive (PLI) scheme for smartphones",
+    "relationship_type": "regulates",
+    "evidence_text": "shapes Pegatron’s India investment and output.",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "policy shifts and lockdowns directly impact operations",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "Strategic expansion hub under PLI; growing share of Pegatron’s assembly.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "trade policy and tariffs drive supply chain moves.",
+    "importance_score": 0.5
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "T.H. Tung",
+    "relationship_type": "partner_with",
+    "evidence_text": "sets strategy and key customer relationships",
+    "importance_score": 0.7
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "Xi Jinping",
+    "relationship_type": "regulates",
+    "evidence_text": "policy direction influences industrial regulation and COVID responses affecting factories",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Pegatron",
+    "target_node": "2022 Shanghai COVID-19 lockdowns",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Severe lockdowns halted Pegatron’s Shanghai iPhone production lines.",
+    "importance_score": 1.0
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Microsoft",
+    "relationship_type": "competes_with",
+    "evidence_text": "competitor in search, cloud, AI; partnership with OpenAI intensifies rivalry",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Meta Platforms",
+    "relationship_type": "competes_with",
+    "evidence_text": "Competes for digital ad spend and user attention",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Amazon",
+    "relationship_type": "competes_with",
+    "evidence_text": "Competes in ads and cloud; shopping search diverts queries",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "ByteDance",
+    "relationship_type": "competes_with",
+    "evidence_text": "TikTok competes with YouTube for video engagement and ad dollars.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "OpenAI",
+    "relationship_type": "competes_with",
+    "evidence_text": "AI breakthroughs and ChatGPT reshape search/user behavior, pressuring Google's core.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Nvidia",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Critical supplier of GPUs for Alphabet’s AI training and inference infrastructure.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Google Search",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Alphabet's primary revenue engine",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "YouTube",
+    "relationship_type": "supplies_to",
+    "evidence_text": "engagement and creator ecosystem materially affect revenue.",
+    "importance_score": 0.4
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Android",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Mobile OS underpinning Google services distribution",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Google Chrome",
+    "relationship_type": "supplies_to",
+    "evidence_text": "key to traffic acquisition",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "U.S. Department of Justice (Antitrust Division)",
+    "relationship_type": "regulates",
+    "evidence_text": "Brings antitrust actions against Google affecting search and ad tech practices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Digital Markets Act (EU)",
+    "relationship_type": "regulates",
+    "evidence_text": "imposing gatekeeper obligations on Google services",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "General Data Protection Regulation (GDPR)",
+    "relationship_type": "regulates",
+    "evidence_text": "impacts ads and product design",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "Digital Advertising",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary industry for Alphabet’s revenue",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Alphabet Inc.",
+    "target_node": "United States v. Google LLC (Search antitrust)",
+    "relationship_type": "regulates",
+    "evidence_text": "DOJ case targeting default search and exclusionary agreements",
+    "importance_score": 0.85
+  }
+]

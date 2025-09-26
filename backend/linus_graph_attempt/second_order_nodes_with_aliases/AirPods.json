@@ -1,0 +1,109 @@
+{
+  "source": "AirPods",
+  "nodes": [
+    {
+      "title": "Luxshare Precision",
+      "category": "Company",
+      "short_description": "Primary AirPods assembler; shifts output and capacity directly affect supply.",
+      "Aliases": [
+        "Luxshare Precision",
+        "Luxshare"
+      ]
+    },
+    {
+      "title": "Goertek",
+      "category": "Company",
+      "short_description": "Major AirPods assembler; order changes have immediate production impact.",
+      "Aliases": []
+    },
+    {
+      "title": "AAC Technologies",
+      "category": "Company",
+      "short_description": "Supplies speakers and acoustic modules essential to AirPods audio and ANC.",
+      "Aliases": []
+    },
+    {
+      "title": "Knowles Corporation",
+      "category": "Company",
+      "short_description": "Provides MEMS microphones critical for voice, ANC, and transparency modes.",
+      "Aliases": []
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Fabs Apple-designed H-series chips powering AirPods; capacity affects launches.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Amperex Technology Limited (ATL)",
+      "category": "Company",
+      "short_description": "Supplies lithium-polymer batteries; cell availability and performance drive product design and life.",
+      "Aliases": []
+    },
+    {
+      "title": "Samsung Galaxy Buds",
+      "category": "Product/Service",
+      "short_description": "Direct competitor influencing AirPods pricing, features, and marketing.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "Sony WF-1000XM series",
+      "category": "Product/Service",
+      "short_description": "Flagship ANC earbuds rival shaping AirPods Pro feature expectations.",
+      "Aliases": [
+        "Sony"
+      ]
+    },
+    {
+      "title": "Bluetooth",
+      "category": "Product/Service",
+      "short_description": "Wireless standard required for AirPods connectivity and interoperability.",
+      "Aliases": []
+    },
+    {
+      "title": "European Union Common Charger Directive (USB-C)",
+      "category": "Regulation",
+      "short_description": "Mandates USB-C charging, forcing AirPods case connector transition.",
+      "Aliases": []
+    },
+    {
+      "title": "Federal Communications Commission (FCC)",
+      "category": "Regulation",
+      "short_description": "Regulatory approval needed for AirPods radio emissions and spectrum compliance.",
+      "Aliases": []
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Core manufacturing hub for AirPods components and assembly.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "Vietnam",
+      "category": "Country",
+      "short_description": "Key AirPods assembly location reducing China concentration and tariff exposure.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S.–China trade war",
+      "category": "Event",
+      "short_description": "Tariffs and restrictions triggered AirPods production diversification to Vietnam.",
+      "Aliases": []
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Factory shutdowns and logistics disruptions constrained AirPods supply and launches.",
+      "Aliases": []
+    }
+  ]
+}

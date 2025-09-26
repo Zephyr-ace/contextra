@@ -1,0 +1,120 @@
+{
+  "source": "Luxshare Precision",
+  "nodes": [
+    {
+      "title": "AirPods",
+      "category": "Product/Service",
+      "short_description": "Wireless earbuds assembled by Luxshare; demand volume directly drives revenues and capacity expansion.",
+      "Aliases": [
+        "AirPods"
+      ]
+    },
+    {
+      "title": "iPhone",
+      "category": "Product/Service",
+      "short_description": "Smartphone line with partial assembly by Luxshare; order allocation crucial for growth.",
+      "Aliases": [
+        "iPhone"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Primary manufacturing base and regulatory environment shaping operations, labor, and incentives.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "Vietnam",
+      "category": "Country",
+      "short_description": "Key expansion hub for assembly; policy stability and labor costs affect competitiveness.",
+      "Aliases": [
+        "Vietnam"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Major end market and source of trade policies impacting supply chains and tariffs.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "Hon Hai Precision Industry Co., Ltd.",
+      "category": "Company",
+      "short_description": "Largest iPhone assembler (Foxconn); competitor for order share, pricing, and capacity.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "Pegatron Corporation",
+      "category": "Company",
+      "short_description": "Major competitor for smartphone assembly orders; shifts directly affect Luxshare volumes.",
+      "Aliases": [
+        "Pegatron"
+      ]
+    },
+    {
+      "title": "GoerTek Inc.",
+      "category": "Company",
+      "short_description": "Rival in audio devices; AirPods order reallocations between GoerTek and Luxshare change revenues.",
+      "Aliases": []
+    },
+    {
+      "title": "Wistron Corporation",
+      "category": "Company",
+      "short_description": "Former iPhone assembly asset seller to Luxshare; deal enabled entry into iPhone production.",
+      "Aliases": [
+        "Wistron"
+      ]
+    },
+    {
+      "title": "Electronics manufacturing services (EMS)",
+      "category": "Sector",
+      "short_description": "Core business model; industry cycles and margins determine profitability and investment.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S.–China trade war",
+      "category": "Event",
+      "short_description": "Escalating tariffs and supply-chain decoupling pressure manufacturing footprints and costs.",
+      "Aliases": []
+    },
+    {
+      "title": "U.S. Section 301 Tariffs on Chinese Goods",
+      "category": "Regulation",
+      "short_description": "Tariffs on electronics alter pricing, sourcing, and localization decisions for exports.",
+      "Aliases": [
+        "U.S.–China Trade Policy",
+        "US-China tariffs"
+      ]
+    },
+    {
+      "title": "Uyghur Forced Labor Prevention Act (UFLPA)",
+      "category": "Regulation",
+      "short_description": "Strict U.S. import law forcing supply-chain audits and vendor compliance for China-linked goods.",
+      "Aliases": []
+    },
+    {
+      "title": "EU Common Charger Directive (USB-C mandate)",
+      "category": "Regulation",
+      "short_description": "Mandate for USB-C charging increases connector demand and redesigns across devices.",
+      "Aliases": []
+    },
+    {
+      "title": "Wang Laichun",
+      "category": "Person",
+      "short_description": "Chairwoman and co-founder steering strategy, customer relationships, and major investments.",
+      "Aliases": [
+        "Luxshare Precision",
+        "Luxshare"
+      ]
+    }
+  ]
+}

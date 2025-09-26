@@ -1,0 +1,97 @@
+[
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Largest memory competitor; pricing, capacity, and technology leadership drive",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "SK hynix",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major DRAM/HBM competitor; capacity decisions and technology pace affect Micron's pricing",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Nvidia",
+    "relationship_type": "supplies_to",
+    "evidence_text": "AI accelerator demand directly drives Micron's HBM and DRAM sales.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Kioxia",
+    "relationship_type": "competes_with",
+    "evidence_text": "output cuts or expansions influence industry pricing and Micron margins",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Western Digital",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major NAND rival, Kioxia JV partner",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "DRAM",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core Micron product; pricing cycles and node transitions determine revenue",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "NAND Flash Memory",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core product; hyperscaler and device demand drive pricing",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Data Center and AI Infrastructure",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary demand engine for DRAM/HBM;",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "Smartphone Manufacturing",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Large consumer of DRAM/NAND;",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "U.S. Export Controls on Semiconductors to China (BIS Rules)",
+    "relationship_type": "regulates",
+    "evidence_text": "reshape Micron's China sales and supply chains.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "CHIPS and Science Act (U.S.)",
+    "relationship_type": "regulates",
+    "evidence_text": "U.S. subsidies and guardrails influence Micron's domestic investment",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "policies and incentives significantly guide strategy and operations",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Micron Technology",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "regulations and domestic competitors shape demand, pricing, and access.",
+    "importance_score": 0.75
+  }
+]

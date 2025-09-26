@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Google",
+    "relationship_type": "regulates",
+    "evidence_text": "policies and fees shape global app economy.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Android",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Dominant mobile OS enabling app distribution",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Google Play",
+    "relationship_type": "regulates",
+    "evidence_text": "billing, review, and distribution rules drive developer monetization",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Digital Markets Act (EU)",
+    "relationship_type": "regulates",
+    "evidence_text": "EU law forcing gatekeepers to allow alternative app stores",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "General Data Protection Regulation (GDPR)",
+    "relationship_type": "regulates",
+    "evidence_text": "EU privacy regulation restricting ad tracking and data sharing",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "antitrust actions and privacy laws influence app store and ad practices.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "European Union",
+    "relationship_type": "regulates",
+    "evidence_text": "imposing DMA and GDPR compliance",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "strict app filing, content, and data rules",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "India",
+    "relationship_type": "regulates",
+    "evidence_text": "policy shifts shape pricing and app growth",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Telecommunications Business Act (South Korea)",
+    "relationship_type": "regulates",
+    "evidence_text": "Mandates alternative in-app billing, challenging app store payment monopolies.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Epic Games v. Google antitrust case",
+    "relationship_type": "regulates",
+    "evidence_text": "pressures Play Store fees and distribution policies.",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Meta Platforms",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Facebook and Instagram advertising drive user acquisition and monetization",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "ByteDance",
+    "relationship_type": "supplies_to",
+    "evidence_text": "TikTok platform and ads shape discovery",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Tencent Holdings",
+    "relationship_type": "partner_with",
+    "evidence_text": "WeChat ecosystem, payments, and app stores influence distribution",
+    "importance_score": 0.6
+  },
+  {
+    "source_node": "Mobile App Economy & Services Sector",
+    "target_node": "Mobile Advertising",
+    "relationship_type": "partner_with",
+    "evidence_text": "Core revenue engine for many apps",
+    "importance_score": 0.85
+  }
+]

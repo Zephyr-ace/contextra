@@ -1,0 +1,100 @@
+[
+  {
+    "source_node": "iPhone",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Fabricates A-series SoCs on advanced nodes, directly determining iPhone performance",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Foxconn",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary final assembler; capacity, yields, and disruptions directly affect iPhone supply",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Qualcomm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies 4G/5G modems and licenses cellular IP essential to iPhone connectivity.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Samsung Display",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major supplier of OLED panels for premium iPhones",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Sony Semiconductor Solutions",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies CMOS image sensors critical to iPhone camera performance.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Broadcom",
+    "relationship_type": "supplies_to",
+    "evidence_text": "essential to iPhone connectivity and design",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Arm",
+    "relationship_type": "partner_with",
+    "evidence_text": "Licenses ARM instruction set underpinning iPhone’s CPU architecture",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Semiconductors",
+    "relationship_type": "customer_of",
+    "evidence_text": "chips powering iPhone performance, efficiency, and features",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Electronics manufacturing services (EMS)",
+    "relationship_type": "partner_with",
+    "evidence_text": "enabling large-scale iPhone production and flexibility.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary manufacturing base; policies, labor, and lockdowns directly impact iPhone",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "tariffs, antitrust, and policy shape iPhone pricing and software.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Taiwan",
+    "relationship_type": "supplies_to",
+    "evidence_text": "geopolitical risk and capacity impact iPhone chip supply.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "EU Common Charger Directive (USB-C mandate)",
+    "relationship_type": "regulates",
+    "evidence_text": "Forced iPhone port transition to USB-C, changing accessories and design.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "iPhone",
+    "target_node": "Android",
+    "relationship_type": "competes_with",
+    "evidence_text": "Competing mobile platform driving iPhone feature priorities",
+    "importance_score": 0.85
+  }
+]

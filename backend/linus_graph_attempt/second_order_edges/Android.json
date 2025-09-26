@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "Android",
+    "target_node": "Google LLC",
+    "relationship_type": "regulates",
+    "evidence_text": "Developer and controller of Android; defines roadmap, licensing, and ecosystem rules",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "partner_with",
+    "evidence_text": "Largest Android OEM; hardware choices and scale influence platform requirements",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Qualcomm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major Android SoC supplier; modem and CPU/GPU capabilities drive Android",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Arm",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Licenses CPU architectures used by Android devices",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Huawei",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major Android OEM; U.S. sanctions removed GMS access",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Google Mobile Services (GMS)",
+    "relationship_type": "regulates",
+    "evidence_text": "licensing terms shape OEM compliance and device capabilities",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Android Open Source Project (AOSP)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core Android codebase; foundation for OEM builds and forks",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Linux kernel",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Underlying kernel for Android",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Android",
+    "target_node": "iOS",
+    "relationship_type": "competes_with",
+    "evidence_text": "rivalry drives Android feature development, privacy, and ecosystem strategies.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Digital Markets Act (EU)",
+    "relationship_type": "regulates",
+    "evidence_text": "forces Android changes in defaults, app stores, and interoperability.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Android",
+    "target_node": "European Commission Android antitrust decision (2018)",
+    "relationship_type": "regulates",
+    "evidence_text": "mandated unbundling and choice screens, altering Android licensing",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Android",
+    "target_node": "U.S. Huawei Entity List (2019)",
+    "relationship_type": "regulates",
+    "evidence_text": "cut GMS access and reshaped Android’s presence in China.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Sundar Pichai",
+    "relationship_type": "partner_with",
+    "evidence_text": "Google CEO overseeing Android strategy",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Android",
+    "target_node": "Margrethe Vestager",
+    "relationship_type": "regulates",
+    "evidence_text": "forced Android unbundling and default choice changes.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Android",
+    "target_node": "China",
+    "relationship_type": "competes_with",
+    "evidence_text": "Restrictions on Google services foster Android forks",
+    "importance_score": 0.8
+  }
+]

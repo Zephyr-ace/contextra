@@ -1,0 +1,118 @@
+{
+  "source": "iPhone",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Fabricates A-series SoCs on advanced nodes, directly determining iPhone performance, power, and launch timing.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Foxconn",
+      "category": "Company",
+      "short_description": "Primary final assembler; capacity, yields, and disruptions directly affect iPhone supply and launches.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "Qualcomm",
+      "category": "Company",
+      "short_description": "Supplies 4G/5G modems and licenses cellular IP essential to iPhone connectivity.",
+      "Aliases": [
+        "Qualcomm"
+      ]
+    },
+    {
+      "title": "Samsung Display",
+      "category": "Company",
+      "short_description": "Major supplier of OLED panels for premium iPhones; quality and yields affect features and production.",
+      "Aliases": []
+    },
+    {
+      "title": "Sony Semiconductor Solutions",
+      "category": "Company",
+      "short_description": "Supplies CMOS image sensors critical to iPhone camera performance.",
+      "Aliases": [
+        "Sony"
+      ]
+    },
+    {
+      "title": "Broadcom",
+      "category": "Company",
+      "short_description": "Provides RF front-end and wireless chips; essential to iPhone connectivity and design.",
+      "Aliases": [
+        "Broadcom"
+      ]
+    },
+    {
+      "title": "Arm",
+      "category": "Company",
+      "short_description": "Licenses ARM instruction set underpinning iPhone’s CPU architecture and app compatibility.",
+      "Aliases": []
+    },
+    {
+      "title": "Semiconductors",
+      "category": "Sector",
+      "short_description": "Foundational industry for chips powering iPhone performance, efficiency, and features.",
+      "Aliases": [
+        "Semiconductor & Chip Industry",
+        "Semiconductor industry"
+      ]
+    },
+    {
+      "title": "Electronics manufacturing services (EMS)",
+      "category": "Sector",
+      "short_description": "Contract assembly sector enabling large-scale iPhone production and flexibility.",
+      "Aliases": [
+        "Hon Hai Precision Industry",
+        "Foxconn"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Primary manufacturing base; policies, labor, and lockdowns directly impact iPhone production and costs.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Core market and regulatory environment; tariffs, antitrust, and policy shape iPhone pricing and software.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Hub for TSMC and key suppliers; geopolitical risk and capacity impact iPhone chip supply.",
+      "Aliases": [
+        "Taiwan"
+      ]
+    },
+    {
+      "title": "EU Common Charger Directive (USB-C mandate)",
+      "category": "Regulation",
+      "short_description": "Forced iPhone port transition to USB-C, changing accessories and design.",
+      "Aliases": []
+    },
+    {
+      "title": "Android",
+      "category": "Product/Service",
+      "short_description": "Competing mobile platform driving iPhone feature priorities, pricing, and app ecosystem dynamics.",
+      "Aliases": [
+        "Android",
+        "Android OS"
+      ]
+    }
+  ]
+}

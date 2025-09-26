@@ -1,0 +1,100 @@
+[
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Dominant advanced foundry; sets process leadership and capacity.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "ASML",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Sole EUV lithography supplier; bottleneck for leading-edge nodes.",
+    "importance_score": 1.0
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "sets global standards and constraints",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "China",
+    "relationship_type": "competes_with",
+    "evidence_text": "pursues self-sufficiency under restrictions.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "EUV Lithography Systems",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Essential for sub-7nm manufacturing",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "U.S. Export Controls on Advanced Semiconductors to China",
+    "relationship_type": "regulates",
+    "evidence_text": "Restrict tool and chip access; reconfigure supply chains",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Nvidia",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Drives demand for advanced GPUs and HBM",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "High-Bandwidth Memory (HBM)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "tight supply steers capex and packaging.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major foundry and memory leader; impacts supply and pricing.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Taiwan",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Foundry-dominated ecosystem; concentration and geopolitics influence global supply risk.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "CHIPS and Science Act (United States, 2022)",
+    "relationship_type": "regulates",
+    "evidence_text": "U.S. subsidies and guardrails reshaping fab location and investment.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "SK hynix",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Leading HBM supplier; capacity and yields directly constrain AI accelerator shipments.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Automotive (EV/ADAS)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Growing silicon content drives reliability, power, and legacy node capacity needs.",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "Semiconductor & Chip Industry",
+    "target_node": "Gina Raimondo",
+    "relationship_type": "regulates",
+    "evidence_text": "Leads U.S. Commerce decisions on export controls and CHIPS funding.",
+    "importance_score": 0.75
+  }
+]

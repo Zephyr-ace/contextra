@@ -1,0 +1,80 @@
+{
+  "source": "iPad",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company",
+      "category": "Company",
+      "short_description": "Fabs Apple-designed A/M processors for iPad; capacity and process advances directly determine performance and release t…"
+    },
+    {
+      "title": "Foxconn",
+      "category": "Company",
+      "short_description": "Primary iPad final assembler; production capacity, yields, and China operations directly affect supply and lead times."
+    },
+    {
+      "title": "Pegatron",
+      "category": "Company",
+      "short_description": "Major iPad assembler; diversification and capacity influence availability and regional manufacturing risk."
+    },
+    {
+      "title": "Samsung Display",
+      "category": "Company",
+      "short_description": "Supplies advanced OLED/LCD panels; panel tech and yields drive iPad display quality, cost, and timing."
+    },
+    {
+      "title": "LG Display",
+      "category": "Company",
+      "short_description": "Key iPad display supplier; tandem OLED and LCD capacity influence performance and launch schedules."
+    },
+    {
+      "title": "Qualcomm",
+      "category": "Company",
+      "short_description": "Provides cellular modems for iPad; 5G/LTE roadmap dictates connectivity capabilities and certification timing."
+    },
+    {
+      "title": "Samsung Galaxy Tab",
+      "category": "Product/Service",
+      "short_description": "Leading Android tablet competitor, shaping iPad pricing, features, and market share."
+    },
+    {
+      "title": "Microsoft Surface",
+      "category": "Product/Service",
+      "short_description": "2-in-1 Windows competitor influencing iPad Pro positioning, accessories, and productivity features."
+    },
+    {
+      "title": "Chromebooks",
+      "category": "Product/Service",
+      "short_description": "Dominant low-cost devices in education, directly impacting iPad adoption and procurement."
+    },
+    {
+      "title": "Education technology (K–12)",
+      "category": "Sector",
+      "short_description": "Institutional purchasing and standards drive iPad deployments, app requirements, and accessories."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Primary iPad manufacturing base; labor, regulation, and lockdowns directly affect production."
+    },
+    {
+      "title": "Vietnam",
+      "category": "Country",
+      "short_description": "Alternative iPad assembly location; capacity expansion reduces China concentration risk."
+    },
+    {
+      "title": "Digital Markets Act",
+      "category": "Regulation",
+      "short_description": "EU regulation forcing app store and platform changes on iPad, affecting distribution and monetization."
+    },
+    {
+      "title": "U.S.-China trade war",
+      "category": "Event",
+      "short_description": "Tariffs and policy tensions driving supply-chain shifts, costs, and production location decisions for iPad."
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Global demand spike and factory disruptions causing volatile iPad supply and logistics constraints."
+    }
+  ]
+}

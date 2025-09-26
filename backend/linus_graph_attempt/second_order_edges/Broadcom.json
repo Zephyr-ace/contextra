@@ -1,0 +1,98 @@
+[
+  {
+    "source_node": "Broadcom",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary foundry manufacturing Broadcom's advanced chips",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "VMware",
+    "relationship_type": "partner_with",
+    "evidence_text": "its products and licensing model now drive Broadcom strategy",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Hock Tan",
+    "relationship_type": "partner_with",
+    "evidence_text": "central to M&A, integration, pricing, and portfolio decisions.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "CFIUS blocks Broadcom-Qualcomm deal (2018)",
+    "relationship_type": "regulates",
+    "evidence_text": "Stopped hostile takeover, prompting U.S. redomiciling",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "China",
+    "relationship_type": "regulates",
+    "evidence_text": "subject to tariffs and export restrictions",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Cloud service providers",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Hyperscale operators drive demand for switching silicon and custom ASICs.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Cisco Systems",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Key networking customer for Ethernet switch silicon and optics",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Arista Networks",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major switch vendor reliant on Broadcom merchant silicon",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Huawei",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Former major customer in networking/smartphones",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Wi-Fi/Bluetooth combo chips",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Flagship mobile connectivity components; design wins determine handset revenue.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "Tomahawk switching ASICs",
+    "relationship_type": "supplies_to",
+    "evidence_text": "High-end Ethernet switch chips for data centers",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Broadcom",
+    "target_node": "EU Merger Regulation",
+    "relationship_type": "regulates",
+    "evidence_text": "Governs antitrust review; remedies/delays for Broadcom acquisitions like VMware.",
+    "importance_score": 0.85
+  }
+]

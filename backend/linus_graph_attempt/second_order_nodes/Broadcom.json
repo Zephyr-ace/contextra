@@ -1,0 +1,80 @@
+{
+  "source": "Broadcom",
+  "nodes": [
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "category": "Company",
+      "short_description": "Primary foundry manufacturing Broadcom's advanced chips; capacity and nodes directly affect shipments."
+    },
+    {
+      "title": "VMware",
+      "category": "Company",
+      "short_description": "Acquired enterprise software company; its products and licensing model now drive Broadcom strategy and revenue."
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Headquarters, major customers, procurement, and primary regulatory jurisdiction."
+    },
+    {
+      "title": "U.S. export controls on China (semiconductors)",
+      "category": "Regulation",
+      "short_description": "Restrict sales and technology transfers; reduce China revenue and complicate supply chains."
+    },
+    {
+      "title": "Hock Tan",
+      "category": "Person",
+      "short_description": "Broadcom CEO; central to M&A, integration, pricing, and portfolio decisions."
+    },
+    {
+      "title": "CFIUS blocks Broadcom-Qualcomm deal (2018)",
+      "category": "Event",
+      "short_description": "Stopped hostile takeover, prompting U.S. redomiciling and shift toward infrastructure/software acquisitions."
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Large end-market and supply base; subject to tariffs and export restrictions."
+    },
+    {
+      "title": "Taiwan",
+      "category": "Country",
+      "short_description": "Core manufacturing hub via TSMC; geopolitical tensions threaten continuity."
+    },
+    {
+      "title": "Cloud service providers",
+      "category": "Sector",
+      "short_description": "Hyperscale operators drive demand for switching silicon and custom ASICs."
+    },
+    {
+      "title": "Cisco Systems",
+      "category": "Company",
+      "short_description": "Key networking customer for Ethernet switch silicon and optics; purchasing volumes affect revenue."
+    },
+    {
+      "title": "Arista Networks",
+      "category": "Company",
+      "short_description": "Major switch vendor reliant on Broadcom merchant silicon; its demand drives chip volumes."
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Former major customer in networking/smartphones; U.S. sanctions sharply curtailed shipments and revenue."
+    },
+    {
+      "title": "Wi-Fi/Bluetooth combo chips",
+      "category": "Product/Service",
+      "short_description": "Flagship mobile connectivity components; design wins determine handset revenue."
+    },
+    {
+      "title": "Tomahawk switching ASICs",
+      "category": "Product/Service",
+      "short_description": "High-end Ethernet switch chips for data centers; critical to hyperscale networking roadmap."
+    },
+    {
+      "title": "EU Merger Regulation",
+      "category": "Regulation",
+      "short_description": "Governs antitrust review; remedies/delays for Broadcom acquisitions like VMware."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "source_node": "LG Display",
+    "target_node": "Samsung Display",
+    "relationship_type": "competes_with",
+    "evidence_text": "Primary OLED competitor; influences pricing, capacity, and technology roadmaps.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "BOE Technology Group",
+    "relationship_type": "competes_with",
+    "evidence_text": "drives price competition and capacity shifts in OLED/LCD.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "LG Electronics",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major buyer of large OLED TV panels",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Guangzhou OLED fab location; market demand, subsidies, and regulations strongly influence outcomes.",
+    "importance_score": 0.55
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "South Korea",
+    "relationship_type": "regulates",
+    "evidence_text": "policy, labor, and currency materially affect operations.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "regulatory origin for export controls affecting customers and suppliers.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "Universal Display Corporation",
+    "relationship_type": "partner_with",
+    "evidence_text": "Supplies and licenses PHOLED materials essential to LG Display’s OLED performance.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "Canon Tokki",
+    "relationship_type": "supplies_to",
+    "evidence_text": "tool availability constrains OLED capacity.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "TCL China Star Optoelectronics Technology (CSOT)",
+    "relationship_type": "competes_with",
+    "evidence_text": "Chinese competitor; LCD oversupply and OLED investments impact LGD margins.",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "Japan–South Korea 2019 export controls dispute",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Export curbs on key materials disrupted OLED/LCD supply",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "OLED TV panels (WOLED)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "yields, capacity, and TV demand drive profitability.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "Flexible OLED (POLED) smartphone displays",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Growth product; yields, customer wins, and device cycles swing earnings.",
+    "importance_score": 0.45
+  },
+  {
+    "source_node": "LG Display",
+    "target_node": "Automotive displays sector",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Emerging demand for mid-size displays",
+    "importance_score": 0.7
+  }
+]

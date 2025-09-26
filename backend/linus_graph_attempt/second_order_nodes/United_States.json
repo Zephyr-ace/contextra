@@ -1,0 +1,80 @@
+{
+  "source": "United States",
+  "nodes": [
+    {
+      "title": "Federal Reserve System",
+      "category": "Regulation",
+      "short_description": "Sets U.S. monetary policy; controls rates and liquidity, stabilizing economy and financial system."
+    },
+    {
+      "title": "U.S. Congress",
+      "category": "Regulation",
+      "short_description": "Writes laws, controls federal spending and taxation, shaping domestic policy and economic priorities."
+    },
+    {
+      "title": "U.S. Department of the Treasury",
+      "category": "Regulation",
+      "short_description": "Manages federal finances, debt issuance, sanctions, and financial oversight affecting markets and geopolitics."
+    },
+    {
+      "title": "Supreme Court of the United States",
+      "category": "Regulation",
+      "short_description": "Interprets Constitution; landmark rulings reshape rights, regulation, elections, and business environments nationwide."
+    },
+    {
+      "title": "People's Republic of China",
+      "category": "Country",
+      "short_description": "Primary strategic competitor; trade, technology, military, and geopolitical actions significantly influence U.S. policy."
+    },
+    {
+      "title": "Energy (Oil & Gas)",
+      "category": "Sector",
+      "short_description": "Prices and supply drive inflation, industrial costs, geopolitics, and national security decisions in the U.S."
+    },
+    {
+      "title": "Semiconductors",
+      "category": "Sector",
+      "short_description": "Underlying technology for computing, defense, and industry; shortages or advancements ripple across the U.S. economy."
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company",
+      "category": "Company",
+      "short_description": "Dominant advanced chip foundry; U.S. tech, autos, and defense depend on its capacity and resilience."
+    },
+    {
+      "title": "Microsoft",
+      "category": "Company",
+      "short_description": "Core enterprise software and cloud provider; critical cybersecurity and infrastructure for government and businesses."
+    },
+    {
+      "title": "Amazon",
+      "category": "Company",
+      "short_description": "E-commerce scale and AWS cloud backbone influence retail, logistics, and digital infrastructure across the U.S."
+    },
+    {
+      "title": "Lockheed Martin",
+      "category": "Company",
+      "short_description": "Largest U.S. defense contractor; platforms and supply chains shape defense spending and capabilities."
+    },
+    {
+      "title": "Mexico",
+      "category": "Country",
+      "short_description": "Top U.S. goods trade partner; migration, manufacturing, and security cooperation directly affect domestic politics and …"
+    },
+    {
+      "title": "Canada",
+      "category": "Country",
+      "short_description": "Integrated energy and manufacturing trade; border security and NORAD defense partnership influence U.S. stability."
+    },
+    {
+      "title": "Saudi Arabia",
+      "category": "Country",
+      "short_description": "Key swing oil producer; production decisions influence global prices, U.S. inflation, and foreign policy."
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "category": "Event",
+      "short_description": "Public health crisis disrupting labor, supply chains, fiscal policy, and Federal Reserve actions in the U.S."
+    }
+  ]
+}

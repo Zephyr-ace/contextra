@@ -1,0 +1,121 @@
+{
+  "source": "Samsung Electronics",
+  "nodes": [
+    {
+      "title": "TSMC",
+      "category": "Company",
+      "short_description": "Leading foundry rival; shapes pricing, technology roadmaps, and major customers' allocation away from Samsung.",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "SK Hynix",
+      "category": "Company",
+      "short_description": "Fierce memory competitor, influencing DRAM/HBM pricing, capex cycles, and market share.",
+      "Aliases": [
+        "SK Hynix"
+      ]
+    },
+    {
+      "title": "Micron Technology",
+      "category": "Company",
+      "short_description": "Key DRAM/NAND competitor affecting pricing, supply discipline, and industry profitability.",
+      "Aliases": [
+        "Micron Technology",
+        "Micron"
+      ]
+    },
+    {
+      "title": "Qualcomm",
+      "category": "Company",
+      "short_description": "Supplies modems/SoCs and licenses IP, affecting Samsung smartphone performance, costs, and market timing.",
+      "Aliases": [
+        "Qualcomm"
+      ]
+    },
+    {
+      "title": "Google",
+      "category": "Company",
+      "short_description": "Controls Android and GMS ecosystem, dictating features, compliance, and revenue-sharing terms for Galaxy devices.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "ASML",
+      "category": "Company",
+      "short_description": "Sole EUV supplier; tool availability dictates Samsung advanced-node timing and yields.",
+      "Aliases": []
+    },
+    {
+      "title": "NVIDIA",
+      "category": "Company",
+      "short_description": "Major buyer of HBM and memory; demand drives pricing and capacity decisions.",
+      "Aliases": []
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Major smartphone competitor; sanctions and recovery directly shift Samsung's market share, especially in China.",
+      "Aliases": []
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Critical market and manufacturing base; regulations and demand swings heavily influence sales and supply chains.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "South Korea",
+      "category": "Country",
+      "short_description": "Home market and policy hub; incentives, regulations, and labor decisions directly affect operations.",
+      "Aliases": [
+        "South Korea"
+      ]
+    },
+    {
+      "title": "U.S. semiconductor export controls on China (2022–)",
+      "category": "Regulation",
+      "short_description": "Restrictions reshape equipment access, customer eligibility, and China-related revenue.",
+      "Aliases": []
+    },
+    {
+      "title": "CHIPS and Science Act (U.S.)",
+      "category": "Regulation",
+      "short_description": "Subsidies and guardrails influence fab investments, location choices, and competitive dynamics.",
+      "Aliases": []
+    },
+    {
+      "title": "Lee Jae-yong",
+      "category": "Person",
+      "short_description": "Executive Chairman; strategic decisions on M&A, capex, and risk tolerance steer Samsung's trajectory.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "Memory semiconductors (DRAM, NAND)",
+      "category": "Sector",
+      "short_description": "Core profit driver; cyclicality and HBM transition dictate earnings and investment.",
+      "Aliases": [
+        "Semiconductor & Chip Industry",
+        "Semiconductor industry"
+      ]
+    },
+    {
+      "title": "Smartphones",
+      "category": "Sector",
+      "short_description": "Largest consumer business; demand cycles and ASPs determine revenue scale and component sourcing.",
+      "Aliases": [
+        "Global Smartphone Market"
+      ]
+    }
+  ]
+}

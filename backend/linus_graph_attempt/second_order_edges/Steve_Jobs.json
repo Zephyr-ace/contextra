@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Steve Wozniak",
+    "relationship_type": "partner_with",
+    "evidence_text": "engineering enabled Apple's birth and early success with Jobs",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "John Sculley",
+    "relationship_type": "partner_with",
+    "evidence_text": "Apple CEO who removed Jobs in 1985, catalyzing NeXT and Pixar paths.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "NeXT",
+    "relationship_type": "partner_with",
+    "evidence_text": "led to his return via acquisition",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Pixar Animation Studios",
+    "relationship_type": "partner_with",
+    "evidence_text": "Studio Jobs bought and led, Toy Story success made him billionaire",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "2003 cancer diagnosis",
+    "relationship_type": "regulates",
+    "evidence_text": "reshaped Jobs's priorities and succession planning",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Microsoft",
+    "relationship_type": "partner_with",
+    "evidence_text": "1997 investment and Office commitment stabilized Apple during Jobs's return",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Bill Gates",
+    "relationship_type": "competes_with",
+    "evidence_text": "rival and counterpart shaping Jobs's strategy",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "The Walt Disney Company",
+    "relationship_type": "partner_with",
+    "evidence_text": "making Jobs its largest individual shareholder and a board member",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Bob Iger",
+    "relationship_type": "partner_with",
+    "evidence_text": "became a key ally to Jobs",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Xerox PARC",
+    "relationship_type": "partner_with",
+    "evidence_text": "profoundly influenced Jobs's product vision",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Paul Jobs",
+    "relationship_type": "partner_with",
+    "evidence_text": "Adoptive father who instilled craftsmanship and work ethic",
+    "importance_score": 0.4
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Mike Markkula",
+    "relationship_type": "partner_with",
+    "evidence_text": "board influence shaped Jobs's role and 1985 departure.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Nolan Bushnell",
+    "relationship_type": "partner_with",
+    "evidence_text": "Atari founder who hired Jobs, shaping his early career",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "India",
+    "relationship_type": "partner_with",
+    "evidence_text": "1974 spiritual journey there deeply influenced Jobs's philosophy",
+    "importance_score": 0.45
+  },
+  {
+    "source_node": "Steve Jobs",
+    "target_node": "Toy Story (1995)",
+    "relationship_type": "partner_with",
+    "evidence_text": "breakout success transformed Jobs's wealth and stature.",
+    "importance_score": 0.75
+  }
+]

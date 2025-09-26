@@ -1,0 +1,93 @@
+[
+  {
+    "source_node": "Sony",
+    "target_node": "PlayStation platform",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Sony’s flagship gaming ecosystem driving hardware, software, and subscription revenues.",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Microsoft",
+    "relationship_type": "competes_with",
+    "evidence_text": "Rival Xbox platform and game services compete directly",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Call of Duty",
+    "relationship_type": "competes_with",
+    "evidence_text": "influencing console choice, engagement, and PlayStation revenues",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "United States",
+    "relationship_type": "customer_of",
+    "evidence_text": "Key market for games, music, and films",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "CMOS Image Sensors",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Core component business supplying smartphone and camera markets",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "China",
+    "relationship_type": "supplies_to",
+    "evidence_text": "demand swings impact sensors and content",
+    "importance_score": 0.45
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "U.S. sanctions on Huawei",
+    "relationship_type": "supplies_to",
+    "evidence_text": "reducing Sony’s image sensor shipments.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Huawei",
+    "relationship_type": "supplies_to",
+    "evidence_text": "restrictions materially impact Sony’s image sensor sales.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Nintendo",
+    "relationship_type": "competes_with",
+    "evidence_text": "Competing consoles and first-party exclusives affect Sony’s market share",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "competes_with",
+    "evidence_text": "Major smartphone maker and image-sensor competitor",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "TSMC",
+    "relationship_type": "partner_with",
+    "evidence_text": "Manufacturing partner for Japan fab projects",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "The Walt Disney Company",
+    "relationship_type": "partner_with",
+    "evidence_text": "Marvel partnership and Spider-Man film rights materially affect Sony Pictures revenues.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Sony",
+    "target_node": "Japan",
+    "relationship_type": "regulates",
+    "evidence_text": "Headquarters, workforce, and policy environment influence strategy, currency, and operations.",
+    "importance_score": 0.55
+  }
+]

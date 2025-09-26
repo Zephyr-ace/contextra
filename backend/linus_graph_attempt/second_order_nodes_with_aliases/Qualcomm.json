@@ -1,0 +1,111 @@
+{
+  "source": "Qualcomm",
+  "nodes": [
+    {
+      "title": "TSMC",
+      "category": "Company",
+      "short_description": "Primary foundry manufacturing Qualcomm's advanced Snapdragon and modem chips; capacity and nodes determine performance …",
+      "Aliases": [
+        "Taiwan Semiconductor Manufacturing Co.",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Samsung Electronics",
+      "category": "Company",
+      "short_description": "Major customer, competitor, and foundry; decisions on Exynos, sourcing, and fabs impact Qualcomm volumes and pricing.",
+      "Aliases": [
+        "Samsung Electronics",
+        "Samsung"
+      ]
+    },
+    {
+      "title": "U.S. export controls on China/Huawei",
+      "category": "Regulation",
+      "short_description": "BIS restrictions dictate Qualcomm's ability to sell advanced chips to Chinese OEMs, especially Huawei.",
+      "Aliases": []
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Largest smartphone market and OEM base; policies and demand strongly influence Qualcomm revenue.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "MediaTek",
+      "category": "Company",
+      "short_description": "Main competitor in smartphone SoCs; pricing and feature race affect Qualcomm share and margins.",
+      "Aliases": []
+    },
+    {
+      "title": "Huawei",
+      "category": "Company",
+      "short_description": "Key Chinese OEM and chipset rival; U.S. sanctions on Huawei directly alter Qualcomm's China sales.",
+      "Aliases": []
+    },
+    {
+      "title": "Arm Holdings",
+      "category": "Company",
+      "short_description": "Licenses CPU and ISA IP underlying Snapdragon; terms and disputes influence Qualcomm's core designs and timelines.",
+      "Aliases": []
+    },
+    {
+      "title": "3GPP cellular standards",
+      "category": "Regulation",
+      "short_description": "Defines 3G/4G/5G specifications guiding Qualcomm modem, RF front-end, and licensing strategies.",
+      "Aliases": []
+    },
+    {
+      "title": "Smartphone industry",
+      "category": "Sector",
+      "short_description": "Primary end-market driving Qualcomm chipset and modem demand, pricing, and product cycles.",
+      "Aliases": [
+        "Global Smartphone Market"
+      ]
+    },
+    {
+      "title": "Android",
+      "category": "Product/Service",
+      "short_description": "Dominant mobile OS shaping Snapdragon features, ecosystem alignment, and OEM demand.",
+      "Aliases": [
+        "Android",
+        "Android OS"
+      ]
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Home jurisdiction shaping antitrust outcomes, export controls, and government technology priorities affecting Qualcomm.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "FTC v. Qualcomm Ninth Circuit reversal (2020)",
+      "category": "Event",
+      "short_description": "Ninth Circuit reversed antitrust ruling, maintaining Qualcomm's licensing model and bargaining leverage.",
+      "Aliases": [
+        "Qualcomm"
+      ]
+    },
+    {
+      "title": "CFIUS blocks Broadcom acquisition (2018)",
+      "category": "Event",
+      "short_description": "U.S. national security order blocked Broadcom's takeover, preserving Qualcomm's independence and 5G roadmap.",
+      "Aliases": [
+        "Qualcomm",
+        "Broadcom"
+      ]
+    },
+    {
+      "title": "Cristiano Amon",
+      "category": "Person",
+      "short_description": "Qualcomm CEO steering diversification, partnerships, and execution across handsets, RF, automotive, and licensing.",
+      "Aliases": []
+    }
+  ]
+}

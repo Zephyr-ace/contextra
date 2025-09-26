@@ -1,0 +1,119 @@
+{
+  "source": "Mobile App Economy & Services Sector",
+  "nodes": [
+    {
+      "title": "Google",
+      "category": "Company",
+      "short_description": "Controls Android, Play Store, AdMob; policies and fees shape global app economy.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "Android",
+      "category": "Product/Service",
+      "short_description": "Dominant mobile OS enabling app distribution, APIs, and policies across global markets.",
+      "Aliases": [
+        "Android",
+        "Android OS"
+      ]
+    },
+    {
+      "title": "Google Play",
+      "category": "Product/Service",
+      "short_description": "Primary Android app store; billing, review, and distribution rules drive developer monetization.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "Digital Markets Act (EU)",
+      "category": "Regulation",
+      "short_description": "EU law forcing gatekeepers to allow alternative app stores and billing; reshapes platform power.",
+      "Aliases": []
+    },
+    {
+      "title": "General Data Protection Regulation (GDPR)",
+      "category": "Regulation",
+      "short_description": "EU privacy regulation restricting ad tracking and data sharing; mandates consent flows affecting monetization.",
+      "Aliases": []
+    },
+    {
+      "title": "United States",
+      "category": "Country",
+      "short_description": "Largest revenue market; antitrust actions and privacy laws influence app store and ad practices.",
+      "Aliases": [
+        "United States",
+        "USA"
+      ]
+    },
+    {
+      "title": "European Union",
+      "category": "Country",
+      "short_description": "Major market imposing DMA and GDPR compliance, altering app distribution and monetization models.",
+      "Aliases": [
+        "European Union",
+        "Europe",
+        "EU"
+      ]
+    },
+    {
+      "title": "China",
+      "category": "Country",
+      "short_description": "Huge market with strict app filing, content, and data rules; favors local stores and super-apps.",
+      "Aliases": [
+        "China (Mainland China)",
+        "China"
+      ]
+    },
+    {
+      "title": "India",
+      "category": "Country",
+      "short_description": "Massive user base; UPI-driven payments and policy shifts shape pricing and app growth.",
+      "Aliases": [
+        "India"
+      ]
+    },
+    {
+      "title": "Telecommunications Business Act (South Korea)",
+      "category": "Regulation",
+      "short_description": "Mandates alternative in-app billing, challenging app store payment monopolies.",
+      "Aliases": []
+    },
+    {
+      "title": "Epic Games v. Google antitrust case",
+      "category": "Event",
+      "short_description": "Jury finding of anti-competitive conduct pressures Play Store fees and distribution policies.",
+      "Aliases": [
+        "Alphabet Inc.",
+        "Google"
+      ]
+    },
+    {
+      "title": "Meta Platforms",
+      "category": "Company",
+      "short_description": "Facebook and Instagram advertising drive user acquisition and monetization for mobile apps globally.",
+      "Aliases": []
+    },
+    {
+      "title": "ByteDance",
+      "category": "Company",
+      "short_description": "TikTok platform and ads shape discovery, user acquisition costs, and monetization dynamics.",
+      "Aliases": []
+    },
+    {
+      "title": "Tencent Holdings",
+      "category": "Company",
+      "short_description": "WeChat ecosystem, payments, and app stores influence distribution and monetization in China.",
+      "Aliases": []
+    },
+    {
+      "title": "Mobile Advertising",
+      "category": "Sector",
+      "short_description": "Core revenue engine for many apps; changes in tracking and attribution directly affect profitability.",
+      "Aliases": []
+    }
+  ]
+}

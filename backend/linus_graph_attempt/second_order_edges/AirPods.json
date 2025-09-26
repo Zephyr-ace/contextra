@@ -1,0 +1,107 @@
+[
+  {
+    "source_node": "AirPods",
+    "target_node": "Luxshare Precision",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary AirPods assembler; shifts output and capacity",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Goertek",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Major AirPods assembler; order changes have immediate production impact.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "AAC Technologies",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies speakers and acoustic modules essential to AirPods audio and ANC.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Knowles Corporation",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Provides MEMS microphones critical for voice, ANC, and transparency modes.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Fabs Apple-designed H-series chips powering AirPods",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Amperex Technology Limited (ATL)",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Supplies lithium-polymer batteries",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Samsung Galaxy Buds",
+    "relationship_type": "competes_with",
+    "evidence_text": "Direct competitor influencing AirPods pricing, features, and marketing.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Sony WF-1000XM series",
+    "relationship_type": "competes_with",
+    "evidence_text": "Flagship ANC earbuds rival shaping AirPods Pro",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Bluetooth",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Wireless standard required for AirPods connectivity",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "European Union Common Charger Directive (USB-C)",
+    "relationship_type": "regulates",
+    "evidence_text": "Mandates USB-C charging, forcing AirPods case connector transition.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Federal Communications Commission (FCC)",
+    "relationship_type": "regulates",
+    "evidence_text": "Regulatory approval needed for AirPods radio emissions and spectrum compliance.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "China",
+    "relationship_type": "partner_with",
+    "evidence_text": "Core manufacturing hub for AirPods components and assembly.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "Vietnam",
+    "relationship_type": "partner_with",
+    "evidence_text": "assembly location reducing China concentration",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "U.S.–China trade war",
+    "relationship_type": "partner_with",
+    "evidence_text": "AirPods production diversification to Vietnam.",
+    "importance_score": 0.5
+  },
+  {
+    "source_node": "AirPods",
+    "target_node": "COVID-19 pandemic",
+    "relationship_type": "regulates",
+    "evidence_text": "Factory shutdowns and logistics disruptions constrained AirPods supply",
+    "importance_score": 0.75
+  }
+]

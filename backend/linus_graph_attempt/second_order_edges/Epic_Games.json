@@ -1,0 +1,93 @@
+[
+  {
+    "source_node": "Epic Games",
+    "target_node": "Fortnite",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Epic's flagship game driving revenue,",
+    "importance_score": 0.95
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Google",
+    "relationship_type": "competes_with",
+    "evidence_text": "target of Epic antitrust case shaping distribution and billing",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Unreal Engine",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Epic's engine powering many games",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Epic Games Store",
+    "relationship_type": "competes_with",
+    "evidence_text": "strategy shape competition with Steam.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "EU Digital Markets Act (DMA)",
+    "relationship_type": "regulates",
+    "evidence_text": "EU law forcing gatekeepers to allow alternative app stores",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Tencent",
+    "relationship_type": "partner_with",
+    "evidence_text": "Major shareholder and partner; influences strategy, funding, and access to China market.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Valve",
+    "relationship_type": "competes_with",
+    "evidence_text": "primary competitor to Epic Games Store in PC distribution",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Microsoft",
+    "relationship_type": "partner_with",
+    "evidence_text": "partner; distribution, cloud gaming, and cross-play policies",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Sony Interactive Entertainment",
+    "relationship_type": "regulates",
+    "evidence_text": "cross-play policies and revenue share affect Fortnite economics",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Epic Games v. Google jury verdict (2023)",
+    "relationship_type": "competes_with",
+    "evidence_text": "Jury found Google liable for anticompetitive conduct",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "Primary market and legal venue for Epic's operations, litigation, and regulatory outcomes.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "European Union",
+    "relationship_type": "regulates",
+    "evidence_text": "DMA enforcement enables alternative distribution paths for Epic.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Epic Games",
+    "target_node": "Mobile App Stores",
+    "relationship_type": "regulates",
+    "evidence_text": "dictate distribution, billing, and discoverability for Epic products",
+    "importance_score": 0.75
+  }
+]

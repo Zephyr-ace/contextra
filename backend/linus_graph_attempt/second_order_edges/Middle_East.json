@@ -1,0 +1,97 @@
+[
+  {
+    "source_node": "Middle East",
+    "target_node": "Oil & Gas",
+    "relationship_type": "supplies_to",
+    "evidence_text": "Primary economic driver; hydrocarbon rents shape politics, alliances, and conflicts",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "United States",
+    "relationship_type": "partner_with",
+    "evidence_text": "Security guarantor, military presence, sanctions and diplomacy",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Iran",
+    "relationship_type": "partner_with",
+    "evidence_text": "Regional power with proxy networks",
+    "importance_score": 0.6
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Israel",
+    "relationship_type": "partner_with",
+    "evidence_text": "regional normalization reshape security and economics",
+    "importance_score": 0.73
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "OPEC production quotas",
+    "relationship_type": "regulates",
+    "evidence_text": "Coordinated output limits by member states set supply, revenues, and global prices",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "U.S. sanctions on Iran",
+    "relationship_type": "regulates",
+    "evidence_text": "altering regional power dynamics and economic flows.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Syrian Civil War",
+    "relationship_type": "partner_with",
+    "evidence_text": "Protracted conflict drawing regional and global actors",
+    "importance_score": 0.7
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "2023 Israel-Hamas war",
+    "relationship_type": "regulates",
+    "evidence_text": "Escalated conflict reshaping regional alignments, security postures",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Saudi Aramco",
+    "relationship_type": "supplies_to",
+    "evidence_text": "State oil giant; pricing, investment, and capacity decisions move global markets",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Mohammed bin Salman",
+    "relationship_type": "partner_with",
+    "evidence_text": "regional diplomacy and security strategies.",
+    "importance_score": 0.65
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Ali Khamenei",
+    "relationship_type": "regulates",
+    "evidence_text": "Iran's Supreme Leader directing foreign policy, nuclear posture, and regional proxy activities.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "United Arab Emirates",
+    "relationship_type": "partner_with",
+    "evidence_text": "assertive regional actor influencing trade, investment, and conflicts.",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Middle East",
+    "target_node": "Suez Canal transit services",
+    "relationship_type": "regulates",
+    "evidence_text": "tolls and closures affect trade, energy flows, and regional revenues",
+    "importance_score": 0.7
+  }
+]

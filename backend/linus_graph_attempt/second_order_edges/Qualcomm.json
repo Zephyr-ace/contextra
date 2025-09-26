@@ -1,0 +1,94 @@
+[
+  {
+    "source_node": "Qualcomm",
+    "target_node": "TSMC",
+    "relationship_type": "partner_with",
+    "evidence_text": "Primary foundry manufacturing Qualcomm's advanced Snapdragon",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Samsung Electronics",
+    "relationship_type": "customer_of",
+    "evidence_text": "Major customer, competitor, and foundry",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "U.S. export controls on China/Huawei",
+    "relationship_type": "supplies_to",
+    "evidence_text": "BIS restrictions dictate Qualcomm's ability to sell advanced chips",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "China",
+    "relationship_type": "customer_of",
+    "evidence_text": "Largest smartphone market and OEM base; policies and demand strongly influence Qualcomm",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "MediaTek",
+    "relationship_type": "competes_with",
+    "evidence_text": "competitor in smartphone SoCs; pricing and feature race affect Qualcomm",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Huawei",
+    "relationship_type": "competes_with",
+    "evidence_text": "Key Chinese OEM and chipset rival",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Arm Holdings",
+    "relationship_type": "partner_with",
+    "evidence_text": "Licenses CPU and ISA IP underlying Snapdragon",
+    "importance_score": 0.85
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Smartphone industry",
+    "relationship_type": "supplies_to",
+    "evidence_text": "driving Qualcomm chipset and modem demand, pricing, and product cycles.",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Android",
+    "relationship_type": "supplies_to",
+    "evidence_text": "shaping Snapdragon features, ecosystem alignment, and OEM demand.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "United States",
+    "relationship_type": "regulates",
+    "evidence_text": "shaping antitrust outcomes, export controls, and government technology priorities",
+    "importance_score": 0.75
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "CFIUS blocks Broadcom acquisition (2018)",
+    "relationship_type": "regulates",
+    "evidence_text": "preserving Qualcomm's independence and 5G roadmap.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Qualcomm",
+    "target_node": "Cristiano Amon",
+    "relationship_type": "partner_with",
+    "evidence_text": "CEO steering diversification, partnerships, and execution",
+    "importance_score": 0.75
+  }
+]

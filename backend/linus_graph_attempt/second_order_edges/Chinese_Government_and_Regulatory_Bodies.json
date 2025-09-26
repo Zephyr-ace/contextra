@@ -1,0 +1,104 @@
+[
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Xi Jinping",
+    "relationship_type": "regulates",
+    "evidence_text": "chairs commissions directing regulatory agendas",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Communist Party of China Constitution",
+    "relationship_type": "regulates",
+    "evidence_text": "Establishes Party leadership over state regulators, guiding mandates and political control.",
+    "importance_score": 0.8
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Anti-corruption campaign (since 2013)",
+    "relationship_type": "regulates",
+    "evidence_text": "CCDI-led campaign disciplines cadres, shaping regulator behavior",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "United States",
+    "relationship_type": "competes_with",
+    "evidence_text": "provoking regulatory responses and industrial policy shifts.",
+    "importance_score": 0.8
+  },
+  {
+    "relationship_type": "partner_with",
+    "evidence_text": ""
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "WTO accession (2001)",
+    "relationship_type": "regulates",
+    "evidence_text": "Binding commitments spurred regulatory restructuring",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "National Security Law of the PRC (2015)",
+    "relationship_type": "regulates",
+    "evidence_text": "Expands national security remit, prioritizing security across regulation",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Cybersecurity Law of the PRC (2017)",
+    "relationship_type": "regulates",
+    "evidence_text": "Defines cyberspace governance, empowering CAC",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Common Prosperity campaign (2021–)",
+    "relationship_type": "regulates",
+    "evidence_text": "steering regulation of platforms, finance, education, and property",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Real estate sector (China)",
+    "relationship_type": "regulates",
+    "evidence_text": "shaping financial, land, and risk oversight priorities",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Platform economy (China)",
+    "relationship_type": "regulates",
+    "evidence_text": "prompted antitrust, data, and labor regulation intensification.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Ant Group",
+    "relationship_type": "regulates",
+    "evidence_text": "Fintech giant whose halted IPO triggered sweeping financial technology regulation.",
+    "importance_score": 0.9
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Huawei",
+    "relationship_type": "regulates",
+    "evidence_text": "catalyzing tech self-reliance policies and regulatory protection",
+    "importance_score": 0.85
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "Evergrande",
+    "relationship_type": "regulates",
+    "evidence_text": "systemic risk regulation and real-estate deleveraging measures.",
+    "importance_score": 0.75
+  },
+  {
+    "source_node": "Chinese Government and Regulatory Bodies",
+    "target_node": "P2P lending platforms",
+    "relationship_type": "regulates",
+    "evidence_text": "forced stricter fintech regulation and supervision",
+    "importance_score": 0.85
+  }
+]
