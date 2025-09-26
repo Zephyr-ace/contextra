@@ -1,9 +1,7 @@
 from enum import Enum
-from typing import Dict, List, Optional, Type, Literal
+from typing import Dict, List, Optional, Literal
 
 from pydantic import BaseModel
-
-from util.asset import Asset
 
 
 class RebalancingFrequency(str, Enum):
@@ -18,13 +16,10 @@ class Strategy(BaseModel):
     description: str
     time_horizon: str
     risk_level: str
-    asset_classes: List[Type[Asset]]
+    asset_classes: List[str]
     rebalancing_frequency: RebalancingFrequency
     allocation_targets: Dict[str, float]
     preferences: Optional[List[str]] = None
-
-    class Config:
-        arbitrary_types_allowed = True
 
 
 class CoreStrategy(Strategy):

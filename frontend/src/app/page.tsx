@@ -1,11 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GraphViz from "./components/GraphViz";
+import type { Portfolio, Position, Strategy } from "@/types/models";
+
+
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
   const [selectedStock, setSelectedStock] = useState<string>("AAPL");
+  const [portfolio, setPortfolio] = useState<Portfolio | null>(null);
+  const [strategy, setStrategy] = useState<Strategy | null>(null);
+  const [loading, setLoading] = useState<{ portfolio: boolean; strategy: boolean }>({ portfolio: true, strategy: true });
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchPortfolio = async () => {
+      try {
+        const res = await fetch(`${API_BASE}/portfolio`);
+        if (!res.ok) throw new Error(`Failed to load portfolio (${res.status})`);
+        const data: Portfolio = await res.json();
+        if (isMounted) setPortfolio(data);
+      } catch (e: any) {
+        if (isMounted) setError(e?.message || "Failed to load portfolio");
+      } finally {
+        if (isMounted) setLoading((prev) => ({ ...prev, portfolio: false }));
+      }
+    };
+
+    const fetchStrategy = async () => {
+      try {
+        const res = await fetch(`${API_BASE}/investment-strategy`);
+        if (!res.ok) throw new Error(`Failed to load strategy (${res.status})`);
+        const data: Strategy = await res.json();
+        if (isMounted) setStrategy(data);
+      } catch (e: any) {
+        if (isMounted) setError(e?.message || "Failed to load strategy");
+      } finally {
+        if (isMounted) setLoading((prev) => ({ ...prev, strategy: false }));
+      }
+    };
+
+    fetchPortfolio();
+    fetchStrategy();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10">
@@ -63,150 +108,63 @@ export default function Home() {
                 <p className="text-sm text-neutral-600 mt-1">Overview of positions and performance</p>
 
                 <div className="mt-5 divide-y divide-[var(--ubs-border)]">
-                  {/* Accordion items */}
-                  <details role="accordion" className="py-3 group" open>
-                    <summary className="flex items-center justify-between cursor-pointer">
-                      <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--ubs-red)" }} />
-                        <span className="font-medium">Apple Inc. (AAPL)</span>
-                      </div>
-                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                    </summary>
-                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                      <div>
-                        <div className="text-neutral-500">Quantity</div>
-                        <div className="font-medium">120</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Avg. Cost</div>
-                        <div className="font-medium">$168.40</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Market Value</div>
-                        <div className="font-medium">$21,480</div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <div className="text-neutral-500">P/L</div>
-                          <div className="font-medium text-green-600">+4.2%</div>
+                  {loading.portfolio && (
+                    <div className="py-3 text-sm text-neutral-600">Loading portfolio…</div>
+                  )}
+                  {error && (
+                    <div className="py-3 text-sm text-red-600">{error}</div>
+                  )}
+                  {!loading.portfolio && !error && portfolio?.positions?.map((p) => (
+                    <details key={p.symbol} role="accordion" className="py-3 group" open>
+                      <summary className="flex items-center justify-between cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <div className="h-2 w-2 rounded-full" style={{ backgroundColor: p.color || "var(--ubs-gray-300)" }} />
+                          <span className="font-medium">{p.name} ({p.symbol})</span>
                         </div>
-                        <button
-                          type="button"
-                          title="Stock Information"
-                          aria-label="Stock Information"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveTab("Stock Details");
-                            setSelectedStock("AAPL");
-                          }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
-                          style={{ color: "var(--ubs-red)" }}
-                        >
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </details>
-
-                  <details role="accordion" className="py-3 group">
-                    <summary className="flex items-center justify-between cursor-pointer">
-                      <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full bg-orange-400" />
-                        <span className="font-medium">Microsoft (MSFT)</span>
-                      </div>
-                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                    </summary>
-                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                      <div>
-                        <div className="text-neutral-500">Quantity</div>
-                        <div className="font-medium">80</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Avg. Cost</div>
-                        <div className="font-medium">$310.20</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Market Value</div>
-                        <div className="font-medium">$25,200</div>
-                      </div>
-                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
+                      </summary>
+                      <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
                         <div>
-                          <div className="text-neutral-500">P/L</div>
-                          <div className="font-medium text-red-600">-1.1%</div>
+                          <div className="text-neutral-500">Quantity</div>
+                          <div className="font-medium">{p.quantity}</div>
                         </div>
-                        <button
-                          type="button"
-                          title="Stock Information"
-                          aria-label="Stock Information"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveTab("Stock Details");
-                            setSelectedStock("MSFT");
-                          }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
-                          style={{ color: "var(--ubs-yellow)" }}
-                        >
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </details>
-
-                  <details role="accordion" className="py-3 group">
-                    <summary className="flex items-center justify-between cursor-pointer">
-                      <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full bg-neutral-300" />
-                        <span className="font-medium">UBS Group (UBSG)</span>
-                      </div>
-                      <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
-                    </summary>
-                    <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-                      <div>
-                        <div className="text-neutral-500">Quantity</div>
-                        <div className="font-medium">1382819</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Avg. Cost</div>
-                        <div className="font-medium">CHF 23.50</div>
-                      </div>
-                      <div>
-                        <div className="text-neutral-500">Market Value</div>
-                        <div className="font-medium">CHF 183,217</div>
-                      </div>
-                      <div className="flex items-center justify-between">
                         <div>
-                          <div className="text-neutral-500">P/L</div>
-                          <div className="font-medium text-green-600">+271.821.172%</div>
+                          <div className="text-neutral-500">Avg. Cost</div>
+                          <div className="font-medium">{p.currency ? `${p.currency} ` : "$"}{p.average_cost.toLocaleString()}</div>
                         </div>
-                        <button
-                          type="button"
-                          title="Stock Information"
-                          aria-label="Stock Information"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveTab("Stock Details");
-                            setSelectedStock("UBSG");
-                          }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
-                          style={{ color: "var(--ubs-black)" }}
-                        >
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                        </button>
+                        <div>
+                          <div className="text-neutral-500">Market Value</div>
+                          <div className="font-medium">{p.currency ? `${p.currency} ` : "$"}{p.market_value.toLocaleString()}</div>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="text-neutral-500">P/L</div>
+                            <div className={`font-medium ${p.pl_percent >= 0 ? "text-green-600" : "text-red-600"}`}>
+                              {p.pl_percent >= 0 ? "+" : ""}{p.pl_percent}%
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            title="Stock Information"
+                            aria-label="Stock Information"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setActiveTab("Stock Details");
+                              setSelectedStock(p.symbol);
+                            }}
+                            className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
+                            style={{ color: p.color || "var(--ubs-black)" }}
+                          >
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </details>
+                    </details>
+                  ))}
                 </div>
               </>
             )}
@@ -217,22 +175,55 @@ export default function Home() {
                 <p className="text-sm text-neutral-600 mt-1">Your personalized approach to financial growth.</p>
 
                 <div className="mt-5 divide-y divide-[var(--ubs-border)]">
-                  <div className="py-3">
-                    <div className="text-neutral-500">Risk Tolerance</div>
-                    <div className="font-medium">Medium</div>
-                  </div>
-                  <div className="py-3">
-                    <div className="text-neutral-500">Investment Horizon</div>
-                    <div className="font-medium">Long-term (5+ years)</div>
-                  </div>
-                  <div className="py-3">
-                    <div className="text-neutral-500">Capital Amount</div>
-                    <div className="font-medium">$100,000</div>
-                  </div>
-                  <div className="py-3">
-                    <div className="text-neutral-500">Investment Preferences</div>
-                    <div className="font-medium">Sustainable investments, Technology, Healthcare</div>
-                  </div>
+                  {loading.strategy && (
+                    <div className="py-3 text-sm text-neutral-600">Loading strategy…</div>
+                  )}
+                  {error && (
+                    <div className="py-3 text-sm text-red-600">{error}</div>
+                  )}
+                  {!loading.strategy && !error && strategy && (
+                    <>
+                      <div className="py-3">
+                        <div className="text-neutral-500">Name</div>
+                        <div className="font-medium">{strategy.name}</div>
+                      </div>
+                      <div className="py-3">
+                        <div className="text-neutral-500">Description</div>
+                        <div className="font-medium">{strategy.description}</div>
+                      </div>
+                      <div className="py-3">
+                        <div className="text-neutral-500">Risk Level</div>
+                        <div className="font-medium">{strategy.risk_level}</div>
+                      </div>
+                      <div className="py-3">
+                        <div className="text-neutral-500">Investment Horizon</div>
+                        <div className="font-medium">{strategy.time_horizon}</div>
+                      </div>
+                      <div className="py-3">
+                        <div className="text-neutral-500">Rebalancing</div>
+                        <div className="font-medium capitalize">{strategy.rebalancing_frequency}</div>
+                      </div>
+                      {strategy.preferences?.length ? (
+                        <div className="py-3">
+                          <div className="text-neutral-500">Preferences</div>
+                          <div className="font-medium">{strategy.preferences.join(", ")}</div>
+                        </div>
+                      ) : null}
+                      {strategy.allocation_targets && (
+                        <div className="py-3">
+                          <div className="text-neutral-500">Allocation Targets</div>
+                          <div className="font-medium grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
+                            {Object.entries(strategy.allocation_targets).map(([k, v]) => (
+                              <div key={k} className="flex items-center justify-between border border-[var(--ubs-border)] rounded-md px-2 py-1">
+                                <span className="text-neutral-600">{k.replaceAll("_", " ")}</span>
+                                <span>{(v * 100).toFixed(0)}%</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  )}
                 </div>
               </>
             )}
