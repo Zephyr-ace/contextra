@@ -27,4 +27,20 @@ export type Strategy = {
   preferences?: string[];
 };
 
+export type ChatMessage = {
+  role: "user" | "assistant";
+  content: string;
+  timestamp?: string;
+};
+
+export type ChatRequest = {
+  message: string;
+  chat_history?: ChatMessage[];
+};
+
+export type ChatResponse = {
+  message: string;
+  chat_history: ChatMessage[];
+};
+
 

@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import GraphViz from "./components/GraphViz";
-import type { Portfolio, Strategy } from "@/types/models";
-import { portfolioService, strategyService } from "@/api";
+import type { Portfolio, Strategy, ChatMessage } from "@/types/models";
+import { portfolioService, strategyService, chatService } from "@/api";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
@@ -12,6 +12,18 @@ export default function Home() {
   const [strategy, setStrategy] = useState<Strategy | null>(null);
   const [loading, setLoading] = useState<{ portfolio: boolean; strategy: boolean }>({ portfolio: true, strategy: true });
   const [error, setError] = useState<string | null>(null);
+  
+  // Chat state
+  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
+    {
+      role: "assistant",
+      content: "Hello! I'm your AI financial analyst. I can help you analyze your portfolio, discuss investment strategies, and provide insights on market trends. What would you like to know?",
+      timestamp: new Date().toISOString(),
+    }
+  ]);
+  const [chatInput, setChatInput] = useState("");
+  const [isChatLoading, setIsChatLoading] = useState(false);
+  const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -45,6 +57,46 @@ export default function Home() {
       isMounted = false;
     };
   }, []);
+
+  const handleSendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!chatInput.trim() || isChatLoading) return;
+
+    const userMessage: ChatMessage = {
+      role: "user",
+      content: chatInput.trim(),
+      timestamp: new Date().toISOString(),
+    };
+
+    // Add user message immediately
+    setChatMessages(prev => [...prev, userMessage]);
+    setChatInput("");
+    setIsChatLoading(true);
+
+    try {
+      const response = await chatService.sendMessage({
+        message: userMessage.content,
+        chat_history: chatMessages,
+      });
+
+      setChatMessages(response.chat_history);
+    } catch (error) {
+      console.error("Chat error:", error);
+      const errorMessage: ChatMessage = {
+        role: "assistant",
+        content: "Sorry, I encountered an error. Please try again.",
+        timestamp: new Date().toISOString(),
+      };
+      setChatMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsChatLoading(false);
+    }
+  };
+
+  // Auto-scroll to bottom of chat
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chatMessages, isChatLoading]);
 
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10">
@@ -261,39 +313,56 @@ export default function Home() {
           </div>
 
           <div className="flex-1 overflow-auto p-5 space-y-4">
-            {/* Sample messages */}
-            <div className="flex gap-3 items-start">
-              <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />
-              <div>
-                <div className="text-[13px] text-neutral-500">Analyst</div>
-                <div className="mt-1 px-3 py-2 rounded-lg bg-[var(--ubs-gray-100)] text-sm max-w-[28rem]">
-                  Apple is approaching resistance near $180. Consider trimming 10% of the position.
+            {chatMessages.map((message, index) => (
+              <div key={index} className={`flex gap-3 items-start ${message.role === "user" ? "justify-end" : ""}`}>
+                {message.role === "assistant" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />}
+                <div>
+                  <div className="text-[13px] text-neutral-500">{message.role === "user" ? "You" : "Analyst"}</div>
+                  <div className={`mt-1 px-3 py-2 rounded-lg text-sm max-w-[28rem] ${
+                    message.role === "user" 
+                      ? "bg-white border border-[var(--ubs-border)]" 
+                      : "bg-[var(--ubs-gray-100)]"
+                  }`}>
+                    {message.content}
+                  </div>
+                </div>
+                {message.role === "user" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-red)]" />}
+              </div>
+            ))}
+            
+            {isChatLoading && (
+              <div className="flex gap-3 items-start">
+                <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />
+                <div>
+                  <div className="text-[13px] text-neutral-500">Analyst</div>
+                  <div className="mt-1 px-3 py-2 rounded-lg bg-[var(--ubs-gray-100)] text-sm max-w-[28rem]">
+                    <div className="flex items-center gap-1">
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
+                      <div className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="flex gap-3 items-start justify-end">
-              <div>
-                <div className="text-[13px] text-neutral-500 text-right">You</div>
-                <div className="mt-1 px-3 py-2 rounded-lg bg-white border border-[var(--ubs-border)] text-sm max-w-[28rem]">
-                  Noted. What is the updated target for UBSG after the latest report?
-                </div>
-              </div>
-              <div className="h-7 w-7 rounded-full bg-[var(--ubs-red)]" />
-            </div>
+            )}
+            <div ref={chatEndRef} />
           </div>
 
-          <form className="p-4 border-t border-[var(--ubs-border)] flex items-center gap-3">
+          <form onSubmit={handleSendMessage} className="p-4 border-t border-[var(--ubs-border)] flex items-center gap-3">
             <input
               type="text"
               placeholder="Type your message..."
-              className="flex-1 rounded-md border border-[var(--ubs-border)] px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[var(--ubs-red)]"
+              value={chatInput}
+              onChange={(e) => setChatInput(e.target.value)}
+              disabled={isChatLoading}
+              className="flex-1 rounded-md border border-[var(--ubs-border)] px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[var(--ubs-red)] disabled:opacity-50"
             />
             <button
-              type="button"
+              type="submit"
               title="Send"
               aria-label="Send"
-              className="h-10 w-10 grid place-items-center rounded-md bg-[var(--ubs-red)] text-white hover:opacity-90"
+              disabled={isChatLoading || !chatInput.trim()}
+              className="h-10 w-10 grid place-items-center rounded-md bg-[var(--ubs-red)] text-white hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M3.4 20.6L21 12L3.4 3.4L3 10L15 12L3 14L3.4 20.6Z" fill="currentColor"/>
