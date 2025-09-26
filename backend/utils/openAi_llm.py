@@ -116,7 +116,8 @@ class LLM_OA:
 
         return asyncio.run(run_with_new_client())
 
-
+    def deepresearch(self, prompt):
+        # deepresearch
 
 
 
