@@ -254,7 +254,7 @@ export default function Home() {
         </div>
 
         {/* Chat Panel */}
-        <aside className="surface-card accent-top flex flex-col lg:col-span-3 h-full lg:mt-[52px] lg:h-[calc(100%_-_52px)] overflow-hidden">
+        <aside className="surface-card accent-top flex flex-col lg:col-span-3 h-full lg:mt-[40px] lg:h-[calc(100%_-_40px)] overflow-hidden">
           <div className="p-5 sm:p-6 border-b border-[var(--ubs-border)]">
             <h2 className="section-title text-lg">Analyst Chat</h2>
             <p className="text-sm text-neutral-600 mt-1">Discuss insights and next steps</p>
