@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* UBS palette */
+  --ubs-red: #e0001a;
+  --ubs-black: #000000;
+  --ubs-gray-50: #fafafa;
+  --ubs-gray-100: #f5f5f5;
+  --ubs-gray-200: #eeeeee;
+  --ubs-border: #e5e5e5;
 }
 
 @theme inline {
@@ -23,4 +30,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Simple card surface matching UBS minimal aesthetic */
+.surface-card {
+  background-color: #fff;
+  border: 1px solid var(--ubs-border);
+  border-radius: 12px;
+}
+
+/* Thin red top accent for key panels */
+.accent-top {
+  border-top: 3px solid var(--ubs-red);
+}
+
+/* Subtle section titles */
+.section-title {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Accordion reset for details/summary */
+details[role="accordion"] summary {
+  list-style: none;
+}
+details[role="accordion"] summary::-webkit-details-marker {
+  display: none;
 }
