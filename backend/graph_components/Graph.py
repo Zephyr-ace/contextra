@@ -17,6 +17,24 @@ class Graph:
         """
         self.nodes: Dict[str, Node] = {}
         self.edges: List[Edge] = []
+
+    def appendNode(self, node: Node) -> None:
+        """
+        Append a node to the graph.
+        
+        Args:
+            node (Node): The node to append.
+        """
+        self.nodes[node.title] = node
+    
+    def appendEdge(self, edge: Edge) -> None:
+        """
+        Append an edge to the graph.
+        
+        Args:
+            edge (Edge): The edge to append.
+        """
+        self.edges.append(edge)
     
     def deleteNode(self, node_title: str) -> bool:
         """
