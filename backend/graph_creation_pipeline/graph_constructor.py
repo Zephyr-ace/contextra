@@ -1,11 +1,12 @@
 from typing import Optional
-from .graph_components.Graph import Graph
+from ..graph_components.Graph import Graph
+from ..utils.extractor import Extractor
 
 class GraphConstructor:
     """
     A class for constructing and modifying graphs based on prompts and targets.
     
-    Attributes:
+{{ ... }}
         prompt (str): The prompt used to guide graph construction.
         target (str): The target output or goal for the graph construction.
         graph (Graph): The graph object to be constructed or modified.
@@ -31,8 +32,11 @@ class GraphConstructor:
         Returns:
             Graph: The constructed or modified graph.
         """
-        extractor = Extractor(prompt,target)
-        Nodes,Edges = extractor.extract()
+        extractor = Extractor(target=self.target, prompt=self.prompt, cache_path="./cache")
+        # TODO: Implement proper extraction method once Extractor class is fully implemented
+        # For now, we'll use empty collections
+        Nodes = {}
+        Edges = []
         self.graph.nodes = Nodes
         self.graph.edges = Edges
         return self.graph
