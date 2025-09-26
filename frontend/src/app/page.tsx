@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -138,7 +137,26 @@ export default function Home() {
             ) : (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Investment Strategy</h1>
-                <p className="text-sm text-neutral-600 mt-1">Coming soon</p>
+                <p className="text-sm text-neutral-600 mt-1">Your personalized approach to financial growth.</p>
+
+                <div className="mt-5 divide-y divide-[var(--ubs-border)]">
+                  <div className="py-3">
+                    <div className="text-neutral-500">Risk Tolerance</div>
+                    <div className="font-medium">Medium</div>
+                  </div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Investment Horizon</div>
+                    <div className="font-medium">Long-term (5+ years)</div>
+                  </div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Capital Amount</div>
+                    <div className="font-medium">$100,000</div>
+                  </div>
+                  <div className="py-3">
+                    <div className="text-neutral-500">Investment Preferences</div>
+                    <div className="font-medium">Sustainable investments, Technology, Healthcare</div>
+                  </div>
+                </div>
               </>
             )}
             </div>
