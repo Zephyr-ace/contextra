@@ -405,7 +405,6 @@ export default function Home() {
           <div className="flex-1 overflow-auto p-5 space-y-4">
             {chatMessages.map((message, index) => (
               <div key={index} className={`flex gap-3 items-start ${message.role === "user" ? "justify-end" : ""}`}>
-                {message.role === "assistant" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />}
                 <div>
                   <div className="text-[13px] text-neutral-500">{message.role === "user" ? "You" : "Analyst"}</div>
                   <div className={`mt-1 px-3 py-2 rounded-lg text-sm max-w-[28rem] ${
@@ -416,13 +415,11 @@ export default function Home() {
                     {message.content}
                   </div>
                 </div>
-                {message.role === "user" && <div className="h-7 w-7 rounded-full bg-[var(--ubs-red)]" />}
               </div>
             ))}
             
             {isChatLoading && (
               <div className="flex gap-3 items-start">
-                <div className="h-7 w-7 rounded-full bg-[var(--ubs-black)]" />
                 <div>
                   <div className="text-[13px] text-neutral-500">Analyst</div>
                   <div className="mt-1 px-3 py-2 rounded-lg bg-[var(--ubs-gray-100)] text-sm max-w-[28rem]">
