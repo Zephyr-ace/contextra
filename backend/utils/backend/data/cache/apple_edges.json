@@ -1,0 +1,118 @@
+[
+  {
+    "title": "Apple Inc. designs and sells iPhone",
+    "description": "Apple Inc. directly causes the existence and sales of the iPhone.",
+    "start": {
+      "name": "Apple Inc.",
+      "aliases": [
+        "Apple",
+        "AAPL"
+      ],
+      "description": "American multinational technology company.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "iPhone",
+      "aliases": [
+        "Apple iPhone",
+        "iPhones"
+      ],
+      "description": "Smartphone product line designed and sold by Apple Inc.",
+      "type": "Product"
+    },
+    "weight": 1
+  },
+  {
+    "title": "Apple Inc. is headquartered in United States",
+    "description": "Apple Inc. operates primarily out of the United States.",
+    "start": {
+      "name": "Apple Inc.",
+      "aliases": [
+        "Apple",
+        "AAPL"
+      ],
+      "description": "American multinational technology company.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "United States",
+      "aliases": [
+        "US",
+        "USA",
+        "America"
+      ],
+      "description": "Country in North America, location of Apple Inc.'s headquarters.",
+      "type": "Country"
+    },
+    "weight": 0
+  },
+  {
+    "title": "Apple Inc. operates in Technology Sector",
+    "description": "\"Apple Inc. is a leading company in the technology sector\".",
+    "start": {
+      "name": "Apple Inc.",
+      "aliases": [
+        "Apple",
+        "AAPL"
+      ],
+      "description": "American multinational technology company.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Technology Sector",
+      "aliases": [
+        "Tech Sector",
+        "Tech Industry"
+      ],
+      "description": "Industry focused on technology products and services.",
+      "type": "Sector"
+    },
+    "weight": 1
+  },
+  {
+    "title": "iPhone drives Apple Inc. revenue",
+    "description": "\"The iPhone is a major driver of Apple's revenue\".",
+    "start": {
+      "name": "iPhone",
+      "aliases": [
+        "Apple iPhone",
+        "iPhones"
+      ],
+      "description": "Smartphone product line designed and sold by Apple Inc.",
+      "type": "Product"
+    },
+    "end": {
+      "name": "Apple Inc.",
+      "aliases": [
+        "Apple",
+        "AAPL"
+      ],
+      "description": "American multinational technology company.",
+      "type": "Company"
+    },
+    "weight": 1
+  },
+  {
+    "title": "iPhone is a flagship product of Technology Sector",
+    "description": "\"iPhone is a flagship product in the technology sector\".",
+    "start": {
+      "name": "iPhone",
+      "aliases": [
+        "Apple iPhone",
+        "iPhones"
+      ],
+      "description": "Smartphone product line designed and sold by Apple Inc.",
+      "type": "Product"
+    },
+    "end": {
+      "name": "Technology Sector",
+      "aliases": [
+        "Tech Sector",
+        "Tech Industry"
+      ],
+      "description": "Industry focused on technology products and services.",
+      "type": "Sector"
+    },
+    "weight": 0
+  }
+]

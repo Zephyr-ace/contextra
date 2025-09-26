@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Apple Inc.",
+    "aliases": [
+      "Apple"
+    ],
+    "description": "US-based technology company known for iPhone, Mac, and other devices.",
+    "type": "Company"
+  },
+  {
+    "name": "iPhone",
+    "aliases": [],
+    "description": "Flagship smartphone product of Apple Inc.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "United States",
+    "aliases": [
+      "US",
+      "USA"
+    ],
+    "description": "Country in North America, home to Apple Inc.",
+    "type": "Country"
+  },
+  {
+    "name": "Technology Sector",
+    "aliases": [],
+    "description": "Economic sector involving development and manufacturing of technology products.",
+    "type": "Sector"
+  }
+]
