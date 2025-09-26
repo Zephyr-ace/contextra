@@ -213,7 +213,7 @@ class Graph:
                 # Explore all adjacent nodes
                 for edge in self.edges:
                     if edge.start.title == current_title and edge.end.title not in visited:
-                        dfs(edge.end.title, target_title, path, visited, total_weight + edge.weight)
+                        dfs(edge.end.title, target_title, path, visited, total_weight * edge.weight)
 
             # Backtrack: remove the current node from path and mark it as unvisited
             path.pop()
