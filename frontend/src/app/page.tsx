@@ -163,13 +163,24 @@ export default function Home() {
         ref={containerRef}
         className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-2 h-[calc(100vh-theme(spacing.6)*2)] sm:h-[calc(100vh-theme(spacing.10)*2)]"
       >
-        {/* Main Column with floating tabs above content */}
+        {/* Main Column with side tabs */}
         <div 
-          className="flex flex-col gap-3 w-full lg:w-auto"
+          className="flex gap-3 w-full lg:w-auto"
           style={{ width: isDesktop ? `${contentWidth}%` : '100%' }}
         >
-          {/* Floating tabs above the content window */}
-          <nav className="relative z-10 flex items-center gap-2 -mb-3">
+          {/* UBS Logo and Side tabs on the left */}
+          <div className="flex flex-col gap-3 w-12 flex-shrink-0">
+            {/* UBS Logo */}
+            <div className="flex justify-center">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/de/a/a0/UBS_Logo_SVG.svg" 
+                alt="UBS Logo" 
+                className="h-8 w-auto"
+              />
+            </div>
+            
+            {/* Side tabs */}
+            <nav className="flex flex-col gap-2">
             <button
               type="button"
               title="Portfolio"
@@ -209,7 +220,8 @@ export default function Home() {
             >
               📈
             </button>
-          </nav>
+            </nav>
+          </div>
 
           {/* Main Content Window */}
           <section className="surface-card accent-top flex-1 flex flex-col overflow-hidden">
@@ -382,7 +394,7 @@ export default function Home() {
 
         {/* Chat Panel */}
         <aside 
-          className="surface-card accent-top flex flex-col flex-1 lg:mt-[40px] overflow-hidden"
+          className="surface-card accent-top flex flex-col flex-1 overflow-hidden"
           style={{ width: isDesktop ? `${100 - contentWidth}%` : '100%' }}
         >
           <div className="p-5 sm:p-6 border-b border-[var(--ubs-border)]">
