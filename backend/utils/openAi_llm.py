@@ -116,11 +116,6 @@ class LLM_OA:
 
         return asyncio.run(run_with_new_client())
 
-    def deepresearch(self, prompt):
-        return "mock research output for testing"
 
 
 
-
-# FinBERT functionality has been moved to core/llm_finbert.py
-# This file now contains only OpenAI LLM functionality for potential future use

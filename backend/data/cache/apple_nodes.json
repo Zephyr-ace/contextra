@@ -1,0 +1,501 @@
+[
+  {
+    "name": "Apple Inc.",
+    "aliases": [
+      "Apple"
+    ],
+    "description": "Global technology giant, maker of iPhone, Mac, iPad, Apple Watch.",
+    "type": "Company"
+  },
+  {
+    "name": "Taiwan Semiconductor Manufacturing Co.",
+    "aliases": [
+      "TSMC"
+    ],
+    "description": "Largest semiconductor foundry, exclusive chip fabricator for Apple.",
+    "type": "Company"
+  },
+  {
+    "name": "Hon Hai Precision Industry",
+    "aliases": [
+      "Foxconn"
+    ],
+    "description": "World\u2019s largest electronics manufacturer, major assembler of iPhones.",
+    "type": "Company"
+  },
+  {
+    "name": "Samsung Electronics",
+    "aliases": [
+      "Samsung"
+    ],
+    "description": "Major smartphone competitor and component supplier to Apple.",
+    "type": "Company"
+  },
+  {
+    "name": "Alphabet Inc.",
+    "aliases": [
+      "Google"
+    ],
+    "description": "Creator of Android OS, Apple\u2019s main smartphone platform rival and search partner.",
+    "type": "Company"
+  },
+  {
+    "name": "Qualcomm",
+    "aliases": [],
+    "description": "Supplier of cellular modem chips vital for iPhones\u2019 connectivity.",
+    "type": "Company"
+  },
+  {
+    "name": "Broadcom",
+    "aliases": [],
+    "description": "Provider of wireless components (Wi-Fi/Bluetooth chips) for Apple devices.",
+    "type": "Company"
+  },
+  {
+    "name": "Sony Corporation",
+    "aliases": [
+      "Sony"
+    ],
+    "description": "Supplier of camera sensors for Apple iPhones.",
+    "type": "Company"
+  },
+  {
+    "name": "LG Display",
+    "aliases": [
+      "LG"
+    ],
+    "description": "Supplier of display panels for Apple devices.",
+    "type": "Company"
+  },
+  {
+    "name": "SK Hynix",
+    "aliases": [],
+    "description": "Memory chip supplier to Apple.",
+    "type": "Company"
+  },
+  {
+    "name": "Micron Technology",
+    "aliases": [
+      "Micron"
+    ],
+    "description": "Supplier of memory components for Apple devices.",
+    "type": "Company"
+  },
+  {
+    "name": "Pegatron",
+    "aliases": [],
+    "description": "Apple contract manufacturer, assembles iPhones and iPads.",
+    "type": "Company"
+  },
+  {
+    "name": "Wistron",
+    "aliases": [],
+    "description": "Contract manufacturer assembling Apple devices.",
+    "type": "Company"
+  },
+  {
+    "name": "Luxshare Precision",
+    "aliases": [
+      "Luxshare"
+    ],
+    "description": "Contract electronics manufacturer, increasingly assembles Apple devices.",
+    "type": "Company"
+  },
+  {
+    "name": "Epic Games",
+    "aliases": [],
+    "description": "Gaming company, challenged Apple\u2019s App Store policies in court.",
+    "type": "Company"
+  },
+  {
+    "name": "Global Smartphone Market",
+    "aliases": [],
+    "description": "Sector driving the majority of Apple\u2019s revenue via iPhone demand.",
+    "type": "Sector"
+  },
+  {
+    "name": "Semiconductor & Chip Industry",
+    "aliases": [
+      "Semiconductor Industry"
+    ],
+    "description": "Sector producing chips powering Apple devices.",
+    "type": "Sector"
+  },
+  {
+    "name": "Mobile App Economy & Services Sector",
+    "aliases": [
+      "Mobile App Economy",
+      "Services Sector"
+    ],
+    "description": "Industry encompassing mobile apps and services, critical to Apple\u2019s revenue.",
+    "type": "Sector"
+  },
+  {
+    "name": "Personal Computing Industry",
+    "aliases": [
+      "PC/Laptop Industry"
+    ],
+    "description": "Global PC/laptop market affecting Apple\u2019s Mac business.",
+    "type": "Sector"
+  },
+  {
+    "name": "Wearables & Consumer Electronics",
+    "aliases": [
+      "Wearables Sector"
+    ],
+    "description": "Market for wearables and smart accessories, important for Apple growth.",
+    "type": "Sector"
+  },
+  {
+    "name": "Telecommunications Industry",
+    "aliases": [
+      "Carriers & 5G/6G"
+    ],
+    "description": "Mobile network sector influences iPhone technologies and distribution.",
+    "type": "Sector"
+  },
+  {
+    "name": "Retail and E-commerce Industry",
+    "aliases": [
+      "Retail Sector"
+    ],
+    "description": "Sector affecting Apple\u2019s product distribution and sales approach.",
+    "type": "Sector"
+  },
+  {
+    "name": "iPhone",
+    "aliases": [
+      "iPhone product line"
+    ],
+    "description": "Apple\u2019s flagship smartphone; main revenue generator.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "App Store",
+    "aliases": [],
+    "description": "Platform for distributing iOS apps and key services revenue source.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "Apple Services",
+    "aliases": [],
+    "description": "Apple\u2019s digital services division, including Music, TV+, iCloud, Pay, etc.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "macOS",
+    "aliases": [],
+    "description": "Operating system for Apple\u2019s Mac computers.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "Mac Hardware",
+    "aliases": [
+      "Mac"
+    ],
+    "description": "Apple\u2019s personal computing hardware products.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "iPad",
+    "aliases": [],
+    "description": "Apple\u2019s tablet product line with significant education/business market.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "Apple Watch",
+    "aliases": [],
+    "description": "Leading smartwatch product in wearables segment.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "AirPods",
+    "aliases": [],
+    "description": "Popular wireless earbuds in Apple\u2019s wearables segment.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "ARM Architecture",
+    "aliases": [
+      "ARM"
+    ],
+    "description": "Semiconductor ecosystem underlying Apple\u2019s custom chips.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "U.S. Department of Justice",
+    "aliases": [
+      "DOJ"
+    ],
+    "description": "American government regulator suing Apple for antitrust violations.",
+    "type": "Regulation"
+  },
+  {
+    "name": "European Commission",
+    "aliases": [
+      "EU Antitrust"
+    ],
+    "description": "Primary EU regulatory body enforcing antitrust and digital markets rules on Apple.",
+    "type": "Regulation"
+  },
+  {
+    "name": "Chinese Government",
+    "aliases": [
+      "China Regulatory Bodies"
+    ],
+    "description": "China\u2019s authorities affecting Apple\u2019s access, supply, and compliance.",
+    "type": "Regulation"
+  },
+  {
+    "name": "U.S.\u2013China Trade Policy",
+    "aliases": [
+      "Tariffs & Export Controls"
+    ],
+    "description": "Bilateral trade laws impacting Apple\u2019s supply chain and costs.",
+    "type": "Regulation"
+  },
+  {
+    "name": "U.S. Congress",
+    "aliases": [],
+    "description": "American legislative body influencing Apple via bills, hearings, and policy pressure.",
+    "type": "Regulation"
+  },
+  {
+    "name": "U.S. Judicial System",
+    "aliases": [
+      "Courts"
+    ],
+    "description": "Courts influencing Apple\u2019s policies via legal judgments (e.g. Epic v. Apple).",
+    "type": "Regulation"
+  },
+  {
+    "name": "Federal Trade Commission",
+    "aliases": [
+      "FTC"
+    ],
+    "description": "U.S. agency enforcing competition and consumer protection rules.",
+    "type": "Regulation"
+  },
+  {
+    "name": "U.S. Securities and Exchange Commission",
+    "aliases": [
+      "SEC"
+    ],
+    "description": "US regulator overseeing public company disclosures and finance.",
+    "type": "Regulation"
+  },
+  {
+    "name": "Competition Commission of India",
+    "aliases": [],
+    "description": "Indian regulator investigating Apple\u2019s App Store practices.",
+    "type": "Regulation"
+  },
+  {
+    "name": "Japan Fair Trade Commission",
+    "aliases": [
+      "JFTC"
+    ],
+    "description": "Japanese agency regulating fair competition; influenced App Store rule changes.",
+    "type": "Regulation"
+  },
+  {
+    "name": "South Korean Regulator",
+    "aliases": [],
+    "description": "Authorities requiring Apple to allow third-party app payments.",
+    "type": "Regulation"
+  },
+  {
+    "name": "Tax Authorities (EU, US, etc.)",
+    "aliases": [
+      "State Aid Regulators"
+    ],
+    "description": "Institutions changing Apple\u2019s tax practices and costs via rulings and law.",
+    "type": "Regulation"
+  },
+  {
+    "name": "World Trade Organization",
+    "aliases": [
+      "WTO"
+    ],
+    "description": "Global trade body affecting rules for tech companies like Apple.",
+    "type": "Regulation"
+  },
+  {
+    "name": "China",
+    "aliases": [
+      "Mainland China"
+    ],
+    "description": "Major market and global manufacturing hub for Apple; key to supply/demand.",
+    "type": "Country"
+  },
+  {
+    "name": "United States",
+    "aliases": [
+      "USA",
+      "US"
+    ],
+    "description": "Apple\u2019s home country; headquarters, top market, and innovation center.",
+    "type": "Country"
+  },
+  {
+    "name": "European Union",
+    "aliases": [
+      "Europe",
+      "EU"
+    ],
+    "description": "Regulatory superpower and major consumer market for Apple.",
+    "type": "Country"
+  },
+  {
+    "name": "Taiwan",
+    "aliases": [],
+    "description": "Home of key Apple suppliers; critical to global chip supply.",
+    "type": "Country"
+  },
+  {
+    "name": "India",
+    "aliases": [],
+    "description": "Fast-growing market and rising manufacturing base for Apple.",
+    "type": "Country"
+  },
+  {
+    "name": "Japan",
+    "aliases": [],
+    "description": "Major iPhone market and source of high-tech components.",
+    "type": "Country"
+  },
+  {
+    "name": "South Korea",
+    "aliases": [],
+    "description": "Home of Samsung and LG, key rivals and suppliers.",
+    "type": "Country"
+  },
+  {
+    "name": "Vietnam",
+    "aliases": [],
+    "description": "Growing Apple manufacturing center, especially for accessories and iPads.",
+    "type": "Country"
+  },
+  {
+    "name": "Singapore",
+    "aliases": [],
+    "description": "Regional supply chain and component production hub for Apple.",
+    "type": "Country"
+  },
+  {
+    "name": "Malaysia",
+    "aliases": [],
+    "description": "Southeast Asian supply chain and manufacturing partner.",
+    "type": "Country"
+  },
+  {
+    "name": "Thailand",
+    "aliases": [],
+    "description": "Location for some Apple device assembly (e.g. MacBooks).",
+    "type": "Country"
+  },
+  {
+    "name": "Latin America",
+    "aliases": [],
+    "description": "Emerging region with growing iPhone adoption, local production to avoid tariffs.",
+    "type": "Country"
+  },
+  {
+    "name": "Middle East",
+    "aliases": [],
+    "description": "Emerging region, especially in UAE and Saudi Arabia, with affluent Apple customers.",
+    "type": "Country"
+  },
+  {
+    "name": "Africa",
+    "aliases": [],
+    "description": "Developing region, potential long-term growth market for Apple.",
+    "type": "Country"
+  },
+  {
+    "name": "Tim Cook",
+    "aliases": [],
+    "description": "Chief Executive Officer of Apple Inc. since 2011.",
+    "type": "Person"
+  },
+  {
+    "name": "Jeff Williams",
+    "aliases": [],
+    "description": "Chief Operating Officer of Apple; oversees supply chain and operations.",
+    "type": "Person"
+  },
+  {
+    "name": "Craig Federighi",
+    "aliases": [],
+    "description": "Senior VP, Software Engineering at Apple; oversees iOS and macOS software.",
+    "type": "Person"
+  },
+  {
+    "name": "Johny Srouji",
+    "aliases": [],
+    "description": "Senior VP, Hardware Technologies at Apple; leads chip development.",
+    "type": "Person"
+  },
+  {
+    "name": "Phil Schiller",
+    "aliases": [],
+    "description": "Former SVP Marketing, now Apple Fellow; oversees App Store and product launches.",
+    "type": "Person"
+  },
+  {
+    "name": "Greg Joswiak",
+    "aliases": [
+      "Joz"
+    ],
+    "description": "SVP of Worldwide Marketing at Apple; responsible for product marketing and launches.",
+    "type": "Person"
+  },
+  {
+    "name": "Steve Jobs",
+    "aliases": [],
+    "description": "Apple co-founder and former CEO; established Apple\u2019s product vision and culture.",
+    "type": "Person"
+  },
+  {
+    "name": "Margrethe Vestager",
+    "aliases": [],
+    "description": "EU Competition Commissioner; leads antitrust action against Apple.",
+    "type": "Person"
+  },
+  {
+    "name": "Lina Khan",
+    "aliases": [],
+    "description": "Chair of U.S. Federal Trade Commission; leading Big Tech scrutiny.",
+    "type": "Person"
+  },
+  {
+    "name": "Xi Jinping",
+    "aliases": [],
+    "description": "President of China; shapes economic and tech policy affecting Apple.",
+    "type": "Person"
+  },
+  {
+    "name": "Narendra Modi",
+    "aliases": [],
+    "description": "Prime Minister of India; architect of manufacturing incentives attracting Apple.",
+    "type": "Person"
+  },
+  {
+    "name": "Elon Musk",
+    "aliases": [],
+    "description": "CEO of Tesla, SpaceX, Twitter; competitive influence in tech ecosystem.",
+    "type": "Person"
+  },
+  {
+    "name": "Satya Nadella",
+    "aliases": [],
+    "description": "CEO of Microsoft; shapes enterprise, cloud, and software competition with Apple.",
+    "type": "Person"
+  },
+  {
+    "name": "Sundar Pichai",
+    "aliases": [],
+    "description": "CEO of Google/Alphabet; leader of Apple\u2019s key competitor in mobile and search.",
+    "type": "Person"
+  }
+]

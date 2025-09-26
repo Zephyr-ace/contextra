@@ -1,5 +1,5 @@
-from openAi_llm import LLM_OA
-from prompts import promptNodeExtractor, promptDeepresearch, promptEdgeExtractor
+from .openAi_llm import LLM_OA
+from .prompts import promptNodeExtractor, promptDeepresearch, promptEdgeExtractor
 from backend.graph_components.Edge import Edge
 from backend.graph_components.Node import Node
 from pydantic import BaseModel
@@ -42,14 +42,19 @@ class Extractor:
             with open(self.cache_path, 'r') as f:
                 return f.read()
 
-        prompt = promptDeepresearch.replace('{target}', self.target)
-        research_output = self.llm_oa.deepresearch(prompt)
+        # Try to use deepresearch method if it exists
+        if hasattr(self.llm_oa, 'deepresearch') and callable(getattr(self.llm_oa, 'deepresearch')):
+            prompt = promptDeepresearch.replace('{target}', self.target)
+            research_output = self.llm_oa.deepresearch(prompt)
 
-        os.makedirs(os.path.dirname(self.cache_path), exist_ok=True)
-        with open(self.cache_path, 'w') as f:
-            f.write(research_output)
+            os.makedirs(os.path.dirname(self.cache_path), exist_ok=True)
+            with open(self.cache_path, 'w') as f:
+                f.write(research_output)
 
-        return research_output
+            return research_output
+        else:
+            print("no deepresearch file and no deepresearch method")
+            return ""
 
     def _extract_nodes(self, research_output):
         prompt = promptNodeExtractor + research_output
