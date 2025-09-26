@@ -57,7 +57,7 @@ export default function Home() {
           {/* Main Content */}
           <section className="surface-card accent-top h-full flex flex-col">
           <div className="p-5 sm:p-6 flex-1 flex flex-col min-h-0">
-            {activeTab === "Portfolio" ? (
+            {activeTab === "Portfolio" && (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
                 <p className="text-sm text-neutral-600 mt-1">Overview of positions and performance</p>
@@ -209,7 +209,9 @@ export default function Home() {
                   </details>
                 </div>
               </>
-            ) : activeTab === "Investment Strategy" ? (
+            )}
+
+            {activeTab === "Investment Strategy" && (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Investment Strategy</h1>
                 <p className="text-sm text-neutral-600 mt-1">Your personalized approach to financial growth.</p>
@@ -233,7 +235,9 @@ export default function Home() {
                   </div>
                 </div>
               </>
-            ) : (
+            )}
+
+            {activeTab === "Stock Details" && (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Stock Details</h1>
                 <p className="text-sm text-neutral-600 mt-1">Detailed information and historical performance.</p>
@@ -258,6 +262,7 @@ export default function Home() {
                 </div>
               </>
             )}
+
             </div>
           </section>
         </div>

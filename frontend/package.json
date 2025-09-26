@@ -9,10 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@antv/g6": "^5.0.49",
+    "cytoscape": "^3.33.1",
+    "graphology": "^0.26.0",
+    "graphology-layout-forceatlas2": "^0.10.1",
     "next": "15.5.4",
     "react": "19.1.0",
+    "react-cytoscapejs": "^2.0.0",
     "react-dom": "19.1.0",
-    "reactflow": "^11.11.4"
+    "reactflow": "^11.11.4",
+    "sigma": "^3.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
