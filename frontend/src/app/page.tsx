@@ -3,7 +3,8 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy">("Portfolio");
+  const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
+  const [selectedStock, setSelectedStock] = useState<string>("AAPL");
 
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10">
@@ -36,6 +37,19 @@ export default function Home() {
               }`}
             >
               🧭
+            </button>
+            <button
+              type="button"
+              title="Stock Details"
+              aria-label="Stock Details"
+              onClick={() => setActiveTab("Stock Details")}
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+                activeTab === "Stock Details"
+                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
+                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+              }`}
+            >
+              📈
             </button>
           </nav>
 
@@ -70,9 +84,29 @@ export default function Home() {
                         <div className="text-neutral-500">Market Value</div>
                         <div className="font-medium">$21,480</div>
                       </div>
-                      <div>
-                        <div className="text-neutral-500">P/L</div>
-                        <div className="font-medium text-green-600">+4.2%</div>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <div className="text-neutral-500">P/L</div>
+                          <div className="font-medium text-green-600">+4.2%</div>
+                        </div>
+                        <button
+                          type="button"
+                          title="Stock Information"
+                          aria-label="Stock Information"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setActiveTab("Stock Details");
+                            setSelectedStock("AAPL");
+                          }}
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          style={{ color: "var(--ubs-red)" }}
+                        >
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </details>
@@ -80,7 +114,7 @@ export default function Home() {
                   <details role="accordion" className="py-3 group">
                     <summary className="flex items-center justify-between cursor-pointer">
                       <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full bg-neutral-300" />
+                        <div className="h-2 w-2 rounded-full bg-orange-400" />
                         <span className="font-medium">Microsoft (MSFT)</span>
                       </div>
                       <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
@@ -98,9 +132,29 @@ export default function Home() {
                         <div className="text-neutral-500">Market Value</div>
                         <div className="font-medium">$25,200</div>
                       </div>
-                      <div>
-                        <div className="text-neutral-500">P/L</div>
-                        <div className="font-medium text-red-600">-1.1%</div>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <div className="text-neutral-500">P/L</div>
+                          <div className="font-medium text-red-600">-1.1%</div>
+                        </div>
+                        <button
+                          type="button"
+                          title="Stock Information"
+                          aria-label="Stock Information"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setActiveTab("Stock Details");
+                            setSelectedStock("MSFT");
+                          }}
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          style={{ color: "var(--ubs-yellow)" }}
+                        >
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </details>
@@ -126,15 +180,35 @@ export default function Home() {
                         <div className="text-neutral-500">Market Value</div>
                         <div className="font-medium">CHF 12,150</div>
                       </div>
-                      <div>
-                        <div className="text-neutral-500">P/L</div>
-                        <div className="font-medium text-green-600">+2.7%</div>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <div className="text-neutral-500">P/L</div>
+                          <div className="font-medium text-green-600">+2.7%</div>
+                        </div>
+                        <button
+                          type="button"
+                          title="Stock Information"
+                          aria-label="Stock Information"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setActiveTab("Stock Details");
+                            setSelectedStock("UBSG");
+                          }}
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          style={{ color: "var(--ubs-black)" }}
+                        >
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </details>
                 </div>
               </>
-            ) : (
+            ) : activeTab === "Investment Strategy" ? (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Investment Strategy</h1>
                 <p className="text-sm text-neutral-600 mt-1">Your personalized approach to financial growth.</p>
@@ -156,6 +230,30 @@ export default function Home() {
                     <div className="text-neutral-500">Investment Preferences</div>
                     <div className="font-medium">Sustainable investments, Technology, Healthcare</div>
                   </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <h1 className="section-title text-xl sm:text-2xl">Stock Details</h1>
+                <p className="text-sm text-neutral-600 mt-1">Detailed information and historical performance.</p>
+
+                <div className="mt-5">
+                  <label htmlFor="stock-select" className="block text-sm font-medium text-neutral-700">Select Stock</label>
+                  <select
+                    id="stock-select"
+                    name="stock-select"
+                    className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-ubs-red focus:border-ubs-red sm:text-sm rounded-md"
+                    value={selectedStock}
+                    onChange={(e) => setSelectedStock(e.target.value)}
+                  >
+                    <option value="AAPL">Apple Inc. (AAPL)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="UBSG">UBS Group (UBSG)</option>
+                  </select>
+                </div>
+
+                <div className="mt-8 h-80 bg-[var(--ubs-gray-100)] border border-[var(--ubs-border)] rounded-md flex items-center justify-center text-neutral-500">
+                  Graph Placeholder
                 </div>
               </>
             )}
