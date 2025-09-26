@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import GraphViz from "./components/GraphViz";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
@@ -55,7 +56,7 @@ export default function Home() {
 
           {/* Main Content */}
           <section className="surface-card accent-top h-full flex flex-col">
-          <div className="p-5 sm:p-6">
+          <div className="p-5 sm:p-6 flex-1 flex flex-col min-h-0">
             {activeTab === "Portfolio" ? (
               <>
                 <h1 className="section-title text-xl sm:text-2xl">Portfolio</h1>
@@ -252,8 +253,8 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="mt-8 h-80 bg-[var(--ubs-gray-100)] border border-[var(--ubs-border)] rounded-md flex items-center justify-center text-neutral-500">
-                  Graph Placeholder
+                <div className="mt-4 flex-1 min-h-0">
+                  <GraphViz />
                 </div>
               </>
             )}
