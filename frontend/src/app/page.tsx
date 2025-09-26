@@ -170,7 +170,7 @@ export default function Home() {
                     <div className="mt-3 pl-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
                       <div>
                         <div className="text-neutral-500">Quantity</div>
-                        <div className="font-medium">500</div>
+                        <div className="font-medium">1382819</div>
                       </div>
                       <div>
                         <div className="text-neutral-500">Avg. Cost</div>
@@ -178,12 +178,12 @@ export default function Home() {
                       </div>
                       <div>
                         <div className="text-neutral-500">Market Value</div>
-                        <div className="font-medium">CHF 12,150</div>
+                        <div className="font-medium">CHF 183,217</div>
                       </div>
                       <div className="flex items-center justify-between">
                         <div>
                           <div className="text-neutral-500">P/L</div>
-                          <div className="font-medium text-green-600">+2.7%</div>
+                          <div className="font-medium text-green-600">+271.821.172%</div>
                         </div>
                         <button
                           type="button"
