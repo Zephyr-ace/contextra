@@ -97,6 +97,56 @@ class Graph:
         # Return True if any edges were removed
         return len(self.edges) < initial_length
     
+    def find_paths(self, start_title: str, target_title: str, amount: int = 1) -> list:
+        """
+        Find the paths with the most weight between a starting node and a target node.
+        
+        Args:
+            start_title (str): The title of the starting node.
+            target_title (str): The title of the target node.
+            amount (int, optional): The number of paths to return. Defaults to 1.
+            
+        Returns:
+            list: A list of lists, where each inner list represents a path (sequence of nodes)
+                 from start to target, sorted by total path weight in descending order.
+                 Each path is represented as a list of node titles.
+                 Returns an empty list if no paths are found.
+        """
+        if start_title not in self.nodes or target_title not in self.nodes:
+            return []
+        
+        # Use a modified depth-first search to find all paths
+        all_paths = []
+        path_weights = []
+        
+        def dfs(current_title, target_title, path, visited, total_weight):
+            # Mark the current node as visited
+            visited.add(current_title)
+            path.append(current_title)
+            
+            # If we've reached the target, add the path to our collection
+            if current_title == target_title:
+                all_paths.append(path.copy())
+                path_weights.append(total_weight)
+            else:
+                # Explore all adjacent nodes
+                for edge in self.edges:
+                    if edge.start.title == current_title and edge.end.title not in visited:
+                        dfs(edge.end.title, target_title, path, visited, total_weight + edge.weight)
+            
+            # Backtrack: remove the current node from path and mark it as unvisited
+            path.pop()
+            visited.remove(current_title)
+        
+        # Start DFS from the start node
+        dfs(start_title, target_title, [], set(), 0)
+        
+        # Sort paths by their weights in descending order
+        sorted_paths = [path for _, path in sorted(zip(path_weights, all_paths), reverse=True)]
+        
+        # Return the specified number of paths (or all if fewer are found)
+        return sorted_paths[:min(amount, len(sorted_paths))]
+    
     def __str__(self) -> str:
         """
         Return a string representation of the graph.
