@@ -10,3 +10,4 @@ class Edge(BaseModel):
     description: str = Field(..., description="Brief description of the entity")
     start: str = Field(..., description="starting Node")
     end: str = Field(..., description="ending Node")
+    weight: int = Field(..., description="weight of the edge")
