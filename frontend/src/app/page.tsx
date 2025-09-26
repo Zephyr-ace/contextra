@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 import GraphViz from "./components/GraphViz";
-import type { Portfolio, Position, Strategy } from "@/types/models";
-
-
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
+import type { Portfolio, Strategy } from "@/types/models";
+import { portfolioService, strategyService } from "@/api";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
@@ -20,12 +18,10 @@ export default function Home() {
 
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(`${API_BASE}/portfolio`);
-        if (!res.ok) throw new Error(`Failed to load portfolio (${res.status})`);
-        const data: Portfolio = await res.json();
+        const data = await portfolioService.getPortfolio();
         if (isMounted) setPortfolio(data);
-      } catch (e: any) {
-        if (isMounted) setError(e?.message || "Failed to load portfolio");
+      } catch (e: unknown) {
+        if (isMounted) setError(e instanceof Error ? e.message : "Failed to load portfolio");
       } finally {
         if (isMounted) setLoading((prev) => ({ ...prev, portfolio: false }));
       }
@@ -33,12 +29,10 @@ export default function Home() {
 
     const fetchStrategy = async () => {
       try {
-        const res = await fetch(`${API_BASE}/investment-strategy`);
-        if (!res.ok) throw new Error(`Failed to load strategy (${res.status})`);
-        const data: Strategy = await res.json();
+        const data = await strategyService.getStrategy();
         if (isMounted) setStrategy(data);
-      } catch (e: any) {
-        if (isMounted) setError(e?.message || "Failed to load strategy");
+      } catch (e: unknown) {
+        if (isMounted) setError(e instanceof Error ? e.message : "Failed to load strategy");
       } finally {
         if (isMounted) setLoading((prev) => ({ ...prev, strategy: false }));
       }
