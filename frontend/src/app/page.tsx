@@ -55,18 +55,19 @@ export default function Home() {
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-theme(spacing.6)*2)] sm:min-h-[calc(100vh-theme(spacing.10)*2)]">
-        {/* Main Column with top-left attached tabs */}
+        {/* Main Column with floating tabs above content */}
         <div className="lg:col-span-9 flex flex-col gap-3">
-          <nav className="sticky top-0 z-10 flex items-center gap-2">
+          {/* Floating tabs above the content window */}
+          <nav className="relative z-10 flex items-center gap-2 -mb-3">
             <button
               type="button"
               title="Portfolio"
               aria-label="Portfolio"
               onClick={() => setActiveTab("Portfolio")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
+              className={`h-10 w-10 rounded-md flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Portfolio"
-                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
-                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+                  ? "bg-[var(--ubs-gray-100)] text-[var(--ubs-black)]"
+                  : "bg-white hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
               }`}
             >
               📊
@@ -76,10 +77,10 @@ export default function Home() {
               title="Investment Strategy"
               aria-label="Investment Strategy"
               onClick={() => setActiveTab("Investment Strategy")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
+              className={`h-10 w-10 rounded-md flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Investment Strategy"
-                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
-                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+                  ? "bg-[var(--ubs-gray-100)] text-[var(--ubs-black)]"
+                  : "bg-white hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
               }`}
             >
               🧭
@@ -89,17 +90,17 @@ export default function Home() {
               title="Stock Details"
               aria-label="Stock Details"
               onClick={() => setActiveTab("Stock Details")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
+              className={`h-10 w-10 rounded-md flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Stock Details"
-                  ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
-                  : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
+                  ? "bg-[var(--ubs-gray-100)] text-[var(--ubs-black)]"
+                  : "bg-white hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
               }`}
             >
               📈
             </button>
           </nav>
 
-          {/* Main Content */}
+          {/* Main Content Window */}
           <section className="surface-card accent-top h-full flex flex-col">
           <div className="p-5 sm:p-6 flex-1 flex flex-col min-h-0">
             {activeTab === "Portfolio" && (
