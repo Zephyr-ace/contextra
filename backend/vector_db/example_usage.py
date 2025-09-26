@@ -1,25 +1,33 @@
 """
 Example usage of the vector database for Contextra.
+Run this script from the backend directory with: python -m vector_db.example_usage
 """
 
 import os
 import sys
 
-# Add the parent directory to the path so we can import modules
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Make sure we're running from the correct directory
+if not os.path.exists(os.path.join(os.getcwd(), 'vector_db')):
+    print("Error: This script must be run from the backend directory.")
+    print("Please run: python -m vector_db.example_usage")
+    sys.exit(1)
 
-# Import from vector_db module
+# Import the Node class
+from graph_components.Node import Node
+
+# Import our vector database components
 from vector_db.vector_store import VectorStore
 from vector_db.embedding_service import EmbeddingService
 
-# Import from graph_components module
-from graph_components.Node import Node
-from graph_components.Graph import Graph
-
 def main():
-    # Initialize services
-    embedding_service = EmbeddingService()
-    vector_store = VectorStore(collection_name="nodes", persist_directory="./chroma_db")
+    print("Starting vector database example...")
+    
+    # Initialize services with dummy embeddings for testing
+    print("Initializing embedding service with dummy embeddings...")
+    embedding_service = EmbeddingService(use_dummy=True)
+    
+    print("Initializing vector store...")
+    vector_store = VectorStore(collection_name="example_nodes", persist_directory="./chroma_db")
     
     # Create some example nodes
     nodes = [
@@ -56,37 +64,56 @@ def main():
     ]
     
     # Generate embeddings and add to vector store
-    print("Generating embeddings and adding nodes to vector store...")
-    embeddings = embedding_service.get_nodes_embeddings(nodes)
-    node_ids = vector_store.add_nodes(nodes, embeddings)
-    
-    # Map node titles to IDs for reference
-    node_id_map = {nodes[i].name: node_ids[i] for i in range(len(nodes))}
-    print(f"Added {len(node_ids)} nodes to vector store")
+    print("\nGenerating embeddings and adding nodes to vector store...")
+    try:
+        # Process nodes one by one for better error handling
+        node_ids = []
+        for i, node in enumerate(nodes):
+            print(f"Processing node {i+1}/{len(nodes)}: {node.name}")
+            embedding = embedding_service.get_node_embedding(node)
+            node_id = vector_store.add_node(node, embedding)
+            node_ids.append(node_id)
+            print(f"  Added with ID: {node_id}")
+        
+        # Map node titles to IDs for reference
+        node_id_map = {nodes[i].name: node_ids[i] for i in range(len(nodes))}
+        print(f"\nSuccessfully added {len(node_ids)} nodes to vector store")
+    except Exception as e:
+        print(f"Error adding nodes to vector store: {e}")
+        import traceback
+        traceback.print_exc()
+        return
     
     # Perform some example searches
-    print("\nSearching for 'cloud computing'...")
-    results = vector_store.search_by_text("cloud computing", n_results=3)
-    print_results(results)
-    
-    print("\nSearching for 'tech company CEO'...")
-    results = vector_store.search_by_text("tech company CEO", n_results=3)
-    print_results(results)
-    
-    # Get a specific node
-    print("\nRetrieving Microsoft node...")
-    microsoft_node = vector_store.get_node(node_id_map["Microsoft"])
-    if microsoft_node:
-        print(f"Found: {microsoft_node['metadata']['name']} - {microsoft_node['metadata']['description']}")
-    else:
-        print("Node not found")
-    
-    # Example of using embeddings for similarity check
-    print("\nChecking similarity between nodes...")
-    azure_embedding = embedding_service.get_node_embedding(nodes[4])  # Azure
-    similar_to_azure = vector_store.search_by_embedding(azure_embedding, n_results=3)
-    print("Nodes similar to Azure:")
-    print_results(similar_to_azure)
+    try:
+        print("\nSearching for 'cloud computing'...")
+        results = vector_store.search_by_text("cloud computing", n_results=3)
+        print_results(results)
+        
+        print("\nSearching for 'tech company CEO'...")
+        results = vector_store.search_by_text("tech company CEO", n_results=3)
+        print_results(results)
+        
+        # Get a specific node
+        print("\nRetrieving Microsoft node...")
+        microsoft_node = vector_store.get_node(node_id_map["Microsoft"])
+        if microsoft_node:
+            print(f"Found: {microsoft_node['metadata']['name']} - {microsoft_node['metadata']['description']}")
+        else:
+            print("Node not found")
+        
+        # Example of using embeddings for similarity check
+        print("\nChecking similarity between nodes...")
+        azure_embedding = embedding_service.get_node_embedding(nodes[4])  # Azure
+        similar_to_azure = vector_store.search_by_embedding(azure_embedding, n_results=3)
+        print("Nodes similar to Azure:")
+        print_results(similar_to_azure)
+        
+        print("\nVector database example completed successfully!")
+    except Exception as e:
+        print(f"\nError during search operations: {e}")
+        import traceback
+        traceback.print_exc()
 
 def print_results(results):
     """Print search results in a readable format."""
