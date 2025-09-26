@@ -124,7 +124,7 @@ function getEdgeParams(sourceNode: any, targetNode: any) {
 }
 
 const FloatingStraightEdge = (props: EdgeProps) => {
-  const { source, target, id, data } = props;
+  const { source, target, id, data, style } = props;
   const { getNodes } = useReactFlow();
   const nodes = getNodes();
 
@@ -143,6 +143,12 @@ const FloatingStraightEdge = (props: EdgeProps) => {
   const [hover, setHover] = useState(false);
   const label = (data as any)?.tooltip ?? `${source} ↔ ${target}`;
 
+  // Get custom colors from style prop, fallback to default
+  const defaultColor = '#6b7280';
+  const hoverColor = '#111827';
+  const edgeColor = (style?.stroke as string) || defaultColor;
+  const edgeWidth = (style?.strokeWidth as number) || 3;
+
   return (
     <>
       {/* fat invisible path to make hover easy */}
@@ -156,7 +162,12 @@ const FloatingStraightEdge = (props: EdgeProps) => {
         style={{ pointerEvents: 'all' }}
       />
       {/* visible edge */}
-      <path d={edgePath} fill="none" stroke={hover ? '#111827' : '#6b7280'} strokeWidth={hover ? 4 : 3} />
+      <path 
+        d={edgePath} 
+        fill="none" 
+        stroke={hover ? hoverColor : edgeColor} 
+        strokeWidth={hover ? edgeWidth + 1 : edgeWidth} 
+      />
 
       {/* tooltip */}
       <EdgeLabelRenderer>
@@ -189,27 +200,260 @@ const edgeTypes: EdgeTypes = { floating: FloatingStraightEdge };
 
 /* --------------------------------- Data ------------------------------------- */
 
+/*
+ * ========================================================================
+ *                    HOW TO CREATE GRAPHS FROM BACKEND
+ * ========================================================================
+ * 
+ * This component expects two arrays: `nodes` and `edges` following ReactFlow's
+ * data structure. Here's exactly what you need to send from your backend:
+ * 
+ * 1. NODES ARRAY STRUCTURE:
+ * -------------------------
+ * Each node must be an object with these required properties:
+ * 
+ * interface Node {
+ *   id: string;              // Unique identifier (e.g., "market", "tech", "ai")
+ *   position: {              // X,Y coordinates on canvas
+ *     x: number;             // Horizontal position (0 = left edge)
+ *     y: number;             // Vertical position (0 = top edge)
+ *   };
+ *   data: {                  // Custom data for the node
+ *     label: string;         // Text displayed inside the node
+ *   };
+ *   type: string;            // Must be "custom" to use our CustomNode component
+ *   draggable: boolean;      // true = user can drag this node around
+ * }
+ * 
+ * Example nodes array from backend:
+ * [
+ *   { 
+ *     id: "stock_aapl", 
+ *     position: { x: 100, y: 50 }, 
+ *     data: { label: "Apple Inc." }, 
+ *     type: "custom", 
+ *     draggable: true 
+ *   },
+ *   { 
+ *     id: "sector_tech", 
+ *     position: { x: 300, y: 150 }, 
+ *     data: { label: "Technology" }, 
+ *     type: "custom", 
+ *     draggable: true 
+ *   }
+ * ]
+ * 
+ * 2. EDGES ARRAY STRUCTURE:
+ * -------------------------
+ * Each edge connects two nodes and must have these properties:
+ * 
+ * interface Edge {
+ *   id: string;              // Unique identifier (e.g., "aapl-tech")
+ *   source: string;          // ID of source node (must match a node.id)
+ *   target: string;          // ID of target node (must match a node.id)
+ *   type: string;            // Must be "floating" to use our custom edge
+ *   data?: {                 // Optional custom data
+ *     tooltip?: string;      // Text shown on hover (optional)
+ *   };
+ *   style?: {                // Optional styling
+ *     stroke?: string;       // Color (hex code like "#ff0000" for red)
+ *     strokeWidth?: number;  // Thickness (1-10, default is 3)
+ *   };
+ * }
+ * 
+ * Example edges array from backend:
+ * [
+ *   { 
+ *     id: "aapl-tech", 
+ *     source: "stock_aapl", 
+ *     target: "sector_tech", 
+ *     type: "floating",
+ *     data: { tooltip: "Apple belongs to tech sector" },
+ *     style: { stroke: "#10b981", strokeWidth: 4 }  // Green, thick line
+ *   },
+ *   { 
+ *     id: "tech-market", 
+ *     source: "sector_tech", 
+ *     target: "market_trends", 
+ *     type: "floating",
+ *     data: { tooltip: "Tech follows market trends" }
+ *     // No style = uses default gray color
+ *   }
+ * ]
+ * 
+ * 3. BACKEND JSON STRUCTURE:
+ * --------------------------
+ * Your backend should return JSON in this exact format:
+ * 
+ * {
+ *   "nodes": [
+ *     {
+ *       "id": "node1",
+ *       "position": { "x": 100, "y": 50 },
+ *       "data": { "label": "Node 1" },
+ *       "type": "custom",
+ *       "draggable": true
+ *     },
+ *     {
+ *       "id": "node2", 
+ *       "position": { "x": 300, "y": 150 },
+ *       "data": { "label": "Node 2" },
+ *       "type": "custom",
+ *       "draggable": true
+ *     }
+ *   ],
+ *   "edges": [
+ *     {
+ *       "id": "edge1",
+ *       "source": "node1",
+ *       "target": "node2", 
+ *       "type": "floating",
+ *       "data": { "tooltip": "Connection info" },
+ *       "style": { "stroke": "#ff0000", "strokeWidth": 4 }
+ *     }
+ *   ]
+ * }
+ * 
+ * 4. COLORS FOR EDGES:
+ * --------------------
+ * Use these hex codes for different colors:
+ * - Red: "#ef4444" or "#dc2626" (brighter)
+ * - Green: "#10b981" 
+ * - Blue: "#3b82f6"
+ * - Purple: "#8b5cf6"
+ * - Orange: "#f59e0b"
+ * - Gray (default): "#6b7280"
+ * 
+ * 5. POSITIONING TIPS:
+ * --------------------
+ * - Canvas size is typically 800x600 pixels
+ * - Keep x coordinates between 50-750 to avoid clipping
+ * - Keep y coordinates between 50-550 to avoid clipping
+ * - Space nodes at least 100-150 pixels apart for readability
+ * - Use a grid layout (e.g., 200px spacing) for clean organization
+ * 
+ * 6. INTEGRATION EXAMPLE:
+ * -----------------------
+ * In your React component, replace the static data with API call:
+ * 
+ * const [graphData, setGraphData] = useState({ nodes: [], edges: [] });
+ * 
+ * useEffect(() => {
+ *   fetch('/api/graph-data')
+ *     .then(res => res.json())
+ *     .then(data => {
+ *       setGraphData(data);
+ *     });
+ * }, []);
+ * 
+ * Then use: 
+ * const [nodes, setNodes, onNodesChange] = useNodesState(graphData.nodes);
+ * const [edges, setEdges, onEdgesChange] = useEdgesState(graphData.edges);
+ * 
+ * 7. DYNAMIC UPDATES:
+ * -------------------
+ * To update the graph after initial load:
+ * - Call setNodes(newNodesArray) to update nodes
+ * - Call setEdges(newEdgesArray) to update edges
+ * - The graph will automatically re-render with new data
+ * 
+ * ========================================================================
+ */
+
 const initialNodes: Node[] = [
-  { id: 'market', position: { x: 300, y: 50 }, data: { label: 'Market Trends' }, type: 'custom', draggable: true },
-  { id: 'tech', position: { x: 150, y: 150 }, data: { label: 'Technology' }, type: 'custom', draggable: true },
-  { id: 'finance', position: { x: 450, y: 150 }, data: { label: 'Finance' }, type: 'custom', draggable: true },
-  { id: 'ai', position: { x: 100, y: 250 }, data: { label: 'AI/ML' }, type: 'custom', draggable: true },
-  { id: 'cloud', position: { x: 200, y: 250 }, data: { label: 'Cloud Services' }, type: 'custom', draggable: true },
-  { id: 'banking', position: { x: 400, y: 250 }, data: { label: 'Banking' }, type: 'custom', draggable: true },
-  { id: 'crypto', position: { x: 500, y: 250 }, data: { label: 'Cryptocurrency' }, type: 'custom', draggable: true },
-  { id: 'regulations', position: { x: 300, y: 350 }, data: { label: 'Regulations' }, type: 'custom', draggable: true },
+  { id: 'china-taiwan-conflict', position: { x: 100, y: 50 }, data: { label: 'China-Taiwan Conflict' }, type: 'custom', draggable: true },
+  { id: 'taiwan', position: { x: 400, y: 100 }, data: { label: 'Taiwan' }, type: 'custom', draggable: true },
+  { id: 'china', position: { x: 250, y: 200 }, data: { label: 'China' }, type: 'custom', draggable: true },
+  { id: 'geopolitics', position: { x: 50, y: 300 }, data: { label: 'Geopolitics' }, type: 'custom', draggable: true },
+  { id: 'tsmc', position: { x: 400, y: 250 }, data: { label: 'TSMC' }, type: 'custom', draggable: true },
+  { id: 'products', position: { x: 250, y: 350 }, data: { label: 'Products' }, type: 'custom', draggable: true },
+  { id: 'apple-stock', position: { x: 500, y: 400 }, data: { label: 'Apple Stock' }, type: 'custom', draggable: true },
 ];
 
 const initialEdges: Edge[] = [
-  { id: 'market-tech', source: 'market', target: 'tech', type: 'floating', data: { tooltip: 'Tech follows market signals' } },
-  { id: 'market-finance', source: 'market', target: 'finance', type: 'floating', data: { tooltip: 'Macro → pricing & risk' } },
-  { id: 'tech-ai', source: 'tech', target: 'ai', type: 'floating', data: { tooltip: 'AI is a subset of Tech' } },
-  { id: 'tech-cloud', source: 'tech', target: 'cloud', type: 'floating', data: { tooltip: 'Cloud infra enables scale' } },
-  { id: 'finance-banking', source: 'finance', target: 'banking', type: 'floating', data: { tooltip: 'Banking vertical' } },
-  { id: 'finance-crypto', source: 'finance', target: 'crypto', type: 'floating', data: { tooltip: 'Digital assets' } },
-  { id: 'ai-regulations', source: 'ai', target: 'regulations', type: 'floating', data: { tooltip: 'AI compliance' } },
-  { id: 'crypto-regulations', source: 'crypto', target: 'regulations', type: 'floating', data: { tooltip: 'KYC/AML' } },
-  { id: 'banking-regulations', source: 'banking', target: 'regulations', type: 'floating', data: { tooltip: 'Basel, PSD2…' } },
+  // Red chain: China-Taiwan Conflict -> Taiwan -> TSMC -> Apple Stock
+  { 
+    id: 'conflict-taiwan', 
+    source: 'china-taiwan-conflict', 
+    target: 'taiwan', 
+    type: 'floating', 
+    data: { tooltip: 'impacts heavily negative' },
+    style: { stroke: '#ef4444', strokeWidth: 4 } // Red
+  },
+  { 
+    id: 'taiwan-tsmc', 
+    source: 'taiwan', 
+    target: 'tsmc', 
+    type: 'floating', 
+    data: { tooltip: 'Semiconductor production' },
+    style: { stroke: '#ef4444', strokeWidth: 4 } // Red
+  },
+  { 
+    id: 'tsmc-apple', 
+    source: 'tsmc', 
+    target: 'apple-stock', 
+    type: 'floating', 
+    data: { tooltip: 'supplies' },
+    style: { stroke: '#ef4444', strokeWidth: 4 } // Red
+  },
+  
+  // All other edges in neutral grey
+  { 
+    id: 'conflict-china', 
+    source: 'china-taiwan-conflict', 
+    target: 'china', 
+    type: 'floating', 
+    data: { tooltip: 'impacts' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'conflict-geopolitics', 
+    source: 'china-taiwan-conflict', 
+    target: 'geopolitics', 
+    type: 'floating', 
+    data: { tooltip: 'impacts strongly negative' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'china-products', 
+    source: 'china', 
+    target: 'products', 
+    type: 'floating', 
+    data: { tooltip: 'consumes' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'china-apple', 
+    source: 'china', 
+    target: 'apple-stock', 
+    type: 'floating', 
+    data: { tooltip: 'produces in' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'geopolitics-china', 
+    source: 'geopolitics', 
+    target: 'china', 
+    type: 'floating', 
+    data: { tooltip: 'inputs' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'geopolitics-products', 
+    source: 'geopolitics', 
+    target: 'products', 
+    type: 'floating', 
+    data: { tooltip: 'uncertainty' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
+  { 
+    id: 'products-apple', 
+    source: 'products', 
+    target: 'apple-stock', 
+    type: 'floating', 
+    data: { tooltip: '' },
+    style: { stroke: '#6b7280', strokeWidth: 3 } // Grey
+  },
 ];
 
 /* --------------------------------- Graph ------------------------------------ */
