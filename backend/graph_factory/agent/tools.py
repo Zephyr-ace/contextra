@@ -79,3 +79,41 @@ def format_paths_as_strings(graph: Graph, paths: List[List[str]]) -> List[str]:
         List[str]: A list of formatted string representations of the paths
     """
     return [format_path_as_string(graph, path) for path in paths]
+
+
+def get_path_with_most_weight(graph: Graph, start_title: str, target_title: str) -> List[str]:
+    """
+    Get the path with the highest total weight between two nodes.
+    
+    Args:
+        graph (Graph): The graph containing the nodes and edges
+        start_title (str): The title of the starting node
+        target_title (str): The title of the target node
+        
+    Returns:
+        List[str]: The path with the highest total weight as a list of node titles
+    """
+    paths = graph.find_paths(start_title, target_title, amount=1)
+    if not paths:
+        return []
+    return paths[0]
+
+
+def validateProximity(node1: Node, node2: Node, edge: Edge) -> bool:
+    """
+    Validate if two nodes should be connected by a specific edge based on their proximity or relationship.
+    
+    Args:
+        node1 (Node): The first node
+        node2 (Node): The second node
+        edge (Edge): The edge connecting the nodes
+        
+    Returns:
+        bool: True if the edge is valid for connecting these nodes, False otherwise
+    """
+    # Placeholder logic - to be implemented
+    # This could check for semantic similarity, contextual relevance, or other factors
+    # that determine if the nodes should be connected by this edge
+    
+    # For now, always return True as a placeholder
+    return True
