@@ -48,10 +48,19 @@ class VectorStore:
         
         # Get or create collection
         try:
+            # Try to get the collection if it exists
             self.collection = self.client.get_collection(name=collection_name)
-        except ValueError:
-            # Collection doesn't exist yet, create it
-            self.collection = self.client.create_collection(name=collection_name)
+            print(f"Using existing collection: {collection_name}")
+        except Exception as e:
+            # Collection doesn't exist yet or there was another error
+            print(f"Collection not found or error: {e}")
+            print(f"Creating new collection: {collection_name}")
+            try:
+                self.collection = self.client.create_collection(name=collection_name)
+                print(f"Successfully created collection: {collection_name}")
+            except Exception as create_error:
+                print(f"Error creating collection: {create_error}")
+                raise
     
     def add_node(self, node: Node, embedding: List[float]) -> str:
         """
