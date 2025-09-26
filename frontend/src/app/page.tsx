@@ -17,7 +17,7 @@ export default function Home() {
               title="Portfolio"
               aria-label="Portfolio"
               onClick={() => setActiveTab("Portfolio")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Portfolio"
                   ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
                   : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
@@ -30,7 +30,7 @@ export default function Home() {
               title="Investment Strategy"
               aria-label="Investment Strategy"
               onClick={() => setActiveTab("Investment Strategy")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Investment Strategy"
                   ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
                   : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
@@ -43,7 +43,7 @@ export default function Home() {
               title="Stock Details"
               aria-label="Stock Details"
               onClick={() => setActiveTab("Stock Details")}
-              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors ${
+              className={`h-10 w-10 rounded-md border flex items-center justify-center transition-colors cursor-pointer-on-hover ${
                 activeTab === "Stock Details"
                   ? "bg-[var(--ubs-gray-100)] border-[var(--ubs-border)] text-[var(--ubs-black)]"
                   : "bg-white border-[var(--ubs-border)] hover:bg-[var(--ubs-gray-50)] text-[var(--ubs-black)]"
@@ -98,7 +98,7 @@ export default function Home() {
                             setActiveTab("Stock Details");
                             setSelectedStock("AAPL");
                           }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
                           style={{ color: "var(--ubs-red)" }}
                         >
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -146,7 +146,7 @@ export default function Home() {
                             setActiveTab("Stock Details");
                             setSelectedStock("MSFT");
                           }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
                           style={{ color: "var(--ubs-yellow)" }}
                         >
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -194,7 +194,7 @@ export default function Home() {
                             setActiveTab("Stock Details");
                             setSelectedStock("UBSG");
                           }}
-                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)]"
+                          className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
                           style={{ color: "var(--ubs-black)" }}
                         >
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

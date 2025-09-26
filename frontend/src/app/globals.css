@@ -60,3 +60,7 @@ details[role="accordion"] summary {
 details[role="accordion"] summary::-webkit-details-marker {
   display: none;
 }
+
+.cursor-pointer-on-hover:hover {
+  cursor: pointer;
+}
