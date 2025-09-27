@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import GraphViz from "./components/GraphViz";
+import AnalysisContent from "./components/AnalysisContent";
 import type { Portfolio, Strategy, ChatMessage } from "@/types/models";
 import { portfolioService, strategyService, chatService } from "@/api";
 
@@ -388,8 +389,17 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="mt-4 flex-1 min-h-0">
-                  <GraphViz />
+                {/* Analysis Content */}
+                <div className="mt-6">
+                  <AnalysisContent />
+                </div>
+
+                {/* Graph Visualization */}
+                <div className="mt-6">
+                  <h3 className="text-lg font-semibold text-[var(--ubs-black)] mb-4">Risk Analysis Graph</h3>
+                  <div className="h-96 border border-[var(--ubs-border)] rounded-lg overflow-hidden">
+                    <GraphViz />
+                  </div>
                 </div>
               </>
             )}
