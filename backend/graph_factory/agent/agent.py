@@ -34,10 +34,9 @@ class Agent:
         # Create the prompt for the LLM
         prompt = f"""Analyze the following graph nodes and identify the 10 most important ones.
         Consider factors such as:
-        1. Centrality in the network
+        1. Connectivity in the network
         2. Significance of the entity type
-        3. Richness of description
-        4. Potential impact or influence
+        3. Potential impact or influence
         
         Here are all the nodes in the graph:
         {json.dumps(nodes_data, indent=2)}
@@ -68,10 +67,74 @@ class Agent:
             return node_list[:min(10, len(node_list))]
 
     def expand_node(self):
-        # formulate_query
-        # scrape_information
-        # extract
-        pass
+        """Expand the graph by identifying important nodes and their connections.
+        
+        This function:
+        1. Gets important nodes from the graph
+        2. For each important node, uses LLM to identify related entities
+        3. Uses the Extractor to extract nodes and edges
+        4. Appends the new nodes and edges to the graph
+        
+        Returns:
+            tuple: (List of new nodes added, List of new edges added)
+        """
+        from backend.utils.openAi_llm import LLM_OA
+        from backend.utils.prompts import promptAgentExpandNode, promptNodeExtractor, promptEdgeExtractor
+        from pydantic import BaseModel
+        from typing import List, Dict, Any
+        import json
+        
+        # Get important nodes from the graph
+        important_nodes = self.get_important_nodes()
+        
+        if not important_nodes:
+            print("No important nodes found to expand.")
+            return [], []
+            
+        # Initialize LLM
+        llm = LLM_OA(default_model="gpt-4")
+        
+        # Track all new nodes and edges
+        all_new_nodes = []
+        all_new_edges = []
+        
+        # Process each important node
+        for node in important_nodes:
+            print(f"Expanding node: {node.title}")
+            
+            try:
+                # 1. Use promptAgentExpandNode to get related entities
+                expand_prompt = promptAgentExpandNode.replace('{target}', node.title)
+                research_output = llm.generate(expand_prompt)
+                
+                # 2. Create an Extractor for this node
+                extractor = Extractor(target=node.title)
+                
+                # 3. Extract nodes and edges using the research output
+                # Override the _fetch_data method to use our research output
+                original_fetch_data = extractor._fetch_data
+                extractor._fetch_data = lambda: research_output
+                
+                # Extract nodes and edges
+                new_nodes, new_edges = extractor.extract()
+                
+                # Restore original method
+                extractor._fetch_data = original_fetch_data
+                
+                # 4. Add to our collection of new nodes and edges
+                all_new_nodes.extend(new_nodes)
+                all_new_edges.extend(new_edges)
+                
+                print(f"Added {len(new_nodes)} nodes and {len(new_edges)} edges from {node.title}")
+                
+            except Exception as e:
+                print(f"Expanded node {node.title}: {e}")
+        
+        # 5. Append all new nodes and edges to the graph
+        if all_new_nodes or all_new_edges:
+            self.append_to_graph(all_new_nodes, all_new_edges)
+            
+        return all_new_nodes, all_new_edges
 
     def append_to_graph(self, nodes, edges):
         """Append nodes and edges to the graph.
