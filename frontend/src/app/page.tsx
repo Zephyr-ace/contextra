@@ -5,6 +5,20 @@ import GraphViz from "./components/GraphViz";
 import type { Portfolio, Strategy, ChatMessage } from "@/types/models";
 import { portfolioService, strategyService, chatService } from "@/api";
 
+// Utility function to map urgency to color
+const getUrgencyColor = (urgency?: string): string => {
+  switch (urgency) {
+    case "urgent":
+      return "var(--ubs-red)";
+    case "attention":
+      return "var(--ubs-yellow)";
+    case "stable":
+      return "var(--ubs-gray-200)";
+    default:
+      return "var(--ubs-gray-300)";
+  }
+};
+
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"Portfolio" | "Investment Strategy" | "Stock Details">("Portfolio");
   const [selectedStock, setSelectedStock] = useState<string>("AAPL");
@@ -242,7 +256,7 @@ export default function Home() {
                     <details key={p.symbol} role="accordion" className="py-3 group" open>
                       <summary className="flex items-center justify-between cursor-pointer">
                         <div className="flex items-center gap-3">
-                          <div className="h-2 w-2 rounded-full" style={{ backgroundColor: p.color || "var(--ubs-gray-300)" }} />
+                          <div className="h-2 w-2 rounded-full" style={{ backgroundColor: getUrgencyColor(p.urgency) }} />
                           <span className="font-medium">{p.name} ({p.symbol})</span>
                         </div>
                         <span className="text-sm text-neutral-600 group-open:rotate-180 transition-transform">▾</span>
@@ -267,24 +281,26 @@ export default function Home() {
                               {p.pl_percent >= 0 ? "+" : ""}{p.pl_percent}%
                             </div>
                           </div>
-                          <button
-                            type="button"
-                            title="Stock Information"
-                            aria-label="Stock Information"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setActiveTab("Stock Details");
-                              setSelectedStock(p.symbol);
-                            }}
-                            className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
-                            style={{ color: p.color || "var(--ubs-black)" }}
-                          >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                              <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                              <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                          </button>
+                          {p.urgency !== "stable" && (
+                            <button
+                              type="button"
+                              title="Stock Information"
+                              aria-label="Stock Information"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setActiveTab("Stock Details");
+                                setSelectedStock(p.symbol);
+                              }}
+                              className="h-8 w-8 rounded-md flex items-center justify-center transition-colors hover:bg-[var(--ubs-gray-50)] cursor-pointer-on-hover"
+                              style={{ color: getUrgencyColor(p.urgency) }}
+                            >
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M12 8V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M12 16H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                            </button>
+                          )}
                         </div>
                       </div>
                     </details>

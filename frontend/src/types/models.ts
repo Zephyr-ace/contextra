@@ -8,7 +8,7 @@ export type Position = {
   market_value: number;
   pl_percent: number;
   currency?: string;
-  color?: string;
+  urgency?: string;
 };
 
 export type Portfolio = {

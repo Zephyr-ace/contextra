@@ -10,7 +10,7 @@ class Position(BaseModel):
     market_value: float
     pl_percent: float = Field(description="Profit/Loss percentage")
     currency: Optional[str] = None
-    color: Optional[str] = None
+    urgency: Optional[str] = None
 
 
 class Portfolio(BaseModel):
