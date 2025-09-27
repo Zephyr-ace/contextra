@@ -1,0 +1,141 @@
+[
+  {
+    "title": "Elon Musk leads Tesla, Inc.",
+    "description": "Elon Musk is the CEO of Tesla, Inc., directly guiding company strategy and decisions.",
+    "start": {
+      "name": "Elon Musk",
+      "aliases": [
+        "Musk"
+      ],
+      "description": "CEO of Tesla, Inc. and key decision maker.",
+      "type": "Person"
+    },
+    "end": {
+      "name": "Tesla, Inc.",
+      "aliases": [
+        "Tesla"
+      ],
+      "description": "Automotive and energy company known for electric vehicles.",
+      "type": "Company"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "Tesla, Inc. manufactures Cybertruck",
+    "description": "The Cybertruck is designed, engineered, and built by Tesla, Inc.",
+    "start": {
+      "name": "Tesla, Inc.",
+      "aliases": [
+        "Tesla"
+      ],
+      "description": "Automotive and energy company known for electric vehicles.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Cybertruck",
+      "aliases": [],
+      "description": "All-electric pickup truck developed and produced by Tesla, Inc.",
+      "type": "Product"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "Tesla, Inc. is part of Automotive Sector",
+    "description": "Tesla operates as a manufacturer within the automotive sector.",
+    "start": {
+      "name": "Tesla, Inc.",
+      "aliases": [
+        "Tesla"
+      ],
+      "description": "Automotive and energy company known for electric vehicles.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Automotive Sector",
+      "aliases": [],
+      "description": "Industry sector focused on the production, marketing, and sales of automobiles.",
+      "type": "Industry"
+    },
+    "importance_score": 0.95
+  },
+  {
+    "title": "United States regulates Tesla, Inc.",
+    "description": "Tesla operates under U.S. automotive and manufacturing regulations.",
+    "start": {
+      "name": "United States",
+      "aliases": [
+        "U.S.",
+        "USA"
+      ],
+      "description": "Country where Tesla is headquartered and main market.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Tesla, Inc.",
+      "aliases": [
+        "Tesla"
+      ],
+      "description": "Automotive and energy company known for electric vehicles.",
+      "type": "Company"
+    },
+    "importance_score": 0.9
+  },
+  {
+    "title": "Cybertruck belongs to Automotive Sector",
+    "description": "Cybertruck is an automobile, part of the automotive sector.",
+    "start": {
+      "name": "Cybertruck",
+      "aliases": [],
+      "description": "All-electric pickup truck developed and produced by Tesla, Inc.",
+      "type": "Product"
+    },
+    "end": {
+      "name": "Automotive Sector",
+      "aliases": [],
+      "description": "Industry sector focused on the production, marketing, and sales of automobiles.",
+      "type": "Industry"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "United States hosts Tesla, Inc.",
+    "description": "Tesla is headquartered and operates its main factories in the United States.",
+    "start": {
+      "name": "United States",
+      "aliases": [
+        "U.S.",
+        "USA"
+      ],
+      "description": "Country where Tesla is headquartered and main market.",
+      "type": "Country"
+    },
+    "end": {
+      "name": "Tesla, Inc.",
+      "aliases": [
+        "Tesla"
+      ],
+      "description": "Automotive and energy company known for electric vehicles.",
+      "type": "Company"
+    },
+    "importance_score": 0.8
+  },
+  {
+    "title": "Elon Musk influences Cybertruck",
+    "description": "Elon Musk oversaw and directed the design and production of the Cybertruck.",
+    "start": {
+      "name": "Elon Musk",
+      "aliases": [
+        "Musk"
+      ],
+      "description": "CEO of Tesla, Inc. and key decision maker.",
+      "type": "Person"
+    },
+    "end": {
+      "name": "Cybertruck",
+      "aliases": [],
+      "description": "All-electric pickup truck developed and produced by Tesla, Inc.",
+      "type": "Product"
+    },
+    "importance_score": 0.9
+  }
+]

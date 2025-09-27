@@ -1,0 +1,302 @@
+{
+  "target": "Apple",
+  "metadata": {
+    "generated_by": "AppleGraphGenerator",
+    "data_source": "apple_deepresearch.txt",
+    "statistics": {
+      "total_nodes": 17,
+      "total_edges": 19,
+      "node_types": {
+        "Company": 10,
+        "Country": 2,
+        "Regulator/Authority": 1,
+        "Sector": 1,
+        "Ecosystem": 1,
+        "Legal Case": 1,
+        "Policy": 1
+      },
+      "avg_importance_score": 0.82
+    },
+    "summary_info": {
+      "model_used": "o3",
+      "summary_length": 3623,
+      "summary_type": "concise_entities_impact"
+    }
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Taiwan Semiconductor Manufacturing Co.",
+      "type": "Company",
+      "description": "Exclusive foundry partner for Apple's A- and M-series chips, essential for iPhone and Mac performance.",
+      "aliases": [
+        "TSMC"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Foxconn",
+      "type": "Company",
+      "description": "Assembles majority of iPhones, affecting shipment and revenue.",
+      "aliases": [
+        "Hon Hai Precision"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "People’s Republic of China",
+      "type": "Country",
+      "description": "Hosts over 50% of Apple's assembly; policy shifts affect supply.",
+      "aliases": []
+    },
+    {
+      "id": 3,
+      "name": "Samsung Electronics",
+      "type": "Company",
+      "description": "Rival and key supplier of OLED displays and memory.",
+      "aliases": []
+    },
+    {
+      "id": 4,
+      "name": "Alphabet",
+      "type": "Company",
+      "description": "Android OS and search deal impacts Apple's profits.",
+      "aliases": [
+        "Google"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Qualcomm",
+      "type": "Company",
+      "description": "Supplies 5G/4G modem chips, crucial for iPhone connectivity.",
+      "aliases": []
+    },
+    {
+      "id": 6,
+      "name": "U.S. & EU Antitrust Regulators",
+      "type": "Regulator/Authority",
+      "description": "Investigate antitrust issues affecting Apple's margins.",
+      "aliases": [
+        "DOJ",
+        "FTC",
+        "European Commission",
+        "DMA"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Global Smartphone Market Demand",
+      "type": "Sector",
+      "description": "Economic factors directly influence Apple's revenue.",
+      "aliases": []
+    },
+    {
+      "id": 8,
+      "name": "Broadcom",
+      "type": "Company",
+      "description": "Supplies Wi-Fi/Bluetooth chips; affects iPhone feature launches.",
+      "aliases": []
+    },
+    {
+      "id": 9,
+      "name": "App Developer Ecosystem",
+      "type": "Ecosystem",
+      "description": "Legal challenges and developer pushback impact App Store revenue.",
+      "aliases": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "India (Government & Manufacturing/Consumer Market)",
+      "type": "Country",
+      "description": "Tariff policies and smartphone demand shape Apple's growth.",
+      "aliases": []
+    },
+    {
+      "id": 11,
+      "name": "Sony",
+      "type": "Company",
+      "description": "Supplies camera sensors, crucial for iPhone differentiation.",
+      "aliases": []
+    },
+    {
+      "id": 12,
+      "name": "LG Display",
+      "type": "Company",
+      "description": "Key OLED supplier alongside Samsung for iPhone displays.",
+      "aliases": []
+    },
+    {
+      "id": 13,
+      "name": "Pegatron",
+      "type": "Company",
+      "description": "Major iPhone assembler alongside Foxconn.",
+      "aliases": []
+    },
+    {
+      "id": 14,
+      "name": "US DOJ Antitrust Case 2024",
+      "type": "Legal Case",
+      "description": "U.S. lawsuit against Apple over App Store and iPhone practices.",
+      "aliases": [
+        "DOJ vs Apple"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EU DMA Compliance",
+      "type": "Policy",
+      "description": "European regulatory framework affecting App Store and iOS features.",
+      "aliases": [
+        "Digital Markets Act"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Apple Inc.",
+      "type": "Company",
+      "description": "Technology company - target entity of this knowledge graph.",
+      "aliases": [
+        "Apple"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 16,
+      "title": "Apple Silicon manufacturer",
+      "description": "TSMC manufactures Apple Silicon chips (A/M-series)",
+      "importance_score": 0.95
+    },
+    {
+      "source": 1,
+      "target": 16,
+      "title": "iPhone assembly",
+      "description": "Foxconn assembles iPhones for Apple",
+      "importance_score": 0.9
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "title": "iPhone assembly",
+      "description": "Pegatron assembles iPhones for Apple",
+      "importance_score": 0.8
+    },
+    {
+      "source": 12,
+      "target": 16,
+      "title": "OLED display panels",
+      "description": "LG Display supplies OLED display panels for iPhones",
+      "importance_score": 0.85
+    },
+    {
+      "source": 3,
+      "target": 16,
+      "title": "Supplier and competitor",
+      "description": "Samsung supplies OLED displays and memory while competing in smartphones",
+      "importance_score": 0.85
+    },
+    {
+      "source": 16,
+      "target": 3,
+      "title": "Competitor and customer",
+      "description": "Apple competes with Samsung smartphones while purchasing components",
+      "importance_score": 0.85
+    },
+    {
+      "source": 11,
+      "target": 16,
+      "title": "Camera sensors",
+      "description": "Sony supplies camera sensors for iPhone cameras",
+      "importance_score": 0.8
+    },
+    {
+      "source": 8,
+      "target": 16,
+      "title": "Wi-Fi/Bluetooth chips",
+      "description": "Broadcom supplies Wi-Fi and Bluetooth connectivity chips",
+      "importance_score": 0.75
+    },
+    {
+      "source": 5,
+      "target": 16,
+      "title": "5G/4G modem supplier",
+      "description": "Qualcomm supplies 5G and 4G modem chips for iPhone connectivity",
+      "importance_score": 0.9
+    },
+    {
+      "source": 4,
+      "target": 16,
+      "title": "Android competition and search partnership",
+      "description": "Alphabet competes via Android OS while partnering on Google search default",
+      "importance_score": 0.8
+    },
+    {
+      "source": 16,
+      "target": 4,
+      "title": "iOS competition and search revenue",
+      "description": "Apple competes with Android while receiving Google search revenue",
+      "importance_score": 0.8
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "title": "Antitrust lawsuit",
+      "description": "US DOJ 2024 antitrust lawsuit targeting Apple's practices",
+      "importance_score": 0.9
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "title": "Regulatory compliance",
+      "description": "EU DMA compliance requirements impacting App Store and iOS features",
+      "importance_score": 0.85
+    },
+    {
+      "source": 9,
+      "target": 16,
+      "title": "App Store ecosystem disputes",
+      "description": "Developer legal disputes and revenue dependence (Epic Games case)",
+      "importance_score": 0.8
+    },
+    {
+      "source": 16,
+      "target": 9,
+      "title": "App Store revenue dependence",
+      "description": "Apple depends on app developer ecosystem for App Store revenue",
+      "importance_score": 0.8
+    },
+    {
+      "source": 2,
+      "target": 16,
+      "title": "Main manufacturing hub",
+      "description": "China hosts majority of Apple's manufacturing with supply chain exposure",
+      "importance_score": 0.85
+    },
+    {
+      "source": 16,
+      "target": 2,
+      "title": "Manufacturing dependence",
+      "description": "Apple's manufacturing dependence on China creates supply chain risk",
+      "importance_score": 0.85
+    },
+    {
+      "source": 10,
+      "target": 16,
+      "title": "Emerging manufacturing and market",
+      "description": "India as emerging manufacturing base and growing consumer market",
+      "importance_score": 0.75
+    },
+    {
+      "source": 16,
+      "target": 10,
+      "title": "Manufacturing diversification",
+      "description": "Apple expanding manufacturing in India to diversify from China",
+      "importance_score": 0.75
+    }
+  ],
+  "graph_format": "json"
+}

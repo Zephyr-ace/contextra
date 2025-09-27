@@ -1,0 +1,178 @@
+[
+  {
+    "title": "TSMC supplies chips to Apple",
+    "description": "TSMC is the sole foundry for Apple\u2019s A- and M-series chips.",
+    "start": {
+      "name": "Taiwan Semiconductor Manufacturing Co.",
+      "aliases": [
+        "TSMC"
+      ],
+      "description": "Sole foundry for Apple\u2019s A- and M-series chips.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company that heavily relies on TSMC for chip manufacturing.",
+      "type": "Company"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "Foxconn assembles iPhones",
+    "description": "Foxconn assembles the majority of iPhones.",
+    "start": {
+      "name": "Foxconn",
+      "aliases": [
+        "Hon Hai Precision"
+      ],
+      "description": "Assembles the majority of iPhones.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company that relies on Foxconn for iPhone assembly.",
+      "type": "Company"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "China hosts Apple\u2019s assembly",
+    "description": "China hosts >50% of Apple\u2019s final assembly and a component base.",
+    "start": {
+      "name": "People\u2019s Republic of China",
+      "aliases": [],
+      "description": "Major assembly and component base for Apple products.",
+      "type": "Government & Region"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company that conducts major manufacturing in China.",
+      "type": "Company"
+    },
+    "importance_score": 1.0
+  },
+  {
+    "title": "Samsung supplies and competes",
+    "description": "Samsung supplies OLED displays and is a main rival in smartphones.",
+    "start": {
+      "name": "Samsung Electronics",
+      "aliases": [],
+      "description": "Supplier of OLED displays and a main rival in smartphones for Apple.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company that competes with Samsung and uses its displays.",
+      "type": "Company"
+    },
+    "importance_score": 0.95
+  },
+  {
+    "title": "Qualcomm supplies modem chips",
+    "description": "Qualcomm provides 5G/4G modem chips for Apple.",
+    "start": {
+      "name": "Qualcomm",
+      "aliases": [],
+      "description": "Provides modem chips for Apple until in-house development is ready.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company reliant on Qualcomm for modem chips.",
+      "type": "Company"
+    },
+    "importance_score": 0.95
+  },
+  {
+    "title": "U.S. & EU Regulators investigate Apple",
+    "description": "Investigate App Store fees, search deal, self-preferencing.",
+    "start": {
+      "name": "U.S. & EU Antitrust Regulators",
+      "aliases": [
+        "DOJ, FTC, European Commission, DMA"
+      ],
+      "description": "Investigate policies affecting Apple's services and ecosystem control.",
+      "type": "Government Organization"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company subject to antitrust investigations by regulators.",
+      "type": "Company"
+    },
+    "importance_score": 0.85
+  },
+  {
+    "title": "Global market influences Apple",
+    "description": "iPhone \u224850% of Apple revenue; global demand impacts sales.",
+    "start": {
+      "name": "Global Smartphone Market Demand",
+      "aliases": [],
+      "description": "Sector influencing Apple's revenue via demand cycles.",
+      "type": "Sector"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company whose revenue is impacted by global market demand.",
+      "type": "Company"
+    },
+    "importance_score": 0.9
+  },
+  {
+    "title": "Broadcom supplies RF chips",
+    "description": "Supplies Wi-Fi/Bluetooth RF front-end chips to Apple.",
+    "start": {
+      "name": "Broadcom",
+      "aliases": [],
+      "description": "Supplies RF front-end chips under multi-year contracts to Apple.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company reliant on Broadcom for RF chip supply.",
+      "type": "Company"
+    },
+    "importance_score": 0.75
+  },
+  {
+    "title": "India influences Apple\u2019s diversification",
+    "description": "Incentives and policies shape Apple\u2019s diversification out of China.",
+    "start": {
+      "name": "India (Government & Manufacturing/Consumer Market)",
+      "aliases": [],
+      "description": "Influences Apple's manufacturing and market strategies via incentives and demand.",
+      "type": "Government & Market"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company diversifying manufacturing strategy influenced by India.",
+      "type": "Company"
+    },
+    "importance_score": 0.75
+  },
+  {
+    "title": "Sony supplies imaging sensors",
+    "description": "Exclusive supplier of high-end camera sensors to Apple.",
+    "start": {
+      "name": "Sony",
+      "aliases": [],
+      "description": "Supplies high-end camera sensors enabling iPhone features.",
+      "type": "Company"
+    },
+    "end": {
+      "name": "Apple",
+      "aliases": [],
+      "description": "Tech company that uses Sony's sensors for iPhone cameras.",
+      "type": "Company"
+    },
+    "importance_score": 0.75
+  }
+]

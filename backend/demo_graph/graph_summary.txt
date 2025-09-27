@@ -1,0 +1,27 @@
+
+Apple Knowledge Graph Summary:
+=============================
+- Target Entity: Apple
+- Total Nodes: 12
+- Total Edges: 0
+- Average Edge Importance: 0.89
+
+Node Type Distribution:
+  - Company: 7
+  - Country: 2
+  - Regulation: 1
+  - Sector: 1
+  - Event: 1
+
+Key Entities (First 10 nodes):
+  - Taiwan Semiconductor Manufacturing Co. (Company)
+  - Foxconn (Company)
+  - People’s Republic of China (Country)
+  - Samsung Electronics (Company)
+  - Alphabet (Company)
+  - Qualcomm (Company)
+  - U.S. & EU Antitrust Regulators (Regulation)
+  - Global Smartphone Market Demand (Sector)
+  - Broadcom (Company)
+  - App Developer Ecosystem (Event)
+        

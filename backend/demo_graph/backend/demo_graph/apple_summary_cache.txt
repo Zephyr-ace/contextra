@@ -1,0 +1,53 @@
+GOAL: To identify the most important entities with direct and strong causal impact on Apple for building a context graph that traces reaction chains and measures event impacts.  
+
+Most-critical external entities (ranked roughly by influence)
+
+1. TSMC (Taiwan Semiconductor Manufacturing Co.) – HIGH  
+   • Sole foundry for Apple’s A- and M-series chips; process leadership (3 nm→2 nm) dictates iPhone/Mac performance and launch timing.  
+   • Any capacity, yield or Taiwan-strait disruption immediately stalls Apple’s entire chipset pipeline.
+
+2. Foxconn (Hon Hai Precision) – HIGH  
+   • Assembles the majority of iPhones in “iPhone City” and other plants.  
+   • Labor unrest, COVID curbs or geopolitical limits at Foxconn translate directly into shipment shortfalls and revenue hits.
+
+3. People’s Republic of China (Government & Region) – HIGH  
+   • Hosts >50 % of Apple’s final assembly and a vast component base; is also a top consumer market.  
+   • Policy shifts (lockdowns, data rules, import bans) or US-China tension can instantly disrupt supply chains or sales.
+
+4. Samsung Electronics – HIGH  
+   • Main rival in premium smartphones AND key supplier of OLED displays & memory.  
+   • Competitive moves (foldables, camera tech) pressure iPhone demand, while any supply hiccup affects Apple’s high-end models.
+
+5. Alphabet / Google (Android ecosystem & Search deal) – HIGH  
+   • Android’s 70 % global OS share frames Apple’s competitive landscape.  
+   • Google’s annual ~$18 B default-search payments bolster Apple services revenue yet face antitrust risk; loss would dent profits.
+
+6. Qualcomm – HIGH (until Apple’s own modem is ready)  
+   • Provides 5G/4G modem chips and owns critical IP.  
+   • Supply or licensing conflicts could leave iPhones without cellular connectivity, forcing costly settlements (as seen in 2019).
+
+7. U.S. & EU Antitrust Regulators (DOJ, FTC, European Commission, DMA) – MEDIUM-HIGH  
+   • Investigate App Store fees, the Google-search deal and self-preferencing.  
+   • Can mandate rule changes or fines that alter Apple’s services margin and ecosystem control.
+
+8. Global Smartphone Market Demand (Sector) – HIGH  
+   • iPhone ≈50 % of Apple revenue; macro cycles, upgrade length, and premium-tier share directly drive Apple’s top line.  
+   • Economic slowdowns or saturation in key regions quickly translate into lower unit sales.
+
+9. Broadcom – MEDIUM  
+   • Supplies Wi-Fi/Bluetooth and RF front-end chips under multi-year contracts.  
+   • Delivery or technology slips can delay new iPhone features until Apple finishes in-house replacements (~2025-26).
+
+10. App Developer Ecosystem (exemplified by Epic Games) – MEDIUM  
+    • Developers supply the content that makes iOS valuable; legal challenges (Epic v. Apple) already forced policy changes on payment steering.  
+    • Broad developer pushback could erode App Store revenue and ecosystem stickiness.
+
+11. India (Government & Manufacturing/Consumer Market) – MEDIUM  
+    • Production-linked incentives and tariff policies shape Apple’s diversification out of China; Foxconn, Pegatron and Luxshare are ramping iPhone output there.  
+    • Rapidly growing premium smartphone demand offers a critical long-term revenue pillar.
+
+12. Sony (Imaging Sensors) – MEDIUM  
+    • Exclusive supplier of high-end camera sensors; performance leaps enable headline iPhone features.  
+    • Yield or innovation setbacks would weaken Apple’s flagship differentiation.
+
+These 12 entities exert the clearest, strongest causal influence on Apple’s supply chain resilience, competitive positioning, regulatory risk and revenue trajectory.

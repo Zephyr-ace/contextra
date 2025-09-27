@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Taiwan Semiconductor Manufacturing Co.",
+    "aliases": [
+      "TSMC"
+    ],
+    "description": "Sole foundry for Apple's chips, impacts iPhone/Mac performance.",
+    "type": "Company"
+  },
+  {
+    "name": "Foxconn",
+    "aliases": [
+      "Hon Hai Precision"
+    ],
+    "description": "Assembles majority of iPhones, affecting shipment and revenue.",
+    "type": "Company"
+  },
+  {
+    "name": "People\u2019s Republic of China",
+    "aliases": [],
+    "description": "Hosts over 50% of Apple's assembly; policy shifts affect supply.",
+    "type": "Country"
+  },
+  {
+    "name": "Samsung Electronics",
+    "aliases": [],
+    "description": "Rival and key supplier of OLED displays and memory.",
+    "type": "Company"
+  },
+  {
+    "name": "Alphabet",
+    "aliases": [
+      "Google"
+    ],
+    "description": "Android OS and search deal impacts Apple's profits.",
+    "type": "Company"
+  },
+  {
+    "name": "Qualcomm",
+    "aliases": [],
+    "description": "Supplies 5G/4G modem chips, crucial for iPhone connectivity.",
+    "type": "Company"
+  },
+  {
+    "name": "U.S. & EU Antitrust Regulators",
+    "aliases": [
+      "DOJ",
+      "FTC",
+      "European Commission",
+      "DMA"
+    ],
+    "description": "Investigate antitrust issues affecting Apple's margins.",
+    "type": "Regulation"
+  },
+  {
+    "name": "Global Smartphone Market Demand",
+    "aliases": [],
+    "description": "Economic factors directly influence Apple's revenue.",
+    "type": "Sector"
+  },
+  {
+    "name": "Broadcom",
+    "aliases": [],
+    "description": "Supplies Wi-Fi/Bluetooth chips; affects iPhone feature launches.",
+    "type": "Company"
+  },
+  {
+    "name": "App Developer Ecosystem",
+    "aliases": [
+      "Epic Games"
+    ],
+    "description": "Legal challenges and developer pushback impact App Store revenue.",
+    "type": "Event"
+  },
+  {
+    "name": "India (Government & Manufacturing/Consumer Market)",
+    "aliases": [],
+    "description": "Tariff policies and smartphone demand shape Apple's growth.",
+    "type": "Country"
+  },
+  {
+    "name": "Sony",
+    "aliases": [],
+    "description": "Supplies camera sensors, crucial for iPhone differentiation.",
+    "type": "Company"
+  }
+]

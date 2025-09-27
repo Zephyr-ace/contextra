@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Tesla, Inc.",
+    "aliases": [
+      "Tesla"
+    ],
+    "description": "American electric vehicle and clean energy company.",
+    "type": "Company"
+  },
+  {
+    "name": "Cybertruck",
+    "aliases": [],
+    "description": "Tesla's electric pickup truck product.",
+    "type": "Product/Service"
+  },
+  {
+    "name": "Elon Musk",
+    "aliases": [],
+    "description": "CEO of Tesla, Inc.",
+    "type": "Person"
+  },
+  {
+    "name": "United States",
+    "aliases": [
+      "USA",
+      "U.S."
+    ],
+    "description": "Country where Tesla is headquartered.",
+    "type": "Country"
+  },
+  {
+    "name": "Automotive Sector",
+    "aliases": [
+      "Car Industry"
+    ],
+    "description": "Industry focused on the manufacturing of vehicles.",
+    "type": "Sector"
+  }
+]
