@@ -1,9 +1,9 @@
 from typing import Dict, List, Optional, Union, Set, Tuple
 import numpy as np
-from ..graph_components.Graph import Graph
-from ..graph_components.Node import Node
-from ..graph_components.Edge import Edge
-from ..vector_db.embedding_service import EmbeddingService
+from backend.graph_components.Graph import Graph
+from backend.graph_components.Node import Node
+from backend.graph_components.Edge import Edge
+from backend.vector_db.embedding_service import EmbeddingService
 
 
 class IntegrityCheck:

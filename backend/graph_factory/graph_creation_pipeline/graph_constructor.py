@@ -1,6 +1,6 @@
 from typing import Optional
-from ..graph_components.Graph import Graph
-from ..utils.extractor import Extractor
+from backend.graph_components.Graph import Graph
+from backend.utils.extractor import Extractor
 
 class GraphConstructor:
     """

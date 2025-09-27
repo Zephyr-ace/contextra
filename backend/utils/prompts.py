@@ -40,7 +40,8 @@ GOAL:
 Produce a clean set of nodes and strong edges that form a simple, causality-focused graph of the text."""
 
 
-promptDeepresearch = """You are a research specialist building a context graph around {target}.  
+promptDeepresearch = """
+You are a research specialist building a context graph around {target}.  
 Your task is to identify the most important entities that have a **direct and strong causal impact** on {target}.  
 
 ENTITIES TO FIND  

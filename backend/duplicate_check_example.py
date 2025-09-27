@@ -4,7 +4,7 @@ Example demonstrating the enhanced duplicate checking with vector similarity.
 
 from graph_components.Graph import Graph
 from graph_components.Node import Node
-from graph_creation_pipeline.integrityCheck import IntegrityCheck
+from backend.graph_factory.graph_creation_pipeline.integrityCheck import IntegrityCheck
 
 def main():
     print("Initializing graph with vector database...")
